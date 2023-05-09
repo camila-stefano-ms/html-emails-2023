@@ -1,0 +1,598 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="es">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="x-apple-disable-message-reformatting">
+	<title>Doppler</title>
+	<style>
+		html,
+		body {
+			margin: 0 auto !important;
+			padding: 0 !important;
+			background-color: #ffffff;
+		}
+
+		* {
+			-ms-text-size-adjust: 100%;
+			-webkit-text-size-adjust: 100%;
+		}
+
+		div[style*="margin: 16px 0"] {
+			margin: 0 !important;
+		}
+
+		table,
+		td {
+			mso-table-lspace: 0pt !important;
+			mso-table-rspace: 0pt !important;
+			border-collapse: separate !important;
+			border-spacing: 0 !important;
+		}
+
+		table {
+			table-layout: auto;
+			mso-table-lspace: 0pt !important;
+			mso-table-rspace: 0pt !important;
+			border-collapse: separate !important;
+			border-spacing: 0 !important;
+			border: none !important;
+			border-color: transparent !important;
+		}
+
+		img {
+			-ms-interpolation-mode: bicubic;
+			border: 0;
+			height: auto;
+			line-height: 100%;
+			outline: none;
+			text-decoration: none;
+		}
+
+		/* Hover styles for buttons */
+		.button--td:hover,
+		.button--a:hover {
+			background: #035A33 !important;
+		}
+
+		.link-hover:hover {
+			color: #035A33 !important;
+		}
+
+		*[x-apple-data-detectors],
+		.x-gmail-data-detectors,
+		.x-gmail-data-detectors *,
+		.aBn {
+			border-bottom: 0 !important;
+			cursor: default !important;
+			color: inherit !important;
+			text-decoration: none !important;
+			font-size: inherit !important;
+			font-family: inherit !important;
+			font-weight: inherit !important;
+			line-height: inherit !important;
+		}
+
+		th {
+			font-weight: normal;
+		}
+
+		.mobileOn {
+			display: none !important;
+			max-height: none !important;
+		}
+
+		/* MEDIA QUERIES */
+		@media all and (max-width:480px) {
+			.wrapper {
+				width: 320px !important;
+				padding: 0 !important;
+			}
+
+			.container {
+				width: 300px !important;
+				padding: 0 !important;
+			}
+
+			.mobile {
+				width: 300px !important;
+				display: block !important;
+				padding: 0 !important;
+			}
+
+			.img {
+				width: 100% !important;
+				height: auto !important;
+			}
+
+			.mobileOff {
+				width: 0px !important;
+				display: none !important;
+			}
+
+			.mobileOn {
+				display: block !important;
+				max-height: none !important;
+			}
+
+			.mobile-pl,
+			.mobile-pl-btn,
+			u+.body .mobile-pl,
+			u+.body .mobile-pl-btn {
+				padding-left: 0 !important;
+			}
+
+			.mobile-pt,
+			u+.body .mobile-pt {
+				padding-top: 20px !important;
+			}
+
+			.mobile-pr,
+			u+.body .mobile-pr {
+				padding-right: 0px !important;
+			}
+
+			.mobile-margin-0,
+			u+.body .mobile-margin-0 {
+				margin: 0px !important;
+			}
+
+			.mobilePadding {
+				padding-left: 3% !important;
+				padding-right: 3% !important;
+				width: 100% !important;
+			}
+
+			u~div .wrapper {
+				width: 100vw !important;
+			}
+
+			.mobile-center,
+			u+.body .mobile-center {
+				text-align: center !important;
+			}
+
+		}
+	</style>
+	<!--[if gte mso 9]>
+      <xml>
+        <o:OfficeDocumentSettings>
+          <o:AllowPNG/>
+          <o:PixelsPerInch>96</o:PixelsPerInch>
+        </o:OfficeDocumentSettings>
+      </xml>
+      <![endif]-->
+
+	<!--[if (gte mso 9)|(IE)]>
+	 <style type="text/css">
+	 table {
+	 border-collapse: collapse;
+	 border-spacing: 0;
+	 mso-table-lspace: 0pt !important;
+	 mso-table-rspace: 0pt !important; }
+	 </style>
+	 <![endif]-->
+</head>
+
+<body style="margin:0; padding:0;">
+	<center>
+		<table width="100%" border="0" cellpadding="0" cellspacing="0"
+			style="background-color: #EEEEEE; border-spacing: 0px !important; border: none;">
+			<tr>
+				<td align="center" valign="top" style="background-color: #EEEEEE; border-spacing: 0px !important;">
+					<table width="640" cellpadding="0" cellspacing="0" border="0" class="wrapper"
+						style="border-spacing: 0px !important; border: none;">
+						<tr>
+							<td align="right" valign="top" style="background-color: #310E44">
+								<table width="600" cellpadding="0" cellspacing="0" border="0" class="container">
+									<tr>
+										<th width="600" class="mobile" align="right" valign="top">
+											<a href="#" style="cursor: default;"><img src="textura.png" alt="Imagen de textura separadora"
+													width="78"
+													style="width:100%;max-width:78px !important; vertical-align: top !important;padding-right: 60px;"
+													class="mobile-pr"></a>
+										</th>
+									</tr>
+								</table>
+							</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+		</table>
+
+		<table width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation"
+			style="background-color: #EEEEEE; border-spacing: 0px !important; border: none;">
+			<tr>
+				<td align="center" valign="top" style="background-color: #EEEEEE">
+					<table width="640" cellpadding="0" cellspacing="0" border="0" class="wrapper"
+						style="border-spacing: 0px !important; border: none;">
+						<tr>
+							<td align="center" valign="top" style="border: none; background-color: #310E44">
+								<table width="600" cellpadding="0" cellspacing="0" border="0" class="container"
+									style="border-spacing: 0px !important; border: none; border-color: transparent;">
+									<tr>
+										<td height="20" style="font-size:20px; line-height:20px;">&nbsp;</td>
+									</tr>
+									<tr>
+										<td align="center" valign="top" style="border-spacing: 0px !important;" class="mobile-margin-0">
+											<a href="#" style="cursor: default;"><img src="logo-doppler.png" alt="Logo de Doppler" width="258"
+													style="width:100%;max-width:258px !important;"></a>
+										</td>
+									</tr>
+									<tr>
+										<td height="20" style="font-size:20px; line-height:20px;">&nbsp;</td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+		</table>
+
+		<table width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation"
+			style="background-color: #EEEEEE;">
+			<tr>
+				<td align="center" valign="top" style="background-color:#EEEEEE">
+					<table width="640" cellpadding="0" cellspacing="0" border="0" class="wrapper">
+						<tr>
+							<td align="center" valign="top" style="background-color: #310E44">
+								<table width="600" cellpadding="0" cellspacing="0" border="0" class="container">
+									<tr>
+										<td height="25" style="font-size:25px; line-height:25px;">&nbsp;</td>
+									</tr>
+									<tr>
+										<td align="center" valign="top" style="font-family:  Helvetica, Arial, sans-serif;">
+											<h1
+												style="Margin: 0;font-size: 15px;line-height: 21px;color:#FFFFFF;font-weight: 400; max-width: 560px;">
+												Hola [[[Nombre]]], ya te has registrado a la edición de E-commerce del EMMS y queremos que te
+												vayas preparando.
+											</h1>
+										</td>
+									</tr>
+									<tr>
+										<td height="21" style="font-size:21px; line-height:21px;">&nbsp;</td>
+									</tr>
+									<tr>
+										<td align="center" valign="top" style="font-family:  Helvetica, Arial, sans-serif;">
+											<p
+												style="Margin: 0;font-size: 15px;line-height: 21px;color:#FFFFFF;font-weight: 400; max-width: 560px;">
+												¿Qué tal si mientras esperamos el evento te registras en un <strong>Bootcamp</strong> gratuito
+												para automatizar el Marketing de tu
+												E-commerce?
+											</p>
+										</td>
+									</tr>
+									<tr>
+										<td height="40" style="font-size:40px; line-height:40px;">&nbsp;</td>
+									</tr>
+									<tr>
+										<td align="center" valign="top" style="font-family:  Helvetica, Arial, sans-serif;">
+											<!-- Button : BEGIN -->
+											<div style="font-size:13px; font-weight: bold; font-family: Helvetica, Arial, sans-serif;">
+												<!--[if mso]>
+												  <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="https://academy.fromdoppler.com/bootcamp/?utm_source=fromdoppler&utm_medium=email&utm_campaign=cw-nutricion-emmsecommerce" style="height:41px;v-text-anchor:middle;width:141px;" arcsize="50%" strokecolor="#008046" strokeweight="1px" fillcolor="#008046" >
+												  <w:anchorlock/>
+												  <center style="color:#ffffff;font-family:sans-serif;font-size:13px;font-weight:bold;">
+													ME INTERESA
+												  </center>
+												  </v:roundrect>
+												  <![endif]-->
+												<!--[if !mso] -->
+												<table cellspacing="0" cellpadding="0">
+													<tr>
+														<td
+															style="border-radius: 99px; background-color: #008046; color: #ffffff; padding: 13px 26px; text-align: center;"
+															class="button--td">
+															<a href="https://academy.fromdoppler.com/bootcamp/?utm_source=fromdoppler&utm_medium=email&utm_campaign=cw-nutricion-emmsecommerce"
+																style="color: #ffffff; font-size:13px; font-weight: bold; font-family:sans-serif; text-decoration: none; width:100%; display:inline-block"
+																target="_blank"><span>ME INTERESA</span></a>
+														</td>
+													</tr>
+												</table>
+												<!--[endif]-->
+											</div>
+											<!-- Button : END -->
+										</td>
+									</tr>
+									<tr>
+										<td height="50" style="font-size:50px; line-height:50px;">&nbsp;</td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+		</table>
+
+		<table width="100%" border="0" cellpadding="0" cellspacing="0" style="background-color: #EEEEEE;">
+			<tr>
+				<td align="center" valign="top" style="background-color: #EEEEEE;">
+					<table width="640" cellpadding="0" cellspacing="0" border="0" class="wrapper">
+						<tr>
+							<td align="center" valign="top" style="background-color: #FFFFFF;">
+								<table width="600" cellpadding="0" cellspacing="0" border="0" class="container">
+									<tr>
+										<td height="30" style="font-size:30px; line-height:30px;" class="mobile-pt">&nbsp;</td>
+									</tr>
+									<tr>
+										<th align="left" valign="middle" class="mobile">
+											<table width="365" cellpadding="0" cellspacing="0" border="0" class="container">
+												<tr>
+													<th width="35" align="center" valign="top" class="mobile mobile-center">
+														<p
+															style="font-family:  Helvetica, Arial, sans-serif;font-weight: 400; font-size: 15px;line-height: 21px;color:#333333; Margin: 0">
+															<img src="1.png" alt="Emoji pin" width="20"
+																style="width:100%;max-width:21px !important; vertical-align: top;">
+														</p>
+													</th>
+													<th width="330" align="left" valign="top" class="mobile mobile-center mobile-pt">
+														<p
+															style="font-family:  Helvetica, Arial, sans-serif;font-weight: 400; font-size: 15px;line-height: 21px;color:#333333; Margin: 0; max-width: 540px;">
+															5 módulos y 20 lecciones a tu ritmo
+														</p>
+													</th>
+												</tr>
+												<tr>
+													<td height="21" style="font-size:21px; line-height:21px;">&nbsp;</td>
+												</tr>
+												<tr>
+													<th width="35" align="center" valign="top" class="mobile mobile-center">
+														<p
+															style="font-family:  Helvetica, Arial, sans-serif;font-weight: 400; font-size: 15px;line-height: 21px;color:#333333; Margin: 0">
+															<img src="1.png" alt="Emoji pin" width="20"
+																style="width:100%;max-width:21px !important; vertical-align: top;">
+														</p>
+													</th>
+													<th width="330" align="left" valign="top" class="mobile mobile-center mobile-pt">
+														<p
+															style="font-family:  Helvetica, Arial, sans-serif;font-weight: 400; font-size: 15px;line-height: 21px;color:#333333; Margin: 0; max-width: 540px;">
+															Clases teóricas y prácticas para aumentar tus conversiones
+														</p>
+													</th>
+												</tr>
+												<tr>
+													<td height="21" style="font-size:21px; line-height:21px;">&nbsp;</td>
+												</tr>
+												<tr>
+													<th width="35" align="center" valign="top" class="mobile mobile-center">
+														<p
+															style="font-family:  Helvetica, Arial, sans-serif;font-weight: 400; font-size: 15px;line-height: 21px;color:#333333; Margin: 0">
+															<img src="1.png" alt="Emoji pin" width="20"
+																style="width:100%;max-width:21px !important; vertical-align: top;">
+														</p>
+													</th>
+													<th width="330" align="left" valign="top" class="mobile mobile-center mobile-pt">
+														<p
+															style="font-family:  Helvetica, Arial, sans-serif;font-weight: 400; font-size: 15px;line-height: 21px;color:#333333; Margin: 0; max-width: 540px;">
+															Online y gratuito
+														</p>
+													</th>
+												</tr>
+												<tr>
+													<td height="21" style="font-size:21px; line-height:21px;">&nbsp;</td>
+												</tr>
+											</table>
+										</th>
+										<th align="center" valign="top" class="mobile">
+											<table width="235" cellpadding="0" cellspacing="0" border="0" class="container">
+												<tr>
+													<td align="center" valign="top" style="font-family:  Helvetica, Arial, sans-serif;">
+														<a href="#" style="cursor: default;"><img src="main.png" alt="" width="235"
+																style="width:100%;max-width:235px !important;" class="mobile-margin-0 "></a>
+													</td>
+												</tr>
+											</table>
+										</th>
+									</tr>
+								</table>
+							</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+		</table>
+
+		<table width="100%" border="0" cellpadding="0" cellspacing="0" style="background-color: #EEEEEE;">
+			<tr>
+				<td align="center" valign="top" style="background-color: #EEEEEE;">
+					<table width="640" cellpadding="0" cellspacing="0" border="0" class="wrapper">
+						<tr>
+							<td align="center" valign="top" style="background-color: #FFFFFF;">
+								<table width="600" cellpadding="0" cellspacing="0" border="0" class="container">
+									<tr>
+										<td height="40" style="font-size:40px; line-height:40px;">&nbsp;</td>
+									</tr>
+									<tr>
+										<td align="center" valign="top" style="font-family:  Helvetica, Arial, sans-serif;"
+											class="mobile-center">
+											<p
+												style="Margin: 0;font-size: 23px;line-height: 32px;color:#333333;font-weight: 700; max-width: 550px;">
+												¡Más de 13.000 personas ya obtuvieron su certificación!
+											</p>
+											<p style="margin: 0; line-height: 21px; font-size: 21px;">&nbsp;</p>
+											<p style="Margin: 0;font-size: 15px;line-height: 21px;color:#333333;font-weight: 400;">
+												Si ya tienes tu cuenta en Doppler o Doppler Academy, inicia sesión y comienza con el primer
+												módulo. Si no, puedes
+												<a href="https://academy.fromdoppler.com/bootcamp/?utm_source=fromdoppler&utm_medium=email&utm_campaign=cw-nutricion-emmsecommerce"
+													target="_blank" style="text-decoration: none; color: #008046;font-weight: bold;"
+													class="link-hover ">registrarte ahora y comenzar cuando quieras</a>.
+											</p>
+										</td>
+									</tr>
+									<tr>
+										<td height="30" style="font-size:30px; line-height:30px;">&nbsp;</td>
+									</tr>
+									<tr>
+										<td align="center" valign="top">
+											<a href="#" style="cursor: default;"><img src="separador.png" alt="imagen separadora" width="21"
+													style="width:100%;max-width:21px !important;" class="mobile-margin-0 "></a>
+										</td>
+									</tr>
+									<tr>
+										<td height="30" style="font-size:30px; line-height:30px;">&nbsp;</td>
+									</tr>
+									<tr>
+										<td align="center" valign="top" style="font-family:  Helvetica, Arial, sans-serif;"
+											class="mobile-center">
+											<p
+												style="Margin: 0;font-size: 15px;line-height: 21px;color:#333333;font-weight: 400; max-width: 550px; font-style: italic;">
+												PD: no te pierdas el próximo Email donde te compartiremos un e-book gratuito sobre cómo utilizar
+												el Email Automation en
+												tu E-commerce.
+											</p>
+										</td>
+									</tr>
+									<tr>
+										<td height="50" style="font-size:50px; line-height:50px;">&nbsp;</td>
+									</tr>
+									<tr>
+										<td align="center" valign="top" style="font-family:  Helvetica, Arial, sans-serif;"
+											class="mobile-center">
+											<p
+												style="Margin: 0;font-size: 15px;line-height: 21px;color:#333333;font-weight: 400; max-width: 550px;">
+												El equipo de Doppler 😉
+											</p>
+										</td>
+									</tr>
+									<tr>
+										<td height="50" style="font-size:50px; line-height:50px;">&nbsp;</td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+		</table>
+
+		<table cellpadding="0" cellspacing="0" border="0" width="100%" role="presentation"
+			style="background-color: #EEEEEE;">
+			<tr>
+				<td align="center" valign="top" style="background-color: #EEEEEE">
+					<table width="640" cellpadding="0" cellspacing="0" border="0" class="wrapper">
+						<tr>
+							<td align="center" valign="top" style="background-color: #FFFFFF;">
+								<table width="600" cellpadding="0" cellspacing="0" border="0" class="container">
+									<tr>
+										<td align="left" valign="top" style="border-top: 1px solid #B4B1A5;">
+
+											<table width="185" border="0" cellpadding="0" cellspacing="0">
+												<tbody>
+													<tr>
+														<td height="50" style="font-size:50px; line-height:50px;">
+															&nbsp;</td>
+													</tr>
+													<tr>
+														<td width="37" align="left">
+															<a href="https://twitter.com/fromDoppler" target="_blank"><img src="twitter-icon.png"
+																	style="width: 100%; max-width: 32px !important;" width="32" class="img"
+																	alt="Twitter" /></a>
+														</td>
+														<td width="37" align="left">
+															<a href="https://www.facebook.com/DopplerEmailMarketing" target="_blank"><img
+																	src="facebook-icon.png" style="width: 100%; max-width: 32px !important;" width="32"
+																	class="img" alt="Facebook" /></a>
+														</td>
+														<td width="37" align="left">
+															<a href="https://www.linkedin.com/company/228261" target="_blank"><img
+																	src="linkedin-icon.png" style="width: 100%; max-width: 32px !important;" width="32"
+																	class="img" alt="Linkedin" /></a>
+														</td>
+														<td width="37" align="left">
+															<a href="https://www.youtube.com/user/FromDoppler" target="_blank"><img
+																	src="youtube-icon.png" style="width: 100%; max-width: 32px !important;" width="32"
+																	class="img" alt="Youtube" /></a>
+														</td>
+														<td width="37" align="left">
+															<a href="https://www.instagram.com/fromdoppler" target="_blank"><img
+																	src="instagram-icon.png" style="width: 100%; max-width: 32px !important;" width="32"
+																	class="img" alt="Instagram" /></a>
+														</td>
+													</tr>
+												</tbody>
+											</table>
+										</td>
+									</tr>
+									<tr>
+										<td height="25" style="font-size:25px; line-height:25px;">&nbsp;</td>
+									</tr>
+									<tr>
+										<td align="left">
+											<p style="
+                                                                  padding: 0;
+                                                                  margin: 0;
+                                                                  font-family: Helvetica, Arial, sans-serif;
+                                                                  font-size: 11px;
+                                                                  line-height: 16px;
+                                                                  color: #999999;
+                                                                ">
+												&copy;
+												<a href="https://www.fromdoppler.com" target="_blank"
+													style="text-decoration: none; color: #008046;font-weight: bold;" class="link-hover ">Doppler
+													LLC</a>. Todos
+												los derechos reservados.
+											</p>
+										</td>
+									</tr>
+									<tr>
+										<td height="20" style="font-size:20px; line-height:20px;">&nbsp;</td>
+									</tr>
+									<tr>
+										<td align="left" valign="top">
+											<p style="
+                                                          padding: 0;
+                                                          margin: 0;
+                                                          font-family: Helvetica, Arial, sans-serif;
+                                                          font-size: 11px;
+                                                          line-height: 14px;
+                                                          color: #999999;
+                                                        ">
+												Te informamos que los datos personales
+												contenidos en esta comunicaci&oacute;n fueron recogidos
+												en nuestro Formulario de registro, cuyo
+												responsable es Doppler LLC, dado que prestaste
+												tu consentimiento para recibir nuestras
+												comunicaciones. Al registrarte como usuario,
+												acept&aacute;s y consent&iacute;s que tus datos sean
+												almacenados por nuestra plataforma, cuyos
+												servidores est&aacute;n en Estados Unidos, para
+												gestionar el env&iacute;o de las comunicaciones
+												correspondientes. Podr&aacute;s ejercer tus derechos de
+												acceso, rectificaci&oacute;n, limitaci&oacute;n y eliminaci&oacute;n
+												de los datos escribiendo a
+												<a href="mailto:legal@fromdoppler.com" target="_blank"
+													style="text-decoration: none; color: #008046;font-weight: bold;"
+													class="link-hover">legal@fromdoppler.com</a>,
+												as&iacute; como presentar una reclamaci&oacute;n ante una
+												autoridad de control. Si no dese&aacute;s seguir
+												recibiendo nuestras Campa&ntilde;as, pod&eacute;s darte de
+												baja autom&aacute;ticamente haciendo clic en el enlace
+												que se encuentra debajo. Pod&eacute;s consultar
+												informaci&oacute;n adicional y detallada sobre la
+												protecci&oacute;n de tus datos personales en nuestra
+												<a href="https://www.fromdoppler.com/legal/privacidad" target="_blank"
+													style="text-decoration: none; color: #008046; font-weight: bold;"
+													class="link-hover">Pol&iacute;tica de
+													Privacidad</a>.
+											</p>
+										</td>
+									</tr>
+									<tr>
+										<td height="20" style="font-size:20px; line-height:20px;">&nbsp;</td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+		</table>
+	</center>
+</body>
+
+</html>

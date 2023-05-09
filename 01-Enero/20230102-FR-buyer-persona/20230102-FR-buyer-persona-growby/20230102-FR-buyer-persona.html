@@ -1,0 +1,417 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="es">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="x-apple-disable-message-reformatting">
+
+    <title>Doppler</title>
+
+    <style>
+        /* What it does: Remove spaces around the email design added by some email clients. */
+        /* Beware: It can remove the padding / margin and add a background color to the compose a reply window. */
+
+        html,
+        body {
+            margin: 0 auto !important;
+            padding: 0 !important;
+        }
+
+        /* What it does: Stops email clients resizing small text. */
+
+        * {
+            -ms-text-size-adjust: 100%;
+            -webkit-text-size-adjust: 100%;
+        }
+
+        /* What it does: Centers email on Android 4.4 */
+
+        div[style*="margin: 16px 0"] {
+            margin: 0 !important;
+        }
+
+        /* What it does: Stops Outlook from adding extra spacing to tables. */
+
+        table,
+        td {
+            mso-table-lspace: 0pt !important;
+            mso-table-rspace: 0pt !important;
+        }
+
+        table table table {
+            table-layout: auto;
+        }
+
+        /* What it does: Uses a better rendering method when resizing images in IE. */
+
+        img {
+            -ms-interpolation-mode: bicubic;
+            border: 0;
+            height: auto;
+            line-height: 100%;
+            outline: none;
+            text-decoration: none;
+        }
+
+        /* Hover styles for buttons */
+
+        .button--td:hover,
+        .button--a:hover {
+            background: #008046 !important;
+        }
+
+        .link-hover:hover {
+            color: #008046 !important
+        }
+
+        /* What it does: A work-around for email clients meddling in triggered links. */
+
+        *[x-apple-data-detectors],
+        /* iOS */
+
+        .x-gmail-data-detectors,
+        /* Gmail */
+
+        .x-gmail-data-detectors *,
+        .aBn {
+            border-bottom: 0 !important;
+            cursor: default !important;
+            color: inherit !important;
+            text-decoration: none !important;
+            font-size: inherit !important;
+            font-family: inherit !important;
+            font-weight: inherit !important;
+            line-height: inherit !important;
+        }
+
+        /* MEDIA QUERY */
+
+        @media screen and (max-width: 600px) {
+            .wrapper {
+                width: 100% !important;
+            }
+
+            .img-max {
+                max-width: 100%;
+                height: auto;
+            }
+
+            .responsive-table {
+                width: 100% !important;
+                max-width: 100% !important;
+            }
+
+            .img-block {
+                display: block !important;
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+            .mobilePadding {
+                padding-left: 3% !important;
+                padding-right: 3% !important;
+                width: 100% !important;
+            }
+
+            .padding-right {
+                padding: 48px 0px 22px 0px !important;
+            }
+
+            .first-logo {
+                padding: 30px 37px 40px 20px !important;
+            }
+
+            .responsive-table2 {
+                width: 80% !important;
+                max-width: 80% !important;
+            }
+
+            u~div .wrapper {
+                width: 100vw !important;
+            }
+        }
+
+        div[style*="margin: 16px 0;"] {
+            margin: 0 !important;
+        }
+
+        th {
+            font-weight: normal;
+        }
+
+        /* MEDIA QUERIES */
+
+        @media all and (max-width:639px) {
+            .wrapper {
+                width: 320px !important;
+                padding: 0 !important;
+            }
+
+            .container {
+                width: 300px !important;
+                padding: 0 !important;
+            }
+
+            .mobile {
+                width: 300px !important;
+                display: block !important;
+                padding: 0 !important;
+            }
+
+            .mobile-title-fontsize {
+                font-size: 23px !important;
+                line-height: 26px !important;
+            }
+
+            .img {
+                width: 100% !important;
+                height: auto !important;
+            }
+
+            *[class="mobileOff"] {
+                width: 0px !important;
+                display: none !important;
+            }
+
+            *[class*="mobileOn"] {
+                display: block !important;
+                max-height: none !important;
+            }
+
+            .mobile-pl,
+            .mobile-pl-btn {
+                padding-left: 0 !important;
+            }
+
+            .mobile-pt {
+                padding-top: 20px !important;
+            }
+
+            .logos {
+                max-width: 85% !important;
+            }
+
+            .mobile-pr {
+                padding-right: 0px !important;
+            }
+        }
+    </style>
+    <!-- What it does: Makes background images in 72ppi Outlook render at correct size. -->
+    <!--[if gte mso 9]>
+      <xml>
+        <o:OfficeDocumentSettings>
+          <o:AllowPNG/>
+          <o:PixelsPerInch>96</o:PixelsPerInch>
+        </o:OfficeDocumentSettings>
+      </xml>
+      <![endif]-->
+</head>
+
+<body style="margin:0; padding:0; background-color:#ffffff;">
+    <center>
+        <table width="100%" border="0" cellpadding="0" cellspacing="0" bgcolor="#ffffff">
+            <tr>
+                <td align="center" valign="top">
+
+                    <table width="640" cellpadding="0" cellspacing="0" border="0" class="wrapper" bgcolor="#FFFFFF">
+                        <tr>
+                            <td height="60" style="font-size:60px; line-height:60px;">&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td align="center" valign="top" class="">
+                                <table width="600" cellpadding="0" cellspacing="0" border="0" class="container">
+                                    <tr>
+                                        <td align="left" valign="top">
+                                            <a href="#" style="cursor: default;"><img src="logo-partner.png" width="142"
+                                                    alt="Logo de partner"
+                                                    style="width:100%;max-width:142px !important;"></a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td height="40" style="font-size:40px; line-height:40px;">&nbsp;</td>
+                                    </tr>
+                                    <tr>
+                                        <td align="left" valign="top"
+                                            style="font-family: Helvetica, Arial, sans-serif;color:#302100;">
+                                            <p style="Margin: 0; font-weight: 700;font-size: 26px;line-height: 32px;"
+                                                class="mobile-title-fontsize">
+                                                Define a tu Buyer Persona
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td height="40" style="font-size:40px; line-height:40px;">&nbsp;</td>
+                                    </tr>
+                                    <tr>
+                                        <td align="left">
+
+                                            <a href="https://partners.fromdoppler.com/buyer-persona/?utm_source=growby&utm_medium=partners&utm_campaign=fr-buyer-persona-ene23"
+                                                style="cursor: pointer;" target="_blank"><img src="main.png" width="600"
+                                                    align="left" style="display: block;width:100%;max-width: 600px;"
+                                                    alt="Ebook gratuito: Captación de Leads y Lead Nurturing"
+                                                    border="0"></a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td height="40" style="font-size:40px; line-height:40px;">
+                                            &nbsp;</td>
+                                    </tr>
+                                    <tr>
+                                        <td align="left" valign="top"
+                                            style="font-family: Helvetica, Arial, sans-serif;color:#333333;font-weight: 400;font-size: 15px;line-height: 24px;"
+                                            class="">
+                                            <p style="Margin:0;">Hola [[[Nombre]]],</p>
+                                            <p style="Margin:0; max-width: 580px;">Como sabemos, <strong>el éxito de la
+                                                    propuesta
+                                                    comercial</strong> de cualquier negocio <strong>comienza en el
+                                                    conocimiento del público objetivo</strong>.
+                                            </p>
+                                            <p style="Margin: 0; line-height: 22px; font-size: 22px;">&nbsp;</p>
+                                            <p style="Margin:0;">Por eso, queremos ayudarte a que
+                                                puedas <strong>definir
+                                                    a tu cliente ideal</strong> y conocer detalladamente <strong>quién
+                                                    es y cuáles son sus
+                                                    motivaciones, miedos, puntos de dolor, objetivos y retos</strong>.
+                                            </p>
+                                            <p style="Margin: 0; line-height: 22px; font-size: 22px;">&nbsp;</p>
+                                            <p style="Margin:0; max-width: 580px;">¿Por qué deberías establecerlos? Esta
+                                                información es
+                                                esencial para analizar los <strong>puntos de contacto entre el cliente y
+                                                    tu
+                                                    marca</strong>, facilitándote:
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td height="22" style="font-size:22px; line-height:22px;">
+                                            &nbsp;</td>
+                                    </tr>
+                                    <tr>
+                                        <td align="left" valign="top"
+                                            style="font-family: Helvetica, Arial, sans-serif;color:#333333;font-weight: 400;font-size: 15px;line-height: 24px;"
+                                            class="">
+                                            <p style="Margin:0; ">&nbsp;&nbsp;<span
+                                                    style="font-weight: 700;">&bull;</span>&nbsp;&nbsp;La creación de
+                                                contenido
+                                            </p>
+                                            <p style="Margin: 0; line-height: 15px;">&nbsp;</p>
+                                            <p style="Margin:0; ">&nbsp;&nbsp;<span
+                                                    style="font-weight: 700;">&bull;</span>&nbsp;&nbsp;La planificación
+                                                de tus
+                                                mensajes y de los canales de comunicación adecuados
+                                            </p>
+                                            <p style="Margin: 0; line-height: 15px;">&nbsp;</p>
+                                            <p style="Margin:0; ">&nbsp;&nbsp;<span
+                                                    style="font-weight: 700;">&bull;</span>&nbsp;&nbsp;La comprensión de
+                                                las
+                                                soluciones que tus productos y/o servicios pueden brindarles
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td height="22" style="font-size:22px; line-height:22px;">&nbsp;</td>
+                                    </tr>
+                                    <tr>
+                                        <td align="left" valign="top"
+                                            style="font-family: Helvetica, Arial, sans-serif;color:#333333;font-weight: 400;font-size: 15px;line-height: 24px;"
+                                            class="">
+                                            <p style="Margin:0;">Hoy, junto a Doppler, compartimos contigo una
+                                                <strong>Plantilla gratuita</strong> que te facilitará bosquejar muy
+                                                fácilmente a tu <strong>Buyer
+                                                    Persona</strong>. Así podrás determinar de forma más efectiva la
+                                                propuesta de valor de tu marca y comunicarla correctamente para
+                                                atraer posibles clientes.
+                                            </p>
+                                            <p style="Margin: 0; line-height: 22px;">&nbsp;</p>
+                                            <p style="Margin:0; font-weight: 700;">¡Descárgala gratis ahora!
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td height="30" style="font-size:30px; line-height:30px;">&nbsp;</td>
+                                    </tr>
+                                    <tr>
+                                        <td align="left" valign="top" class="">
+                                            <!-- Button : BEGIN -->
+                                            <div>
+                                                <!--[if mso]>
+                                                        <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="https://partners.fromdoppler.com/buyer-persona/?utm_source=growby&utm_medium=partners&utm_campaign=fr-buyer-persona-ene23" style="height:43px;v-text-anchor:middle;width:183px;" arcsize="50%" strokecolor="#33AD73" strokeweight="1px" fillcolor="#33AD73" >
+                                                    	<w:anchorlock/>
+                                                        <center style="color:#ffffff;font-family:sans-serif;font-size:13px;font-weight:bold;">
+                                                        ACCEDE A LA PLANTILLA
+                                                        </center>
+                                                        </v:roundrect>
+                                                        <![endif]-->
+                                                <!--[if !mso] -->
+                                                <table cellspacing="0" cellpadding="0">
+                                                    <tr>
+                                                        <td style="border-radius: 99px; background-color: #33AD73; color: #ffffff; padding: 14px 31px; text-align: center;"
+                                                            class="button--td">
+                                                            <a href="https://partners.fromdoppler.com/buyer-persona/?utm_source=growby&utm_medium=partners&utm_campaign=fr-buyer-persona-ene23"
+                                                                style="color: #ffffff; font-size:13px; font-weight: bold; font-family:sans-serif; text-decoration: none; width:100%; display:inline-block"
+                                                                target="_blank"><span>ACCEDE A LA PLANTILLA</span></a>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                                <!--[endif]-->
+                                            </div>
+                                            <!-- Button : END -->
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+
+        </td>
+        </tr>
+        <tr>
+            <td align="center" valign="top" class="dm-background-dark ">
+                <table width="640" cellpadding="0" cellspacing="0" border="0" class="wrapper" bgcolor="#FFFFFF">
+
+                    <tr>
+                        <td align="center" valign="top" class="">
+                            <table width="600" cellpadding="0" cellspacing="0" border="0" class="container">
+                                <tr>
+                                    <td height="50" style="font-size:50px; line-height:50px;">&nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td height="10" style="font-size:10px; line-height:10px;" align="center"
+                                        valign="middle">
+                                        <hr style="height:1px;background-color:#cccccc;border:none;" noshade>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td height="10" style="font-size:10px; line-height:10px;">&nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td align="center" valign="top"
+                                        style="font-family: Helvetica, Arial, sans-serif;color:#333333;font-weight: 400;font-size: 12px;line-height: 20px;">
+                                        <p style="Margin:0;">&copy; 2023. <a href="#"
+                                                style="text-decoration:none;color:#33AD73;font-weight:bold; cursor: initial;">Growby</a>.
+                                            Todos
+                                            los
+                                            derechos reservados.</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td height="10" style="font-size:10px; line-height:10px;">&nbsp;</td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td height="10" style="font-size:10px; line-height:10px;">&nbsp;</td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        </table>
+    </center>
+</body>
+
+</html>

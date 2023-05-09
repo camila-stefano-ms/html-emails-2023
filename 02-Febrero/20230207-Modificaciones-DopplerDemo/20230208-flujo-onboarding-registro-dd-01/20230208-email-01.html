@@ -1,0 +1,802 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="es">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="x-apple-disable-message-reformatting">
+	<title>Doppler</title>
+	<style>
+		html,
+		body {
+			margin: 0 auto !important;
+			padding: 0 !important;
+			background-color: #ffffff;
+		}
+
+		* {
+			-ms-text-size-adjust: 100%;
+			-webkit-text-size-adjust: 100%;
+		}
+
+		div[style*="margin: 16px 0"] {
+			margin: 0 !important;
+		}
+
+		table,
+		td {
+			mso-table-lspace: 0pt !important;
+			mso-table-rspace: 0pt !important;
+		}
+
+		table table table {
+			table-layout: auto;
+		}
+
+		img {
+			-ms-interpolation-mode: bicubic;
+			border: 0;
+			height: auto;
+			line-height: 100%;
+			outline: none;
+			text-decoration: none;
+		}
+
+		/* Hover styles for buttons */
+		.button--td:hover,
+		.button--a:hover {
+			background: #008046 !important;
+		}
+
+		.link-hover:hover {
+			color: #008046 !important;
+		}
+
+		*[x-apple-data-detectors],
+		.x-gmail-data-detectors,
+		.x-gmail-data-detectors *,
+		.aBn {
+			border-bottom: 0 !important;
+			cursor: default !important;
+			color: inherit !important;
+			text-decoration: none !important;
+			font-size: inherit !important;
+			font-family: inherit !important;
+			font-weight: inherit !important;
+			line-height: inherit !important;
+		}
+
+		th {
+			font-weight: normal;
+		}
+
+		.mobileOn {
+			display: none !important;
+			max-height: none !important;
+		}
+
+		/* MEDIA QUERIES */
+		@media all and (max-width:480px) {
+			.wrapper {
+				width: 320px !important;
+				padding: 0 !important;
+			}
+
+			.container {
+				width: 300px !important;
+				padding: 0 !important;
+			}
+
+			.mobile {
+				width: 300px !important;
+				display: block !important;
+				padding: 0 !important;
+			}
+
+			.img {
+				width: 100% !important;
+				height: auto !important;
+			}
+
+			.mobileOff {
+				width: 0px !important;
+				height: 0px !important;
+				display: none !important;
+				overflow: hidden !important;
+				float: none !important;
+				visibility: hidden !important;
+				border: none !important;
+				font-size: 0px !important;
+				max-height: 0px !important;
+				mso-hide: all !important;
+			}
+
+			.mobileOn {
+				display: block !important;
+				width: auto !important;
+				height: auto !important;
+				overflow: visible !important;
+				float: none !important;
+				visibility: visible !important;
+				border: none !important;
+			}
+
+			.mobile-pl,
+			.mobile-pl-btn,
+			u+.body .mobile-pl,
+			u+.body .mobile-pl-btn {
+				padding-left: 0 !important;
+			}
+
+			.mobile-pt,
+			u+.body .mobile-pt {
+				padding-top: 20px !important;
+			}
+
+			.mobile-pr,
+			u+.body .mobile-pr {
+				padding-right: 0px !important;
+			}
+
+			.mobilePadding {
+				padding-left: 3% !important;
+				padding-right: 3% !important;
+				width: 100% !important;
+			}
+
+			u~div .wrapper {
+				width: 100vw !important;
+			}
+
+			.mobile-center,
+			u+.body .mobile-center {
+				text-align: center !important;
+			}
+		}
+	</style>
+	<!--[if gte mso 9]>
+      <xml>
+        <o:OfficeDocumentSettings>
+          <o:AllowPNG/>
+          <o:PixelsPerInch>96</o:PixelsPerInch>
+        </o:OfficeDocumentSettings>
+      </xml>
+      <![endif]-->
+</head>
+
+<body style="margin:0; padding:0;">
+	<center>
+		<table width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation">
+			<tr>
+				<td align="center" valign="top" style="background-color: #FFFFFF">
+
+					<table width="640" cellpadding="0" cellspacing="0" border="0" class="wrapper">
+						<tr>
+							<td height="60" style="font-size:60px; line-height:60px;">&nbsp;</td>
+						</tr>
+						<tr>
+							<td align="center" valign="top">
+								<table width="600" cellpadding="0" cellspacing="0" border="0" class="container">
+									<tr>
+										<td align="center" valign="top">
+											<a href="#" style="cursor: default;"><img src="logo-academy.png" alt="Logo de Doppler Academy"
+													width="175" style="width:100%;max-width:175px !important;"></a>
+										</td>
+									</tr>
+									<tr>
+										<td height="50" style="font-size:50px; line-height:50px;">&nbsp;</td>
+									</tr>
+									<tr>
+										<td align="center" valign="top" style="font-family:  Helvetica, Arial, sans-serif;">
+											<p style="Margin: 0;font-size: 20px;line-height: 26px;color:#333333;font-weight: 700;">
+												¡Te damos la bienvenida a Doppler Academy!
+											</p>
+											<p style="Margin: 0; font-size: 8px; line-height: 8px;">&nbsp;</p>
+											<p style="Margin: 0;font-size: 15px;line-height: 26px;color:#333333;font-weight: 700;">
+												Capacitaciones 100% online y gratuitas sobre Marketing Digital
+											</p>
+											<p style="Margin: 0; font-size: 17px; line-height: 17px;">&nbsp;</p>
+											<p
+												style="Margin: 0;font-size: 15px;line-height: 24px;color:#333333;font-weight: 400; max-width: 450px;">
+												¡Hola [[[Nombre]]], estamos felices de que seas parte de nuestra Comunidad! ¿Te preguntarás cómo
+												sucedió?
+											</p>
+										</td>
+									</tr>
+									<tr>
+										<td height="30" style="font-size:30px; line-height:30px;">&nbsp;</td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+						<tr>
+							<td align="center" valign="top" style="background-color: #FCE579;">
+								<table width="600" cellpadding="0" cellspacing="0" border="0" class="container">
+									<tr>
+										<td height="16" style="font-size:16px; line-height:16px;">&nbsp;</td>
+									</tr>
+									<tr>
+										<td align="center" valign="top" style="font-family:  Helvetica, Arial, sans-serif;">
+											<p
+												style="max-width: 500px; Margin: 0;font-size: 15px;line-height: 24px;color:#333333;font-weight: 400;">
+												Al momento en que te registras a <strong>Doppler Demo</strong> empiezas a formar
+												parte del mundo de
+												<strong>Doppler Academy</strong> ¡y queremos que lo aproveches al máximo!
+											</p>
+										</td>
+									</tr>
+									<tr>
+										<td height="16" style="font-size:16px; line-height:16px;">&nbsp;</td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+						<tr>
+							<td align="center" valign="top">
+								<table width="600" cellpadding="0" cellspacing="0" border="0" class="container">
+									<tr>
+										<td height="50" style="font-size:50px; line-height:50px;">&nbsp;</td>
+									</tr>
+									<tr>
+										<td align="center" valign="top" style="font-family:  Helvetica, Arial, sans-serif;">
+											<p style="Margin: 0;font-size: 18px;line-height: 24px;color:#333333;font-weight: 700;">
+												¿Qué puedes hacer en Doppler Academy?
+											</p>
+										</td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+		</table>
+
+		<table width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation">
+			<tr>
+				<td align="center" valign="top" style="background-color:#FFFFFF">
+					<table width="640" cellpadding="0" cellspacing="0" border="0" class="wrapper">
+						<tr>
+							<td align="center" valign="top">
+								<table width="600" cellpadding="0" cellspacing="0" border="0" class="container">
+									<tr>
+										<td height="50" style="font-size:50px; line-height:50px;">&nbsp;</td>
+									</tr>
+									<tr>
+										<td align="center" valign="top" class="container ">
+											<table cellpadding="0" cellspacing="0" border="0" class="container">
+												<tr>
+													<th align="center" valign="middle" width="284"
+														style="font-family: Helvetica, Arial, sans-serif;" class="mobile mobile-pt">
+														<p style="Margin: 0;">
+															<a href="#" style="cursor: default;"><img src="https://i.imgur.com/9OWu71s.png"
+																	alt="Imagen Cursos" width="161"
+																	style="width:100%;max-width:161px !important; margin-bottom: 0; padding-bottom: 0;display: block;"></a>
+														</p>
+														<p style="margin: 0; font-size: 20px; line-height: 20px;">&nbsp;</p>
+														<p
+															style="Margin: 0; font-family: Helvetica, Arial, sans-serif;font-size: 16px;line-height: 24px;color:#333333;">
+															Aprende a tu ritmo y obtén una Certificación Oficial cuando lo apruebes. ¡Podrás compartir
+															tu logro!
+														</p>
+														<p style="margin: 0; font-size: 20px; line-height: 24px;">&nbsp;</p>
+														<p style="margin: 0; font-size: 30px; line-height: 30px;">&nbsp;</p>
+														<!-- Button : BEGIN -->
+														<div style="font-size:13px; font-weight: bold; font-family: Helvetica, Arial, sans-serif;">
+															<!--[if mso]>
+                                <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="https://academy.fromdoppler.com/cursos/?utm_source=direct?utm_source=fromdoppler&utm_medium=email&utm_campaign=inbound-onboardingacademy-dd-dts-btc" style="height:41px;v-text-anchor:middle;width:189px;" arcsize="50%" strokecolor="#33AD73" strokeweight="1px" fillcolor="#33AD73" >
+                                <w:anchorlock/>
+                                <center style="color:#ffffff;font-family:sans-serif;font-size:13px;font-weight:bold;">
+                                DESCUBRIR CURSOS
+                                </center>
+                               </v:roundrect>
+                                <![endif]-->
+															<!--[if !mso] -->
+															<table cellspacing="0" cellpadding="0">
+																<tr>
+																	<td
+																		style="border-radius: 99px; background-color: #33AD73; color: #ffffff; padding: 13px 26px; text-align: center;"
+																		class="button--td">
+																		<a href="https://academy.fromdoppler.com/cursos/?utm_source=direct?utm_source=fromdoppler&utm_medium=email&utm_campaign=inbound-onboardingacademy-dd-dts-btc"
+																			style="color: #ffffff; font-size:13px; font-weight: bold; font-family:sans-serif; text-decoration: none; width:100%; display:inline-block"
+																			target="_blank"><span>DESCUBRIR CURSOS</span></a>
+																	</td>
+																</tr>
+															</table>
+															<!--[endif]-->
+														</div>
+														<!-- Button : END -->
+													</th>
+													<th align="center" valign="middle" width="32"
+														style="font-family: Helvetica, Arial, sans-serif;" class="mobile mobile-pt">
+													</th>
+													<th align="center" valign="middle" width="284"
+														style="font-family: Helvetica, Arial, sans-serif;" class="mobile mobile-pt">
+														<p class="mobile-pt" style="Margin: 0;">
+															<a href="#" style="cursor: default;"><img src="https://i.imgur.com/cAXWI7P.png"
+																	alt="Imagen Cápsulas" width="161"
+																	style="width:100%;max-width:161px !important; margin-bottom: 0; padding-bottom: 0;display: block;"></a>
+														</p>
+														<p style="margin: 0; font-size: 20px; line-height: 20px;">&nbsp;</p>
+														<p
+															style="Margin: 0; font-family: Helvetica, Arial, sans-serif;font-size: 16px;line-height: 24px;color:#333333;">
+															Aprende y descubre cómo potenciar tus Redes Sociales, E-commerce, tu Estrategia de venta,
+															contenido SEO y mucho más.
+														</p>
+														<p style="margin: 0; font-size: 30px; line-height: 30px;">&nbsp;</p>
+														<!-- Button : BEGIN -->
+														<div style="font-size:13px; font-weight: bold; font-family: Helvetica, Arial, sans-serif;">
+															<!--[if mso]>
+													                                <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="https://academy.fromdoppler.com/capsulas/?utm_source=fromdoppler&utm_medium=email&utm_campaign=inbound-onboardingacademy-dd-dts-btc" style="height:41px;v-text-anchor:middle;width:131px;" arcsize="50%" strokecolor="#33AD73" strokeweight="1px" fillcolor="#33AD73" >
+													                                <w:anchorlock/>
+													                                <center style="color:#ffffff;font-family:sans-serif;font-size:13px;font-weight:bold;">
+													                                VER VIDEOS
+													                                </center>
+													                               </v:roundrect>
+													                                <![endif]-->
+															<!--[if !mso] -->
+															<table cellspacing="0" cellpadding="0">
+																<tr>
+																	<td
+																		style="border-radius: 99px; background-color: #33AD73; color: #ffffff; padding: 13px 26px; text-align: center;"
+																		class="button--td">
+																		<a href="https://academy.fromdoppler.com/capsulas/?utm_source=fromdoppler&utm_medium=email&utm_campaign=inbound-onboardingacademy-dd-dts-btc"
+																			style="color: #ffffff; font-size:13px; font-weight: bold; font-family:sans-serif; text-decoration: none; width:100%; display:inline-block"
+																			target="_blank"><span>VER VIDEOS</span></a>
+																	</td>
+																</tr>
+															</table>
+															<!--[endif]-->
+														</div>
+														<!-- Button : END -->
+													</th>
+												</tr>
+											</table>
+										</td>
+									</tr>
+									<tr>
+										<td height="32" style="font-size:32px; line-height:32px;">&nbsp;</td>
+									</tr>
+									<tr>
+										<td height="32" style="font-size:32px; line-height:32px;" class="mobileOff">&nbsp;</td>
+									</tr>
+									<tr>
+										<td align="center" valign="top" class="container ">
+											<table cellpadding="0" cellspacing="0" border="0" class="container">
+												<tr>
+													<th align="center" valign="middle" width="284"
+														style="font-family: Helvetica, Arial, sans-serif;" class="mobile mobile-pt">
+														<p class="mobile-pt" style="Margin: 0;">
+															<a href="#" style="cursor: default;"><img src="https://i.imgur.com/Dym6Qjf.png"
+																	alt="Imagen Cursos" width="161"
+																	style="width:100%;max-width:161px !important; margin-bottom: 0; padding-bottom: 0;display: block;"></a>
+														</p>
+														<p style="margin: 0; font-size: 20px; line-height: 20px;">&nbsp;</p>
+														<p
+															style="Margin: 0; font-family: Helvetica, Arial, sans-serif;font-size: 16px;line-height: 24px;color:#333333;">
+															Descubre distintos Eventos online donde los especialistas del Marketing Digital nos
+															comparten sus experiencias y
+															consejos.
+														</p>
+														<p style="margin: 0; font-size: 30px; line-height: 30px;">&nbsp;</p>
+														<!-- Button : BEGIN -->
+														<div style="font-size:13px; font-weight: bold; font-family: Helvetica, Arial, sans-serif;">
+															<!--[if mso]>
+									                                <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="https://academy.fromdoppler.com/webinars/?utm_source=fromdoppler&utm_medium=email&utm_campaign=inbound-onboardingacademy-dd-dts-btc" style="height:41px;v-text-anchor:middle;width:141px;" arcsize="50%" strokecolor="#33AD73" strokeweight="1px" fillcolor="#33AD73" >
+									                                <w:anchorlock/>
+									                                <center style="color:#ffffff;font-family:sans-serif;font-size:13px;font-weight:bold;">
+									                                ME INTERESA
+									                                </center>
+									                               </v:roundrect>
+									                                <![endif]-->
+															<!--[if !mso] -->
+															<table cellspacing="0" cellpadding="0">
+																<tr>
+																	<td
+																		style="border-radius: 99px; background-color: #33AD73; color: #ffffff; padding: 13px 26px; text-align: center;"
+																		class="button--td">
+																		<a href="https://academy.fromdoppler.com/webinars/?utm_source=fromdoppler&utm_medium=email&utm_campaign=inbound-onboardingacademy-dd-dts-btc"
+																			style="color: #ffffff; font-size:13px; font-weight: bold; font-family:sans-serif; text-decoration: none; width:100%; display:inline-block"
+																			target="_blank"><span>ME INTERESA</span></a>
+																	</td>
+																</tr>
+															</table>
+															<!--[endif]-->
+														</div>
+														<!-- Button : END -->
+													</th>
+													<th align="center" valign="middle" width="32"
+														style="font-family: Helvetica, Arial, sans-serif;" class="mobile mobile-pt">
+													</th>
+													<th align="center" valign="middle" width="284"
+														style="font-family: Helvetica, Arial, sans-serif;" class="mobile mobile-pt">
+														<p class="mobile-pt" style="Margin: 0;">
+															<a href="#" style="cursor: default;"><img src="https://i.imgur.com/iwzsgEK.png"
+																	alt="Imagen Podcast" width="161"
+																	style="width:100%;max-width:161px !important; margin-bottom: 0; padding-bottom: 0;display: block;"></a>
+														</p>
+														<p style="margin: 0; font-size: 20px; line-height: 20px;">&nbsp;</p>
+														<p
+															style="Margin: 0; font-family: Helvetica, Arial, sans-serif;font-size: 16px;line-height: 24px;color:#333333;">
+															Siempre es un buen momento para aprender escuchando. Casos de éxito, Influencers invitados
+															y Testimonios de quienes más
+															saben.
+														</p>
+														<p style="margin: 0; font-size: 30px; line-height: 30px;">&nbsp;</p>
+														<!-- Button : BEGIN -->
+														<div style="font-size:13px; font-weight: bold; font-family: Helvetica, Arial, sans-serif;">
+															<!--[if mso]>
+																  <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="https://academy.fromdoppler.com/podcasts/?utm_source=fromdoppler&utm_medium=email&utm_campaign=inbound-onboardingacademy-dd-dts-btc" style="height:41px;v-text-anchor:middle;width:129px;" arcsize="50%" strokecolor="#33AD73" strokeweight="1px" fillcolor="#33AD73" >
+																  <w:anchorlock/>
+																  <center style="color:#ffffff;font-family:sans-serif;font-size:13px;font-weight:bold;">
+																  DESCUBRIR
+																  </center>
+																 </v:roundrect>
+																  <![endif]-->
+															<!--[if !mso] -->
+															<table cellspacing="0" cellpadding="0">
+																<tr>
+																	<td
+																		style="border-radius: 99px; background-color: #33AD73; color: #ffffff; padding: 13px 26px; text-align: center;"
+																		class="button--td">
+																		<a href="https://academy.fromdoppler.com/podcasts/?utm_source=fromdoppler&utm_medium=email&utm_campaign=inbound-onboardingacademy-dd-dts-btc"
+																			style="color: #ffffff; font-size:13px; font-weight: bold; font-family:sans-serif; text-decoration: none; width:100%; display:inline-block"
+																			target="_blank"><span>DESCUBRIR</span></a>
+																	</td>
+																</tr>
+															</table>
+															<!--[endif]-->
+														</div>
+														<!-- Button : END -->
+													</th>
+												</tr>
+											</table>
+										</td>
+									</tr>
+									<tr>
+										<td height="60" style="font-size:60px; line-height:60px;">&nbsp;</td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+		</table>
+
+		<table width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation">
+			<tr>
+				<td align="center" valign="top" style="background-color:#F1E8F1">
+					<table width="640" cellpadding="0" cellspacing="0" border="0" class="wrapper">
+						<tr>
+							<td align="center" valign="top">
+								<table width="600" cellpadding="0" cellspacing="0" border="0" class="container">
+									<tr>
+										<td height="60" style="font-size:60px; line-height:60px;">&nbsp;</td>
+									</tr>
+									<tr>
+										<td align="center" valign="top" class="container ">
+											<table cellpadding="0" cellspacing="0" border="0" class="container">
+												<tr>
+													<td align="center" valign="top" style="font-family:  Helvetica, Arial, sans-serif;">
+														<p style="Margin: 0;font-size: 18px;line-height: 24px;color:#333333;font-weight: 700;">
+															Mira nuestros Entrenamientos destacados
+														</p>
+													</td>
+												</tr>
+											</table>
+										</td>
+									</tr>
+									<tr>
+										<td height="50" style="font-size:50px; line-height:50px;">&nbsp;</td>
+									</tr>
+									<tr>
+										<td align="center" valign="top" class="container ">
+											<table cellpadding="0" cellspacing="0" border="0" class="container">
+												<tr>
+													<th align="center" valign="middle" width="300"
+														style="font-family: Helvetica, Arial, sans-serif;" class="mobileOff">
+														<p style="Margin: 0;">
+															<a href="#" style="cursor: default;"><img src="img-1.png" alt="Imagen Cursos" width="243"
+																	style="width:100%;max-width:243px !important; margin-bottom: 0; padding-bottom: 0;display: block;"></a>
+														</p>
+													</th>
+													<th align="center" valign="middle" width="300"
+														style="font-family: Helvetica, Arial, sans-serif;" class="mobile">
+														<p class="mobile-center"
+															style="text-align: left; Margin: 0; font-family: Helvetica, Arial, sans-serif;font-size: 15px;font-weight: bold; line-height: 22px;color:#333333;">
+															Doppler Training Session: aprende a automatizar el Marketing en tu Negocio
+														</p>
+														<p style="margin: 0; font-size: 20px; line-height: 20px;">&nbsp;</p>
+														<p class="mobile-center"
+															style="text-align: left; Margin: 0; font-family: Helvetica, Arial, sans-serif;font-size: 15px; line-height: 22px;color:#333333;">
+															Descubre herramientas y consejos para ahorrar tiempo, mejorar la comunicación con tus
+															clientes y aumentar tus ventas.
+														</p>
+														<p style="margin: 0; font-size: 30px; line-height: 30px;">&nbsp;</p>
+														<div style="padding-right: 138px;" class="mobile-pr">
+															<!-- Button : BEGIN -->
+															<div
+																style="font-size:13px; font-weight: bold; font-family: Helvetica, Arial, sans-serif;">
+																<!--[if mso]>
+																														  <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="https://academy.fromdoppler.com/trainning-session/?utm_medium=email&utm_source=fromdoppler&utm_campaign=inbound-onboardingacademy-dd-dts-btc" style="height:41px;v-text-anchor:middle;width:162px;" arcsize="50%" strokecolor="#33AD73" strokeweight="1px" fillcolor="#33AD73" >
+																														  <w:anchorlock/>
+																														  <center style="color:#ffffff;font-family:sans-serif;font-size:13px;font-weight:bold;">
+																														  DESCUBRIR MÁS
+																														  </center>
+																														 </v:roundrect>
+																														  <![endif]-->
+																<!--[if !mso] -->
+																<table cellspacing="0" cellpadding="0">
+																	<tr>
+																		<td
+																			style="border-radius: 99px; background-color: #33AD73; color: #ffffff; padding: 13px 26px; text-align: center;"
+																			class="button--td">
+																			<a href="https://academy.fromdoppler.com/trainning-session/?utm_medium=email&utm_source=fromdoppler&utm_campaign=inbound-onboardingacademy-dd-dts-btc"
+																				style="color: #ffffff; font-size:13px; font-weight: bold; font-family:sans-serif; text-decoration: none; width:100%; display:inline-block"
+																				target="_blank"><span>DESCUBRIR MÁS</span></a>
+																		</td>
+																	</tr>
+																</table>
+																<!--[endif]-->
+															</div>
+															<!-- Button : END -->
+														</div>
+													</th>
+													<th align="center" valign="middle" width="300" style="display: none;"
+														class="mobileOn mobile-pt">
+														<p class="mobile-pt" style="Margin: 0;">
+															<a href="#" style="cursor: default;"><img src="img-1.png" alt="Imagen Cursos" width="243"
+																	style="width:100%;max-width:243px !important; margin-bottom: 0; padding-bottom: 0;display: block;"></a>
+														</p>
+													</th>
+												</tr>
+											</table>
+										</td>
+									</tr>
+									<tr>
+										<td height="30" style="font-size:30px; line-height:30px;">&nbsp;</td>
+									</tr>
+									<tr>
+										<td align="center" valign="top" class="container ">
+											<table cellpadding="0" cellspacing="0" border="0" class="container">
+												<tr>
+													<th align="center" valign="middle" width="300"
+														style="font-family: Helvetica, Arial, sans-serif;" class="mobile mobile-pt">
+														<p class="mobile-center"
+															style="text-align: left; Margin: 0; font-family: Helvetica, Arial, sans-serif;font-size: 15px;font-weight: bold; line-height: 22px;color:#333333;">
+															Doppler Digital Bootcamp: Certificate en Automation Marketing
+														</p>
+														<p style="margin: 0; font-size: 20px; line-height: 20px;">&nbsp;</p>
+														<p class="mobile-center"
+															style="text-align: left; Margin: 0; font-family: Helvetica, Arial, sans-serif;font-size: 15px; line-height: 22px;color:#333333;">
+															Conviértete en un experto en Embudos Automatizados. ¡Son 5 módulos que puedes completar a
+															tu ritmo!
+														</p>
+														<p style="margin: 0; font-size: 30px; line-height: 30px;">&nbsp;</p>
+														<div style="padding-right: 138px;" class="mobile-pr">
+															<!-- Button : BEGIN -->
+															<div
+																style="font-size:13px; font-weight: bold; font-family: Helvetica, Arial, sans-serif;">
+																<!--[if mso]>
+															  <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="https://academy.fromdoppler.com/bootcamp/?utm_medium=email&utm_source=fromdoppler&utm_campaign=inbound-onboardingacademy-dd-dts-btc" style="height:41px;v-text-anchor:middle;width:162px;" arcsize="50%" strokecolor="#33AD73" strokeweight="1px" fillcolor="#33AD73" >
+															  <w:anchorlock/>
+															  <center style="color:#ffffff;font-family:sans-serif;font-size:13px;font-weight:bold;">
+															  DESCUBRIR MÁS
+															  </center>
+															 </v:roundrect>
+															  <![endif]-->
+																<!--[if !mso] -->
+																<table cellspacing="0" cellpadding="0">
+																	<tr>
+																		<td
+																			style="border-radius: 99px; background-color: #33AD73; color: #ffffff; padding: 13px 26px; text-align: center;"
+																			class="button--td">
+																			<a href="https://academy.fromdoppler.com/bootcamp/?utm_medium=email&utm_source=fromdoppler&utm_campaign=inbound-onboardingacademy-dd-dts-btc"
+																				style="color: #ffffff; font-size:13px; font-weight: bold; font-family:sans-serif; text-decoration: none; width:100%; display:inline-block"
+																				target="_blank"><span>DESCUBRIR MÁS</span></a>
+																		</td>
+																	</tr>
+																</table>
+																<!--[endif]-->
+															</div>
+															<!-- Button : END -->
+														</div>
+													</th>
+													<th align="center" valign="middle" width="280"
+														style="font-family: Helvetica, Arial, sans-serif;" class="mobile mobile-pt">
+														<p class="mobile-pt" style="Margin: 0;">
+															<a href="#" style="cursor: default;"><img src="img-2.png" alt="Imagen Cursos" width="243"
+																	style="width:100%;max-width:243px !important; margin-bottom: 0; padding-bottom: 0;display: block;"></a>
+														</p>
+													</th>
+												</tr>
+											</table>
+										</td>
+									</tr>
+									<tr>
+										<td height="60" style="font-size:60px; line-height:60px;">&nbsp;</td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+		</table>
+
+		<table width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation">
+			<tr>
+				<td align="center" valign="top" style="background-color: #FFFFFF;">
+					<table width="640" cellpadding="0" cellspacing="0" border="0" class="wrapper">
+						<tr>
+							<td align="center" valign="top">
+								<table width="600" cellpadding="0" cellspacing="0" border="0" class="container">
+									<tr>
+										<td height="40" style="font-size:40px; line-height:40px;">&nbsp;</td>
+									</tr>
+									<tr>
+										<td align="center" valign="top" style="font-family:  Helvetica, Arial, sans-serif;">
+											<p
+												style="Margin: 0;font-size: 20px;line-height: 26px;color:#333333;font-weight: 700; max-width: 500px;">
+												¡Hoy comienzas tu camino para convertirte en un experto del Marketing Digital!
+											</p>
+										</td>
+									</tr>
+									<tr>
+										<td height="30" style="font-size:30px; line-height:30px;">&nbsp;</td>
+									</tr>
+									<tr>
+										<td align="center" valign="top" style="font-family:  Helvetica, Arial, sans-serif;">
+											<p style="Margin: 0;font-size: 15px;line-height: 22px;color:#333333;font-weight: 400; ">
+												Equipo de Doppler &nbsp;💛
+											</p>
+										</td>
+									</tr>
+									<tr>
+										<td height="60" style="font-size:60px; line-height:60px;">&nbsp;</td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+		</table>
+
+		<table width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation">
+			<tr>
+				<td align="center" valign="top" style="background-color: #FFFFFF;">
+					<table width="640" cellpadding="0" cellspacing="0" border="0" class="wrapper">
+						<tr>
+							<td align="center" valign="top">
+								<table width="600" cellpadding="0" cellspacing="0" border="0" class="container">
+									<tr>
+										<td align="center" valign="top" style="border-top: 1px solid #B4B1A5;">
+											<table width="600" cellpadding="0" cellspacing="0" border="0" class="container">
+												<tr>
+													<td height="40" style="font-size:40px; line-height:40px;">
+														&nbsp;</td>
+												</tr>
+												<tr>
+													<td align="left" valign="top">
+
+														<table width="185" border="0" cellpadding="0" cellspacing="0">
+															<tbody>
+																<tr>
+																	<td width="37" align="left">
+																		<a href="https://twitter.com/fromDoppler" target="_blank"><img
+																				src="https://www.fromdoppler.com/images/emails/2022/rrss/twitter-icon.png"
+																				style="width: 100%; max-width: 32px !important;" width="32" class="img"
+																				alt="Twitter" /></a>
+																	</td>
+																	<td width="37" align="left">
+																		<a href="https://www.facebook.com/DopplerEmailMarketing" target="_blank"><img
+																				src="https://www.fromdoppler.com/images/emails/2022/rrss/facebook-icon.png"
+																				style="width: 100%; max-width: 32px !important;" width="32" class="img"
+																				alt="Facebook" /></a>
+																	</td>
+																	<td width="37" align="left">
+																		<a href="https://www.linkedin.com/company/228261" target="_blank"><img
+																				src="https://www.fromdoppler.com/images/emails/2022/rrss/linkedin-icon.png"
+																				style="width: 100%; max-width: 32px !important;" width="32" class="img"
+																				alt="Linkedin" /></a>
+																	</td>
+																	<td width="37" align="left">
+																		<a href="https://www.youtube.com/user/FromDoppler" target="_blank"><img
+																				src="https://www.fromdoppler.com/images/emails/2022/rrss/youtube-icon.png"
+																				style="width: 100%; max-width: 32px !important;" width="32" class="img"
+																				alt="Youtube" /></a>
+																	</td>
+																	<td width="37" align="left">
+																		<a href="https://www.instagram.com/fromdoppler" target="_blank"><img
+																				src="https://www.fromdoppler.com/images/emails/2022/rrss/instagram-icon.png"
+																				style="width: 100%; max-width: 32px !important;" width="32" class="img"
+																				alt="Instagram" /></a>
+																	</td>
+																</tr>
+															</tbody>
+														</table>
+													</td>
+												</tr>
+												<tr>
+													<td align="left" style="padding: 25px 0 0;">
+														<p style="
+														        padding: 0;
+														        margin: 0;
+														        font-family: Helvetica, Arial, sans-serif;
+														        font-size: 11px;
+														        line-height: 16px;
+														        color: #999999;
+														      ">
+															&copy;
+															<a href="https://www.fromdoppler.com" target="_blank"
+																style="text-decoration: none; color: #33AD73;font-weight: bold;"
+																class="link-hover ">Doppler
+																LLC</a>. Todos
+															los derechos reservados.
+														</p>
+													</td>
+												</tr>
+												<tr>
+													<td height="20" style="font-size:20px; line-height:20px;">&nbsp;</td>
+												</tr>
+												<tr>
+													<td align="left" valign="top">
+														<p style="
+														          padding: 0;
+														          margin: 0;
+														          font-family: Helvetica, Arial, sans-serif;
+														         font-size: 11px;
+														           line-height: 14px;
+														          color: #999999;
+														        ">
+															Te informamos que los datos personales
+															contenidos en esta comunicaci&oacute;n fueron recogidos
+															en nuestro Formulario de registro, cuyo
+															responsable es Doppler LLC, dado que prestaste
+															tu consentimiento para recibir nuestras
+															comunicaciones. Al registrarte como usuario,
+															acept&aacute;s y consent&iacute;s que tus datos sean
+															almacenados por nuestra plataforma, cuyos
+															servidores est&aacute;n en Estados Unidos, para
+															gestionar el env&iacute;o de las comunicaciones
+															correspondientes. Podr&aacute;s ejercer tus derechos de
+															acceso, rectificaci&oacute;n, limitaci&oacute;n y eliminaci&oacute;n
+															de los datos escribiendo a
+															<a href="mailto:legal@fromdoppler.com" target="_blank"
+																style="text-decoration: none; color: #33AD73;font-weight: bold;"
+																class="link-hover">legal@fromdoppler.com</a>,
+															as&iacute; como presentar una reclamaci&oacute;n ante una
+															autoridad de control. Si no dese&aacute;s seguir
+															recibiendo nuestras Campa&ntilde;as, pod&eacute;s darte de
+															baja autom&aacute;ticamente haciendo clic en el enlace
+															que se encuentra debajo. Pod&eacute;s consultar
+															informaci&oacute;n adicional y detallada sobre la
+															protecci&oacute;n de tus datos personales en nuestra
+															<a href="https://www.fromdoppler.com/legal/privacidad" target="_blank"
+																style="text-decoration: none; color: #33AD73; font-weight: bold;"
+																class="link-hover">Pol&iacute;tica de
+																Privacidad</a>.
+														</p>
+													</td>
+												</tr>
+												<tr>
+													<td height="20" style="font-size:20px; line-height:20px;">&nbsp;</td>
+												</tr>
+											</table>
+										</td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+		</table>
+
+	</center>
+</body>
+
+</html>

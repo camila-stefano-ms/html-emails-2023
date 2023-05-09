@@ -1,0 +1,497 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="es">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="x-apple-disable-message-reformatting">
+	<meta content="telephone=no" name="format-detection">
+	<title>Doppler</title>
+	<style>
+		html,
+		body {
+			margin: 0 auto !important;
+			padding: 0 !important;
+			background-color: #ffffff;
+		}
+
+		* {
+			-ms-text-size-adjust: 100%;
+			-webkit-text-size-adjust: 100%;
+		}
+
+		div[style*="margin: 16px 0"] {
+			margin: 0 !important;
+		}
+
+		table,
+		td {
+			mso-table-lspace: 0pt !important;
+			mso-table-rspace: 0pt !important;
+		}
+
+		table table table {
+			table-layout: auto;
+		}
+
+		img {
+			-ms-interpolation-mode: bicubic;
+			border: 0;
+			height: auto;
+			line-height: 100%;
+			outline: none;
+			text-decoration: none;
+		}
+
+		/* Hover styles for buttons */
+		.button--td:hover,
+		.button--a:hover {
+			background: #008046 !important;
+		}
+
+		.link-hover:hover {
+			color: #008046 !important;
+		}
+
+		*[x-apple-data-detectors],
+		.x-gmail-data-detectors,
+		.x-gmail-data-detectors *,
+		.aBn {
+			border-bottom: 0 !important;
+			cursor: default !important;
+			color: inherit !important;
+			text-decoration: none !important;
+			font-size: inherit !important;
+			font-family: inherit !important;
+			font-weight: inherit !important;
+			line-height: inherit !important;
+		}
+
+		th {
+			font-weight: normal;
+		}
+
+		/* MEDIA QUERIES */
+		@media all and (max-width:480px) {
+			.wrapper {
+				width: 320px !important;
+				padding: 0 !important;
+			}
+
+			.container {
+				width: 300px !important;
+				padding: 0 !important;
+			}
+
+			.mobile {
+				width: 300px !important;
+				display: block !important;
+				padding: 0 !important;
+			}
+
+			.mobile-btn {
+				width: 240px !important;
+				display: block !important;
+			}
+
+			.img {
+				width: 100% !important;
+				height: auto !important;
+			}
+
+			.mobileOff {
+				width: 0px !important;
+				display: none !important;
+			}
+
+			.mobileOn {
+				display: block !important;
+				max-height: none !important;
+			}
+
+			.mobile-pl,
+			.mobile-pl-btn,
+			u+.body .mobile-pl,
+			u+.body .mobile-pl-btn {
+				padding-left: 0 !important;
+			}
+
+			.mobile-pt,
+			u+.body .mobile-pt {
+				padding-top: 20px !important;
+			}
+
+			.mobile-pr,
+			u+.body .mobile-pr {
+				padding-right: 0px !important;
+			}
+
+			.mobile-mr,
+			u+.body .mobile-mr {
+				margin-right: 0px !important;
+			}
+
+			.mobilePadding {
+				padding-left: 3% !important;
+				padding-right: 3% !important;
+				width: 100% !important;
+			}
+
+			.mobilePaddingRight {
+				padding-right: 55px !important;
+			}
+
+			.mobileTitle {
+				font-size: 28px !important;
+				line-height: 32px !important;
+			}
+
+			u~div .wrapper {
+				width: 100vw !important;
+			}
+
+			.mobile-center,
+			u+.body .mobile-center {
+				text-align: center !important;
+			}
+		}
+	</style>
+	<!--[if gte mso 9]>
+      <xml>
+        <o:OfficeDocumentSettings>
+          <o:AllowPNG/>
+          <o:PixelsPerInch>96</o:PixelsPerInch>
+        </o:OfficeDocumentSettings>
+      </xml>
+      <![endif]-->
+</head>
+
+<body style="margin:0; padding:0;">
+	<center>
+		<table width="100%" border="0" cellpadding="0" cellspacing="0">
+			<tr>
+				<td align="center" valign="top" style="background-color: #FFFFFF;">
+					<table width="640" cellpadding="0" cellspacing="0" border="0" class="wrapper">
+						<tr>
+							<td align="center" valign="top">
+								<table width="600" cellpadding="0" cellspacing="0" border="0" class="container">
+									<tr>
+										<td height="60" style="font-size:60px; line-height:60px;">&nbsp;</td>
+									</tr>
+									<tr>
+										<td align="left" valign="top" class="mobile">
+											<a href="#" style="cursor: default;"><img src="logo-doppler.png" alt="Logo de Doppler" width="144"
+													style="width:100%;max-width:144px !important" class="mobile"></a>
+										</td>
+									</tr>
+									<tr>
+										<td height="60" style="font-size:60px; line-height:60px;">&nbsp;</td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+		</table>
+
+		<table width="100%" border="0" cellpadding="0" cellspacing="0">
+			<tr>
+				<td align="center" valign="top" style="background-color: #FFFFFF;">
+					<table width="640" cellpadding="0" cellspacing="0" border="0" class="wrapper">
+						<tr>
+							<td align="center" valign="top" class="container">
+								<table width="600" cellpadding="0" cellspacing="0" border="0" class="container">
+									<tr>
+										<td align="left" valign="top" style="font-family:  Helvetica, Arial, sans-serif;" class="mobile">
+											<p style=" Margin: 0;font-size: 15px;line-height: 20px;color:#333333;font-weight: 400; ">
+												DESBLOQUEA EL POTENCIAL<br class="mobileOn" style="display: none;"> DE TU EMPRENDIMIENTO CON<br
+													class="mobileOn" style="display: none;">
+												EMAIL MARKETING</p>
+											<p style=" Margin: 0;font-size: 10px;line-height: 10px;">&nbsp;</p>
+											<p style=" Margin: 0;font-size: 30px;line-height: 36px;color:#333333;font-weight: 700; "
+												class="mobileTitle">¿Necesitas inspiración? ✨</p>
+										</td>
+									</tr>
+									<tr>
+										<td height="30" style="font-size:30px; line-height:30px;">&nbsp;</td>
+									</tr>
+									<tr>
+										<td align="left" valign="top" style="font-family:  Helvetica, Arial, sans-serif;">
+											<p style="Margin: 0;font-size: 15px;line-height: 25px;color:#333333;font-weight: 400; ">
+												Ahora que aprendiste las claves en Email Marketing y te ayudamos a implementar tu plan desde el
+												inicio, es hora de
+												buscar nuevas ideas para descubrir los elementos más efectivos que este canal puede aportar a tu
+												estrategia.
+											</p>
+											<p style="Margin: 0;font-size: 25px;line-height: 25px;">&nbsp;</p>
+											<p style="Margin: 0;font-size: 15px;line-height: 25px;color:#333333;font-weight: 400; ">Por eso,
+												te traemos la siguiente lectura para que puedas ahondar en ellos y aprender algunos tips para
+												aprovechar las
+												funcionalidades al máximo:
+											</p>
+										</td>
+									</tr>
+									<tr>
+										<td height="30" style="font-size:30px; line-height:30px;">&nbsp;</td>
+									</tr>
+									<tr>
+										<td align="left" valign="top" style="font-family:  Helvetica, Arial, sans-serif;">
+											<p style="Margin: 0;font-size: 15px;line-height: 25px;color:#333333;font-weight: 400;">📓 <a
+													href="https://blog.fromdoppler.com/que-es-email-marketing-la-guia-definitiva-2023/?utm_source=clubdeemp&utm_medium=partners&utm_campaign=cyw-flujo-post-ws-inicial-abr23"
+													target="_blank" style="text-decoration: none; color: #33AD73;font-weight: bold;"
+													class="link-hover ">Guía definitiva de Email Marketing</a>
+											</p>
+										</td>
+									</tr>
+									<tr>
+										<td height="25" style="font-size:25px; line-height:25px;">&nbsp;</td>
+									</tr>
+									<tr>
+										<td align="left" valign="top" style="font-family:  Helvetica, Arial, sans-serif;">
+											<p style="Margin: 0;font-size: 15px;line-height: 25px;color:#333333;font-weight: 400;">📰 <a
+													href="https://blog.fromdoppler.com/ejemplos-de-newsletters-consejos-de-disenio/?utm_source=clubdeemp&utm_medium=partners&utm_campaign=cyw-flujo-post-ws-inicial-abr23"
+													target="_blank" style="text-decoration: none; color: #33AD73;font-weight: bold;"
+													class="link-hover ">Ejemplos de Newsletters y 7 consejos para el éxito tu pieza</a>
+											</p>
+										</td>
+									</tr>
+									<tr>
+										<td height="25" style="font-size:25px; line-height:25px;">&nbsp;</td>
+									</tr>
+									<tr>
+										<td align="left" valign="top" style="font-family:  Helvetica, Arial, sans-serif;">
+											<p style="Margin: 0;font-size: 15px;line-height: 25px;color:#333333;font-weight: 400;">📑 <a
+													href="https://blog.fromdoppler.com/5-claves-para-disenar-formularios-de-suscripcion-exitosos/?utm_source=clubdeemp&utm_medium=partners&utm_campaign=cyw-flujo-post-ws-inicial-abr23"
+													target="_blank" style="text-decoration: none; color: #33AD73;font-weight: bold;"
+													class="link-hover ">5 claves para diseñar Formularios exitosos</a>
+											</p>
+										</td>
+									</tr>
+									<tr>
+										<td height="40" style="font-size:40px; line-height:40px;">&nbsp;</td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+		</table>
+
+		<table width="100%" border="0" cellpadding="0" cellspacing="0">
+			<tr>
+				<td align="center" valign="top" style="background-color: #FBDFE0;">
+					<table width="640" cellpadding="0" cellspacing="0" border="0" class="wrapper">
+						<tr>
+							<td align="center" valign="top">
+								<table width="600" cellpadding="0" cellspacing="0" border="0" class="container">
+									<tr>
+										<td height="40" style="font-size:40px; line-height:40px;">&nbsp;</td>
+									</tr>
+									<tr>
+										<td align="center" valign="top" style="font-family:  Helvetica, Arial, sans-serif;">
+											<p style="Margin: 0;font-size: 15px;line-height: 25px;color:#333333;font-weight: 700;">¿Aún no
+												pasaste a la práctica?
+											</p>
+											<p style="Margin: 0;font-size: 25px;line-height: 25px;">&nbsp;</p>
+											<p style="Margin: 0;font-size: 15px;line-height: 25px;color:#333333;font-weight: 400;">
+												<strong>Crea una cuenta gratis</strong> en Doppler y comienza a crear tus propias Campañas,
+												Formularios y Automatizaciones.
+											</p>
+										</td>
+									</tr>
+									<tr>
+										<td height="30" style="font-size:30px; line-height:30px;">&nbsp;</td>
+									</tr>
+									<tr>
+										<td align="center" valign="top">
+											<table width="600" cellpadding="0" cellspacing="0" border="0" class="container">
+												<tr>
+													<td align="center" valign="top"
+														style="font-family:  Helvetica, Arial, sans-serif;font-size: 15px;color:#FFFFFF;font-weight: 400;"
+														class="mobile">
+														<!-- Button : BEGIN -->
+														<div>
+															<!--[if mso]>  <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="https://app.fromdoppler.com/signup?utm_source=clubdeemp&utm_medium=partners&utm_campaign=cyw-flujo-post-ws-inicial-abr23" style="height:47px;v-text-anchor:middle;width:215px;" arcsize="50%" strokecolor="#33AD73" strokeweight="1px" fillcolor="#33AD73" >	<w:anchorlock/><center style="color:#ffffff;font-family:sans-serif;font-size:15px;font-weight:bold;">REGÍSTRATE AHORA</center></v:roundrect><![endif]-->
+															<!--[if !mso] -->
+															<table cellspacing="0" cellpadding="0">
+																<tr>
+																	<td
+																		style="border-radius: 99px; background-color: #33AD73; color: #ffffff; padding: 15px 30px; text-align: center;"
+																		class="button--td mobile-btn">
+																		<a href="https://app.fromdoppler.com/signup?utm_source=clubdeemp&utm_medium=partners&utm_campaign=cyw-flujo-post-ws-inicial-abr23"
+																			style="color: #ffffff; font-size:15px; font-weight: bold; font-family:sans-serif; text-decoration: none; width:100%; display:inline-block"
+																			target="_blank"><span>REGÍSTRATE AHORA</span></a>
+																	</td>
+																</tr>
+															</table>
+															<!--[endif]-->
+														</div>
+														<!-- Button : END -->
+													</td>
+												</tr>
+											</table>
+										</td>
+									</tr>
+									<tr>
+										<td height="40" style="font-size:40px; line-height:40px;">&nbsp;</td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+
+					</table>
+				</td>
+			</tr>
+		</table>
+
+		<table width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation">
+			<tr>
+				<td align="center" valign="top" style="background-color: #FFFFFF">
+					<table width="600" cellpadding="0" cellspacing="0" border="0" class="wrapper">
+						<tr>
+							<td height="40" style="font-size:40px; line-height:40px;">&nbsp;</td>
+						</tr>
+						<tr>
+							<td align="center" valign="top"
+								style="font-family:  Helvetica, Arial, sans-serif; background-color: #FFFFFF" class="mobile-center">
+								<p style="Margin: 0;font-size: 13px;line-height: 18px;color:#333333;font-weight: 400; "><em>Atrae,
+										convierte y fideliza de la mano de Doppler</em>
+								</p>
+							</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+		</table>
+
+		<table width="100%" border="0" cellpadding="0" cellspacing="0">
+			<tr>
+				<td align="center" valign="top" style="background-color: #FFFFFF;">
+					<table width="640" cellpadding="0" cellspacing="0" border="0" class="wrapper">
+						<tr>
+							<td align="center" valign="top">
+								<table width="600" cellpadding="0" cellspacing="0" border="0" class="container">
+									<tr>
+										<td align="center" valign="top">
+											<table width="600" cellpadding="0" cellspacing="0" border="0" class="container">
+												<tr>
+													<td height="60" style="font-size:60px; line-height:60px;">
+														&nbsp;</td>
+												</tr>
+												<tr>
+													<td align="left" valign="top">
+
+														<table width="185" border="0" cellpadding="0" cellspacing="0">
+															<tbody>
+																<tr>
+																	<td width="37" align="left">
+																		<a href="https://twitter.com/fromDoppler" target="_blank"><img
+																				src="twitter-icon.png" style="width: 100%; max-width: 32px !important;"
+																				width="32" class="img" alt="Twitter" /></a>
+																	</td>
+																	<td width="37" align="left">
+																		<a href="https://www.facebook.com/DopplerEmailMarketing" target="_blank"><img
+																				src="facebook-icon.png" style="width: 100%; max-width: 32px !important;"
+																				width="32" class="img" alt="Facebook" /></a>
+																	</td>
+																	<td width="37" align="left">
+																		<a href="https://www.linkedin.com/company/228261" target="_blank"><img
+																				src="linkedin-icon.png" style="width: 100%; max-width: 32px !important;"
+																				width="32" class="img" alt="Linkedin" /></a>
+																	</td>
+																	<td width="37" align="left">
+																		<a href="https://www.youtube.com/user/FromDoppler" target="_blank"><img
+																				src="youtube-icon.png" style="width: 100%; max-width: 32px !important;"
+																				width="32" class="img" alt="Youtube" /></a>
+																	</td>
+																	<td width="37" align="left">
+																		<a href="https://www.instagram.com/fromdoppler" target="_blank"><img
+																				src="instagram-icon.png" style="width: 100%; max-width: 32px !important;"
+																				width="32" class="img" alt="Instagram" /></a>
+																	</td>
+																</tr>
+															</tbody>
+														</table>
+													</td>
+												</tr>
+												<tr>
+													<td align="left" style="padding: 25px 0 0;">
+														<p style="
+														        padding: 0;
+														        margin: 0;
+														        font-family: Helvetica, Arial, sans-serif;
+														        font-size: 11px;
+														        line-height: 16px;
+														        color: #999999;
+														      ">
+															&copy;
+															<a href="https://www.fromdoppler.com" target="_blank"
+																style="text-decoration: none; color: #33AD73;font-weight: bold;"
+																class="link-hover ">Doppler
+																LLC</a>. Todos
+															los derechos reservados.
+														</p>
+													</td>
+												</tr>
+												<tr>
+													<td height="20" style="font-size:20px; line-height:20px;">&nbsp;</td>
+												</tr>
+												<tr>
+													<td align="left" valign="top">
+														<p style="
+														          padding: 0;
+														          margin: 0;
+														          font-family: Helvetica, Arial, sans-serif;
+														         font-size: 11px;
+														           line-height: 14px;
+														          color: #999999;
+														        ">
+															Te informamos que los datos personales
+															contenidos en esta comunicaci&oacute;n fueron recogidos
+															en nuestro Formulario de registro, cuyo
+															responsable es Doppler LLC, dado que prestaste
+															tu consentimiento para recibir nuestras
+															comunicaciones. Al registrarte como usuario,
+															acept&aacute;s y consent&iacute;s que tus datos sean
+															almacenados por nuestra plataforma, cuyos
+															servidores est&aacute;n en Estados Unidos, para
+															gestionar el env&iacute;o de las comunicaciones
+															correspondientes. Podr&aacute;s ejercer tus derechos de
+															acceso, rectificaci&oacute;n, limitaci&oacute;n y eliminaci&oacute;n
+															de los datos escribiendo a
+															<a href="mailto:legal@fromdoppler.com" target="_blank"
+																style="text-decoration: none; color: #33AD73;font-weight: bold;"
+																class="link-hover">legal@fromdoppler.com</a>,
+															as&iacute; como presentar una reclamaci&oacute;n ante una
+															autoridad de control. Si no dese&aacute;s seguir
+															recibiendo nuestras Campa&ntilde;as, pod&eacute;s darte de
+															baja autom&aacute;ticamente haciendo clic en el enlace
+															que se encuentra debajo. Pod&eacute;s consultar
+															informaci&oacute;n adicional y detallada sobre la
+															protecci&oacute;n de tus datos personales en nuestra
+															<a href="https://www.fromdoppler.com/legal/privacidad" target="_blank"
+																style="text-decoration: none; color: #33AD73; font-weight: bold;"
+																class="link-hover">Pol&iacute;tica de
+																Privacidad</a>.
+														</p>
+													</td>
+												</tr>
+												<tr>
+													<td height="20" style="font-size:20px; line-height:20px;">&nbsp;</td>
+												</tr>
+											</table>
+										</td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+		</table>
+	</center>
+</body>
+
+</html>

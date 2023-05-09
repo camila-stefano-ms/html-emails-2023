@@ -1,0 +1,574 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="es">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="x-apple-disable-message-reformatting">
+  <meta content="telephone=no" name="format-detection">
+  <title>Doppler</title>
+  <style>
+    html,
+    body {
+      margin: 0 auto !important;
+      padding: 0 !important;
+    }
+
+
+    * {
+      -ms-text-size-adjust: 100%;
+      -webkit-text-size-adjust: 100%;
+    }
+
+    div[style*="margin: 16px 0"] {
+      margin: 0 !important;
+    }
+
+    table,
+    td {
+      mso-table-lspace: 0pt !important;
+      mso-table-rspace: 0pt !important;
+    }
+
+    table table table {
+      table-layout: auto;
+    }
+
+    img {
+      -ms-interpolation-mode: bicubic;
+      border: 0;
+      height: auto;
+      line-height: 100%;
+      outline: none;
+      text-decoration: none;
+    }
+
+    /* Hover styles for buttons */
+    .button--td:hover,
+    .button--a:hover {
+      background: #008046 !important;
+    }
+
+    .link-hover:hover {
+      color: #008046 !important
+    }
+
+    *[x-apple-data-detectors],
+    .x-gmail-data-detectors,
+    .x-gmail-data-detectors *,
+    .aBn {
+      border-bottom: 0 !important;
+      cursor: default !important;
+      color: inherit !important;
+      text-decoration: none !important;
+      font-size: inherit !important;
+      font-family: inherit !important;
+      font-weight: inherit !important;
+      line-height: inherit !important;
+    }
+
+    th {
+      font-weight: normal;
+    }
+
+    /* MEDIA QUERIES */
+    @media all and (max-width:480px) {
+      .wrapper {
+        width: 320px !important;
+        padding: 0 !important;
+      }
+
+      .container {
+        width: 300px !important;
+        padding: 0 !important;
+      }
+
+      .mobile {
+        width: 300px !important;
+        display: block !important;
+        padding: 0 !important;
+      }
+
+      .img {
+        width: 100% !important;
+        height: auto !important;
+      }
+
+      .mobileOff {
+        width: 0px !important;
+        display: none !important;
+      }
+
+      .mobileOn {
+        display: block !important;
+        max-height: none !important;
+      }
+
+      .mobile-pl,
+      .mobile-pl-btn,
+      u+.body .mobile-pl,
+      u+.body .mobile-pl-btn {
+        padding-left: 0 !important;
+      }
+
+      .mobile-max-w {
+        max-width: 200px !important;
+      }
+
+      .mobile-pr,
+      .mobile-pr-btn,
+      u+.body .mobile-pr,
+      u+.body .mobile-pr-btn {
+        padding-right: 0 !important;
+      }
+
+      .mobile-pt,
+      u+.body .mobile-pt {
+        padding-top: 20px !important;
+      }
+
+      .mobilePadding {
+        padding-left: 5% !important;
+        padding-right: 5% !important;
+        width: 100% !important;
+      }
+
+      .mobile-center,
+      u+.body .mobile-center {
+        text-align: center !important;
+      }
+
+      u~div .wrapper {
+        width: 100vw !important;
+      }
+    }
+  </style>
+  <!--[if gte mso 9]>
+      <xml>
+        <o:OfficeDocumentSettings>
+          <o:AllowPNG/>
+          <o:PixelsPerInch>96</o:PixelsPerInch>
+        </o:OfficeDocumentSettings>
+      </xml>
+      <![endif]-->
+</head>
+
+<body style="margin:0; padding:0;">
+  <center>
+    <table width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation">
+      <tr>
+        <td align="center" valign="top" style="background-color:#FFFFFF; ">
+          <table width="640" cellpadding="0" cellspacing="0" border="0" class="wrapper">
+            <tr>
+              <td align="center" valign="top">
+                <table width="600" cellpadding="0" cellspacing="0" border="0" class="container">
+                  <tr>
+                    <td height="60" style="font-size:60px; line-height:60px;">&nbsp;</td>
+                  </tr>
+                  <tr>
+                    <td align="center" valign="top">
+                      <a href="#" style="cursor: default;"><img src="logo-doppler.png" alt="Logo de Doppler" width="144"
+                          style="width:100%;max-width:144px !important"></a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td height="60" style="font-size:60px; line-height:60px;">&nbsp;</td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+
+    <table width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation">
+      <tr>
+        <td align="center" valign="top" style="background-color:#FFFFFF">
+          <table width="640" cellpadding="0" cellspacing="0" border="0" class="wrapper">
+            <tr>
+              <td align="center" valign="top">
+                <table width="600" cellpadding="0" cellspacing="0" border="0" class="container">
+                  <tr>
+                    <td align="center" valign="top" class="container ">
+                      <table cellpadding="0" cellspacing="0" border="0" class="container">
+                        <tr>
+                          <td align="center" valign="top" style="font-family: Arial, Helvetica, sans-serif;"
+                            class="mobile">
+                            <h1 style=" margin: 0; font-size: 20px;line-height: 30px;font-weight: 700;color:#333333;">
+                              [[[Nombre]]], ¿tienes listo el arco y las flechas?&nbsp;🏹&nbsp;💘
+                            </h1>
+                            <p style="margin: 0; font-size: 22px; line-height: 22px;">&nbsp;</p>
+                            <h2
+                              style=" margin: 0; font-size: 15px;line-height: 22px;font-weight: 400;color:#333333; max-width: 580px;">
+                              Esperamos que te haya sido de ayuda el <a
+                                href="https://www.fromdoppler.com/wp-content/uploads/2023/02/20230111-recurso-sanvalentin-suscriptores.pdf"
+                                target="_blank" style="text-decoration: none; color: #33AD73; font-weight: bold;"
+                                class="link-hover">Plan de Acción</a> que te enviamos para que planifiques tus
+                              comunicaciones de San
+                              Valentín.
+                            </h2>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+
+    <table width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation">
+      <tr>
+        <td align="center" valign="top" style="background-color:#FFFFFF; ">
+          <table width="640" cellpadding="0" cellspacing="0" border="0" class="wrapper">
+            <tr>
+              <td align="center" valign="top">
+                <table width="600" cellpadding="0" cellspacing="0" border="0" class="container">
+                  <tr>
+                    <td height="40" style="font-size:40px; line-height:40px;">&nbsp;</td>
+                  </tr>
+                  <tr>
+                    <td align="center" valign="top">
+                      <a href="#" style="cursor: default;"><img src="separador.png" alt="imagen separadora" width="21"
+                          style="width:100%;max-width:21px !important"></a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td height="40" style="font-size:40px; line-height:40px;">&nbsp;</td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+
+    <table width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation">
+      <tr>
+        <td align="center" valign="top" style="background-color:#FFFFFF">
+          <table width="640" cellpadding="0" cellspacing="0" border="0" class="wrapper">
+            <tr>
+              <td align="center" valign="top">
+                <table width="600" cellpadding="0" cellspacing="0" border="0" class="container">
+                  <tr>
+                    <td align="center" valign="top">
+                      <table cellpadding="0" cellspacing="0" border="0" class="container">
+                        <tr>
+                          <td align="left" valign="top" style="font-family: Arial, Helvetica, sans-serif;"
+                            class="mobile">
+                            <p style=" margin: 0; font-size: 15px;line-height: 22px;font-weight: 400;color:#333333;">
+                              Y, si aún no has llevado la teoría a la práctica, te contamos tres razones por las que
+                              tienes que empezar a tirar
+                              flechazos a tus clientes:
+                            </p>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td height="30" style="font-size:30px; line-height:30px;">&nbsp;</td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+            <tr>
+              <td align="center" valign="top">
+                <table width="580" cellpadding="0" cellspacing="0" border="0" class="container">
+                  <tr>
+                    <td align="center" valign="top">
+                      <table cellpadding="0" cellspacing="0" border="0" class="container">
+                        <tr>
+                          <td align="left" valign="top" style="font-family: Arial, Helvetica, sans-serif;"
+                            class="mobile">
+                            <p style=" margin: 0; font-size: 15px;line-height: 22px;font-weight: 400;color:#333333;">
+                              💛&nbsp;<strong>Porque todos lo harán.</strong> Tus competidores y las empresas en general
+                              aprovechan esta y otras fechas significativas para saludar a sus clientes y
+                              acercarles sus productos. ¡Deberías ser tú quien llegue primero y a través del Email
+                              Marketing lo conseguirás en
+                              minutos!
+                            </p>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td height="25" style="font-size:25px; line-height:25px;">&nbsp;</td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+            <tr>
+              <td align="center" valign="top">
+                <table width="580" cellpadding="0" cellspacing="0" border="0" class="container">
+                  <tr>
+                    <td align="center" valign="top">
+                      <table cellpadding="0" cellspacing="0" border="0" class="container">
+                        <tr>
+                          <td align="left" valign="top" style="font-family: Arial, Helvetica, sans-serif;"
+                            class="mobile">
+                            <p style=" margin: 0; font-size: 15px;line-height: 22px;font-weight: 400;color:#333333;">
+                              💛&nbsp;<strong>Porque tus clientes están dispuestos a comprar, y están esperando que tú
+                                les digas qué tienes de bueno para ellos.</strong> Tu objetivo debe ser movilizar la
+                              intención de compra que se halla latente en estos “compradores potenciales” y
+                              conducirla hacia tu producto. La gran mayoría de los enamorados piensan hacer un regalo
+                              por San Valentín, por lo que tu
+                              trabajo en parte está hecho. ¡Imposible no explotar esta mina de oro que es su inclinación
+                              a comprar en esta fecha y
+                              lograr tu meta!
+                            </p>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td height="25" style="font-size:25px; line-height:25px;">&nbsp;</td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+            <tr>
+              <td align="center" valign="top">
+                <table width="580" cellpadding="0" cellspacing="0" border="0" class="container">
+                  <tr>
+                    <td align="center" valign="top">
+                      <table cellpadding="0" cellspacing="0" border="0" class="container">
+                        <tr>
+                          <td align="left" valign="top" style="font-family: Arial, Helvetica, sans-serif;"
+                            class="mobile">
+                            <p style=" margin: 0; font-size: 15px;line-height: 22px;font-weight: 400;color:#333333;">
+                              💛&nbsp;<strong>Porque San Valentín es la fecha ideal para celebrar el amor en todas sus
+                                dimensiones y formas… o al menos de eso
+                                deberías convencerlos.</strong> El Día de los Enamorados implica directamente a personas
+                              de todas las edades, pero con una Campaña de Email Marketing
+                              irresistible podrás convencer a solteros, corazones partidos y solitarios empedernidos de
+                              que compren para otro ser
+                              querido o incluso para ellos mismos. Se trata de explotar comercialmente una fecha cargada
+                              de sensibilidad, por lo que
+                              el enfoque del <a
+                                href="https://blog.fromdoppler.com/como-el-marketing-emocional-ayuda-a-tu-marca/?utm_source=fromdoppler&utm_medium=email&utm_campaign=inbound-sanvalentin2023"
+                                target="_blank" style="text-decoration: none; color: #33AD73; font-weight: bold;"
+                                class="link-hover">Marketing Emocional</a> podría serte de utilidad para que tus
+                              clientes no sólo
+                              compren sino que además
+                              perseveren en el camino de la fidelidad a tu marca.
+                            </p>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td height="40" style="font-size:40px; line-height:40px;">&nbsp;</td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+
+    <table width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation">
+      <tr>
+        <td align="center" valign="top" style="background-color: #FCE579;">
+          <table width="640" cellpadding="0" cellspacing="0" border="0" class="wrapper">
+            <tr>
+              <td align="center" valign="top">
+                <table width="600" cellpadding="0" cellspacing="0" border="0" class="container">
+                  <tr>
+                    <td height="40" style="font-size:40px; line-height:40px;">&nbsp;</td>
+                  </tr>
+                  <tr>
+                    <td align="center" valign="top" style="font-family: Helvetica, Arial, sans-serif;color:#333333;"
+                      class="mobile-center">
+                      <p
+                        style="margin: 0; font-family: Helvetica, Arial, sans-serif;color:#333333; font-size: 15px;line-height: 22px;font-weight: 400;">
+                        ¡Conquista a tus potenciales clientes a través de las redes sociales, recolecta sus datos y
+                        termina de enamorarlos con
+                        tus Campañas de Email!
+                      </p>
+                      <p style="margin: 0; font-size: 22px; line-height: 22px;">&nbsp;</p>
+                      <p
+                        style="margin: 0; font-family: Helvetica, Arial, sans-serif;color:#333333; font-size: 15px;line-height: 22px;font-weight: 400;">
+                        <a href="https://app.fromdoppler.com/signup?&lang=es&id=es&page=beneficios-email-marketing/?utm_source=fromdoppler&utm_medium=email&utm_campaign=inbound-sanvalentin2023"
+                          target="_blank" style="text-decoration: none; color: #33AD73;font-weight: bold;"
+                          class="link-hover">Empieza hoy a hacer Email y Automation Marketing de la mano de Doppler.</a>
+                      </p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td height="40" style="font-size:40px; line-height:40px;">&nbsp;</td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+
+    <table width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation">
+      <tr>
+        <td align="center" valign="top" style="background-color: #FFFFFF;">
+          <table width="640" cellpadding="0" cellspacing="0" border="0" class="wrapper">
+            <tr>
+              <td align="center" valign="top">
+                <table width="600" cellpadding="0" cellspacing="0" border="0" class="container">
+                  <tr>
+                    <td height="40" style="font-size:40px; line-height:40px;">&nbsp;</td>
+                  </tr>
+                  <tr>
+                    <td align="center" valign="top" style="font-family: Helvetica, Arial, sans-serif;color:#333333;">
+                      <p
+                        style="margin: 0; font-family: Helvetica, Arial, sans-serif;color:#333333; font-size: 15px;line-height: 20px;font-weight: 400;">
+                        Equipo de Doppler
+                      </p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td height="60" style="font-size:60px; line-height:60px;">&nbsp;</td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+
+    <!--footer begin-->
+    <table width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation">
+      <tr>
+        <td align="center" valign="top">
+          <table width="640" cellpadding="0" cellspacing="0" border="0" class="wrapper">
+            <tr>
+              <td align="center" valign="top">
+                <table width="600" cellpadding="0" cellspacing="0" border="0" class="container">
+                  <tr>
+                    <td align="left" valign="top" style="border-top: 1px solid #999999;">
+                      <table width="185" border="0" cellpadding="0" cellspacing="0">
+                        <tbody>
+                          <tr>
+                            <td height="45" style="font-size:45px; line-height:45px;">
+                              &nbsp;</td>
+                          </tr>
+                          <tr>
+                            <td width="37" align="left">
+                              <a href="https://twitter.com/fromDoppler" target="_blank"><img src="twitter-icon.png"
+                                  style="width: 100%; max-width: 32px !important;" width="32" class="img"
+                                  alt="Twitter" /></a>
+                            </td>
+                            <td width="37" align="left">
+                              <a href="https://www.facebook.com/DopplerEmailMarketing" target="_blank"><img
+                                  src="facebook-icon.png" style="width: 100%; max-width: 32px !important;" width="32"
+                                  class="img" alt="Facebook" /></a>
+                            </td>
+                            <td width="37" align="left">
+                              <a href="https://www.linkedin.com/company/228261" target="_blank"><img
+                                  src="linkedin-icon.png" style="width: 100%; max-width: 32px !important;" width="32"
+                                  class="img" alt="Linkedin" /></a>
+                            </td>
+                            <td width="37" align="left">
+                              <a href="https://www.youtube.com/user/FromDoppler" target="_blank"><img
+                                  src="youtube-icon.png" style="width: 100%; max-width: 32px !important;" width="32"
+                                  class="img" alt="Youtube" /></a>
+                            </td>
+                            <td width="37" align="left">
+                              <a href="https://www.instagram.com/fromdoppler" target="_blank"><img
+                                  src="instagram-icon.png" style="width: 100%; max-width: 32px !important;" width="32"
+                                  class="img" alt="Instagram" /></a>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td height="25" style="font-size:25px; line-height:25px;">&nbsp;</td>
+                  </tr>
+                  <tr>
+                    <td align="left" style="padding: 25px 0 0;">
+                      <p style="
+                                                                  padding: 0;
+                                                                  margin: 0;
+                                                                  font-family: Helvetica, Arial, Helvetica,
+                                                                    sans-serif;
+                                                                  font-size: 11px;
+                                                                  line-height: 16px;
+                                                                  color: #999999;
+                                                                ">
+                        &copy; 2023
+                        <a href="https://www.fromdoppler.com" target="_blank"
+                          style="text-decoration: none; color: #33AD73;font-weight: bold;" class="link-hover">Doppler
+                          LLC</a>. Todos
+                        los derechos reservados.
+                      </p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td height="20" style="font-size:20px; line-height:20px;">&nbsp;</td>
+                  </tr>
+                  <tr>
+                    <td align="left" valign="top">
+                      <p style="
+                                                          padding: 0;
+                                                          margin: 0;
+                                                          font-family: Helvetica, Arial, Helvetica,
+                                                            sans-serif;
+                                                          font-size: 11px;
+                                                          line-height: 14px;
+                                                          color: #999999;
+                                                        ">
+                        Te informamos que los datos personales
+                        contenidos en esta comunicaci&oacute;n fueron recogidos
+                        en nuestro Formulario de registro, cuyo
+                        responsable es Doppler LLC, dado que prestaste
+                        tu consentimiento para recibir nuestras
+                        comunicaciones. Al registrarte como usuario,
+                        acept&aacute;s y consent&iacute;s que tus datos sean
+                        almacenados por nuestra plataforma, cuyos
+                        servidores est&aacute;n en Estados Unidos, para
+                        gestionar el env&iacute;o de las comunicaciones
+                        correspondientes. Podr&aacute;s ejercer tus derechos de
+                        acceso, rectificaci&oacute;n, limitaci&oacute;n y eliminaci&oacute;n
+                        de los datos escribiendo a
+                        <a href="mailto:legal@fromdoppler.com" target="_blank"
+                          style="text-decoration: none; color: #33AD73;font-weight: bold;"
+                          class="link-hover">legal@fromdoppler.com</a>,
+                        as&iacute; como presentar una reclamaci&oacute;n ante una
+                        autoridad de control. Si no dese&aacute;s seguir
+                        recibiendo nuestras Campa&ntilde;as, pod&eacute;s darte de
+                        baja autom&aacute;ticamente haciendo clic en el enlace
+                        que se encuentra debajo. Pod&eacute;s consultar
+                        informaci&oacute;n adicional y detallada sobre la
+                        protecci&oacute;n de tus datos personales en nuestra
+                        <a href="https://www.fromdoppler.com/legal/privacidad" target="_blank"
+                          style="text-decoration: none; color: #33AD73; font-weight: bold;"
+                          class="link-hover">Pol&iacute;tica de
+                          Privacidad</a>.
+                      </p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td height="20" style="font-size:20px; line-height:20px;">&nbsp;</td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+  </center>
+</body>
+
+</html>
