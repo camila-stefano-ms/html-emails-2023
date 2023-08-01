@@ -1,0 +1,817 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="es">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="x-apple-disable-message-reformatting">
+	<title>Doppler</title>
+	<style>
+		html,
+		body {
+			margin: 0 auto !important;
+			padding: 0 !important;
+			background-color: #ffffff;
+		}
+
+		* {
+			-ms-text-size-adjust: 100%;
+			-webkit-text-size-adjust: 100%;
+		}
+
+		div[style*="margin: 16px 0"] {
+			margin: 0 !important;
+		}
+
+		table,
+		td {
+			mso-table-lspace: 0pt !important;
+			mso-table-rspace: 0pt !important;
+		}
+
+		table table table {
+			table-layout: auto;
+		}
+
+		img {
+			-ms-interpolation-mode: bicubic;
+			border: 0;
+			height: auto;
+			line-height: 100%;
+			outline: none;
+			text-decoration: none;
+		}
+
+		/* Hover styles for buttons */
+		.button--td:hover,
+		.button--a:hover {
+			background: #008046 !important;
+		}
+
+		.link-hover:hover {
+			color: #008046 !important;
+		}
+
+		*[x-apple-data-detectors],
+		.x-gmail-data-detectors,
+		.x-gmail-data-detectors *,
+		.aBn {
+			border-bottom: 0 !important;
+			cursor: default !important;
+			color: inherit !important;
+			text-decoration: none !important;
+			font-size: inherit !important;
+			font-family: inherit !important;
+			font-weight: inherit !important;
+			line-height: inherit !important;
+		}
+
+		th {
+			font-weight: normal;
+		}
+
+		.mobileOn {
+			display: none !important;
+			max-height: none !important;
+		}
+
+
+
+		/* MEDIA QUERIES */
+		@media all and (max-width:480px) {
+			.wrapper {
+				width: 320px !important;
+				padding: 0 !important;
+			}
+
+			.container {
+				width: 300px !important;
+				padding: 0 !important;
+			}
+
+			.mobile {
+				width: 300px !important;
+				display: block !important;
+				padding: 0 !important;
+			}
+
+			.mobile-btn {
+				width: 240px !important;
+				display: block !important;
+			}
+
+			.img {
+				width: 100% !important;
+				height: auto !important;
+			}
+
+			.mobileOff {
+				width: 0px !important;
+				display: none !important;
+			}
+
+			.mobileOn {
+				display: block !important;
+				max-height: none !important;
+			}
+
+			.mobile-pl,
+			.mobile-pl-btn,
+			u+.body .mobile-pl,
+			u+.body .mobile-pl-btn {
+				padding-left: 0 !important;
+			}
+
+			.mobile-pt,
+			u+.body .mobile-pt {
+				padding-top: 20px !important;
+			}
+
+			.mobile-pr,
+			u+.body .mobile-pr {
+				padding-right: 0px !important;
+			}
+
+			.mobile-margin-0,
+			u+.body .mobile-margin-0 {
+				margin: 0px !important;
+			}
+
+			.mobilePadding {
+				padding-left: 3% !important;
+				padding-right: 3% !important;
+				width: 100% !important;
+			}
+
+			u~div .wrapper {
+				width: 100vw !important;
+			}
+
+			.mobile-center,
+			u+.body .mobile-center {
+				text-align: center !important;
+			}
+
+			.mobile-left,
+			u+.body .mobile-left {
+				text-align: left !important;
+			}
+
+			.mobile-border {
+				border-bottom: 2px solid #B58FC1 !important;
+				border-right: none !important;
+				border-left: none !important;
+			}
+		}
+	</style>
+	<!--[if gte mso 9]>
+      <xml>
+        <o:OfficeDocumentSettings>
+          <o:AllowPNG/>
+          <o:PixelsPerInch>96</o:PixelsPerInch>
+        </o:OfficeDocumentSettings>
+      </xml>
+      <![endif]-->
+</head>
+
+<body style="margin:0; padding:0;">
+	<center>
+		<table width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation">
+			<tr>
+				<td align="center" valign="top" style="background-color: #EEEEEE">
+					<table width="600" cellpadding="0" cellspacing="0" border="0" class="wrapper">
+						<tr>
+							<td align="center" valign="top" style="background-color: #FFFFFF">
+								<table width="555" cellpadding="0" cellspacing="0" border="0" class="container">
+									<tr>
+										<td height="60" style="font-size:60px; line-height:60px;">&nbsp;</td>
+									</tr>
+									<tr>
+										<td align="center" valign="top" style="padding-right: 406px;" class="mobile-pr">
+											<a href="#" style="cursor: default;"><img src="logo-doppler.png" alt="Logo de Doppler" width="144"
+													style="width:100%;max-width:144px !important;" class="mobile-margin-0"></a>
+										</td>
+									</tr>
+									<tr>
+										<td height="40" style="font-size:40px; line-height:40px;">&nbsp;</td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+		</table>
+
+		<table width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation">
+			<tr>
+				<td align="center" valign="top" style="background-color: #EEEEEE">
+					<table width="600" cellpadding="0" cellspacing="0" border="0" class="wrapper">
+						<tr>
+							<td align="center" valign="top" style="background-color: #FFFFFF">
+								<table width="555" cellpadding="0" cellspacing="0" border="0" class="container">
+									<tr>
+										<td height="10" style="font-size:10px; line-height:10px;">&nbsp;</td>
+									</tr>
+									<tr>
+										<td align="left" valign="top" style="font-family:  Helvetica, Arial, sans-serif;" class="mobile-center">
+											<p style="Margin: 0;font-size: 16px;line-height: 26px;color:#333333;font-weight: 400;">¡Hola, [[[Nombre]]]! Esperamos que te encuentres bien.
+											</p>
+											<p style="Margin: 0;font-size: 16px;line-height: 26px;color:#333333;font-weight: 400;">Hoy vamos a <strong>ayudarte a interpretar los Reportes de Doppler</strong> para que puedas optimizar tus envíos y alcances cada vez
+											mejores resultados.
+											</p>
+										</td>
+									</tr>
+									<tr>
+										<td height="26" style="font-size:26px; line-height:26px;">&nbsp;</td>
+									</tr>
+									<tr>
+										<td align="left" valign="top" style="font-family:  Helvetica, Arial, sans-serif;" class="mobile-center">
+											<p style="Margin: 0;font-size: 16px;line-height: 26px;color:#333333;font-weight: 400;">Te contamos 5 métricas que debes analizar para entender el comportamiento de tus usuarios:
+											</p>
+										</td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+		</table>
+
+		<table width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation">
+			<tr>
+				<td align="center" valign="top" style="background-color: #EEEEEE">
+					<table width="600" cellpadding="0" cellspacing="0" border="0" class="wrapper">
+						<tr>
+							<td align="center" valign="top" style="background-color: #FFFFFF">
+								<table width="555" cellpadding="0" cellspacing="0" border="0" class="container">
+									<tr>
+										<td height="40" style="font-size:40px; line-height:40px;">&nbsp;</td>
+									</tr>
+									<tr>
+										<td align="left" valign="top" style="font-family:  Helvetica, Arial, sans-serif;" class="mobile-center">
+											<p style="Margin: 0;font-size: 16px;line-height: 24px;color:#333333;font-weight: 400; ">1. <strong>Tasa de Apertura.</strong> Muestra la proporción de Emails abiertos por tus Contactos en comparación con la cantidad de correos electrónicos
+											entregados.
+											</p>
+										</td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+						<tr>
+							<td align="center" valign="top" style="background-color: #FFFFFF">
+								<table width="555" cellpadding="0" cellspacing="0" border="0" class="container">
+									<tr>
+										<td height="26" style="font-size:26px; line-height:26px;">&nbsp;</td>
+									</tr>
+									<tr>
+										<th align="center" valign="top" class="mobile" width="50">
+											<table width="50" cellpadding="0" cellspacing="0" border="0" class="container">
+												<tr>
+													<th align="center" valign="top" style="font-family:  Helvetica, Arial, sans-serif;">
+														<a href="#" style="cursor: default;"><img src="asset-01.png" alt="" width="50"
+																style="width:100%;max-width:50px !important;" ></a>
+													</th>
+												</tr>
+											</table>
+										</th>
+										<th align="center" valign="top" class="mobile" width="15" style="line-height: 20px; font-size: 20px;">
+											<table width="15" cellpadding="0" cellspacing="0" border="0" class="container">
+												<tr>
+													<th align="center" valign="top">&nbsp;
+													</th>
+												</tr>
+											</table>
+										</th>
+										<th align="left" valign="middle" class="mobile mobile-center" width="490">
+											<table width="490" cellpadding="0" cellspacing="0" border="0" class="container">
+												<tr>
+													<th align="left" valign="top" style="font-family:  Helvetica, Arial, sans-serif;"
+														class="mobile-center">
+														<p style="Margin: 0;font-size: 16px;line-height: 24px;color:#333333;font-weight: 400; "><em>Una Tasa de Apertura baja podría indicar que el asunto no fue lo suficientemente llamativo o que la Lista de Contactos
+														necesita una limpieza.</em>
+														</p>
+													</th>
+												</tr>
+											</table>
+										</th>
+									</tr>
+									<tr>
+										<td height="40" style="font-size:40px; line-height:40px;">&nbsp;</td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+						<tr>
+							<td align="center" valign="top" style="background-color: #FFFFFF">
+								<table width="555" cellpadding="0" cellspacing="0" border="0" class="container">
+									<tr>
+										<td align="left" valign="top" style="font-family:  Helvetica, Arial, sans-serif;" class="mobile-center">
+											<p style="Margin: 0;font-size: 16px;line-height: 24px;color:#333333;font-weight: 400; ">2. <strong>Tasa de Rebote.</strong> Mide la cantidad de correos electrónicos que no pudieron ser entregados al destinatario.
+											</p>
+										</td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+						<tr>
+							<td align="center" valign="top" style="background-color: #FFFFFF">
+								<table width="555" cellpadding="0" cellspacing="0" border="0" class="container">
+									<tr>
+										<td height="26" style="font-size:26px; line-height:26px;">&nbsp;</td>
+									</tr>
+									<tr>
+										<th align="center" valign="top" class="mobile" width="50">
+											<table width="50" cellpadding="0" cellspacing="0" border="0" class="container">
+												<tr>
+													<th align="center" valign="top" style="font-family:  Helvetica, Arial, sans-serif;">
+														<a href="#" style="cursor: default;"><img src="asset-01.png" alt="" width="50"
+																style="width:100%;max-width:50px !important;"></a>
+													</th>
+												</tr>
+											</table>
+										</th>
+										<th align="center" valign="top" class="mobile" width="15" style="line-height: 20px; font-size: 20px;">
+											<table width="15" cellpadding="0" cellspacing="0" border="0" class="container">
+												<tr>
+													<th align="center" valign="top">&nbsp;
+													</th>
+												</tr>
+											</table>
+										</th>
+										<th align="left" valign="middle" class="mobile mobile-center" width="490">
+											<table width="490" cellpadding="0" cellspacing="0" border="0" class="container">
+												<tr>
+													<th align="left" valign="top" style="font-family:  Helvetica, Arial, sans-serif;"
+														class="mobile-center ">
+														<p style="Margin: 0;font-size: 16px;line-height: 24px;color:#333333;font-weight: 400; "><em>Una Tasa de Rebote alta puede ser una señal de que tu Lista de Contactos necesita una limpieza o que los Emails se están
+														enviando a direcciones de correo electrónico no válidas.</em>
+														</p>
+													</th>
+												</tr>
+											</table>
+										</th>
+									</tr>
+									<tr>
+										<td height="40" style="font-size:40px; line-height:40px;">&nbsp;</td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+						<tr>
+							<td align="center" valign="top" style="background-color: #FFFFFF">
+								<table width="555" cellpadding="0" cellspacing="0" border="0" class="container">
+									<tr>
+										<td align="left" valign="top" style="font-family:  Helvetica, Arial, sans-serif;" class="mobile-center">
+											<p style="Margin: 0;font-size: 16px;line-height: 24px;color:#333333;font-weight: 400; ">3. <strong>CTR o Tasa de Clics.</strong> Indica la cantidad de personas que hicieron clic en un Email en relación con el número de correos entregados.
+											</p>
+										</td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+						<tr>
+							<td align="center" valign="top" style="background-color: #FFFFFF">
+								<table width="555" cellpadding="0" cellspacing="0" border="0" class="container">
+									<tr>
+										<td height="26" style="font-size:26px; line-height:26px;">&nbsp;</td>
+									</tr>
+									<tr>
+										<th align="center" valign="top" class="mobile" width="50">
+											<table width="50" cellpadding="0" cellspacing="0" border="0" class="container">
+												<tr>
+													<th align="center" valign="top" style="font-family:  Helvetica, Arial, sans-serif;">
+														<a href="#" style="cursor: default;"><img src="asset-01.png" alt="" width="50"
+																style="width:100%;max-width:50px !important;"></a>
+													</th>
+												</tr>
+											</table>
+										</th>
+										<th align="center" valign="top" class="mobile" width="15" style="line-height: 20px; font-size: 20px;">
+											<table width="15" cellpadding="0" cellspacing="0" border="0" class="container">
+												<tr>
+													<th align="center" valign="top">&nbsp;
+													</th>
+												</tr>
+											</table>
+										</th>
+										<th align="left" valign="middle" class="mobile mobile-center" width="490">
+											<table width="490" cellpadding="0" cellspacing="0" border="0" class="container">
+												<tr>
+													<th align="left" valign="top" style="font-family:  Helvetica, Arial, sans-serif;"
+														class="mobile-center ">
+														<p style="Margin: 0;font-size: 16px;line-height: 24px;color:#333333;font-weight: 400; "><em>Un CTR bajo puede indicar que el contenido no fue lo suficientemente interesante o que su llamado a la acción no fue
+														claro.</em>
+														</p>
+													</th>
+												</tr>
+											</table>
+										</th>
+									</tr>
+									<tr>
+										<td height="40" style="font-size:40px; line-height:40px;">&nbsp;</td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+						<tr>
+							<td align="center" valign="top" style="background-color: #FFFFFF">
+								<table width="555" cellpadding="0" cellspacing="0" border="0" class="container">
+									<tr>
+										<td align="left" valign="top" style="font-family:  Helvetica, Arial, sans-serif;" class="mobile-center">
+											<p style="Margin: 0;font-size: 16px;line-height: 24px;color:#333333;font-weight: 400; ">4. <strong>CTOR o Tasa de Clics sobre aperturas.</strong> Mide el número de clics en relación con el número de correos electrónicos abiertos. Proporciona una mejor medida de la
+											efectividad de un Email, ya que solo contempla los clics en los correos que fueron abiertos.
+											</p>
+										</td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+						<tr>
+							<td align="center" valign="top" style="background-color: #FFFFFF">
+								<table width="555" cellpadding="0" cellspacing="0" border="0" class="container">
+									<tr>
+										<td height="26" style="font-size:26px; line-height:26px;">&nbsp;</td>
+									</tr>
+									<tr>
+										<th align="center" valign="top" class="mobile" width="50">
+											<table width="50" cellpadding="0" cellspacing="0" border="0" class="container">
+												<tr>
+													<th align="center" valign="top" style="font-family:  Helvetica, Arial, sans-serif;">
+														<a href="#" style="cursor: default;"><img src="asset-01.png" alt="" width="50"
+																style="width:100%;max-width:50px !important;"></a>
+													</th>
+												</tr>
+											</table>
+										</th>
+										<th align="center" valign="top" class="mobile" width="15" style="line-height: 20px; font-size: 20px;">
+											<table width="15" cellpadding="0" cellspacing="0" border="0" class="container">
+												<tr>
+													<th align="center" valign="top">&nbsp;
+													</th>
+												</tr>
+											</table>
+										</th>
+										<th align="left" valign="middle" class="mobile mobile-center" width="490">
+											<table width="490" cellpadding="0" cellspacing="0" border="0" class="container">
+												<tr>
+													<th align="left" valign="top" style="font-family:  Helvetica, Arial, sans-serif;"
+														class="mobile-center ">
+														<p style="Margin: 0;font-size: 16px;line-height: 24px;color:#333333;font-weight: 400; "><em>Esto indica que el contenido fue lo suficientemente atractivo como para generar clics.</em>
+														</p>
+													</th>
+												</tr>
+											</table>
+										</th>
+									</tr>
+									<tr>
+										<td height="40" style="font-size:40px; line-height:40px;">&nbsp;</td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+						<tr>
+							<td align="center" valign="top" style="background-color: #FFFFFF">
+								<table width="555" cellpadding="0" cellspacing="0" border="0" class="container">
+									<tr>
+										<td align="left" valign="top" style="font-family:  Helvetica, Arial, sans-serif;" class="mobile-center">
+											<p style="Margin: 0;font-size: 16px;line-height: 24px;color:#333333;font-weight: 400; ">5. <strong>Tasa de Conversión.</strong> Mide la cantidad de personas que tomaron una acción después de hacer clic en el correo electrónico, como realizar una
+											compra o registrarse a un evento.
+											</p>
+										</td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+						<tr>
+							<td align="center" valign="top" style="background-color: #FFFFFF">
+								<table width="555" cellpadding="0" cellspacing="0" border="0" class="container">
+									<tr>
+										<td height="26" style="font-size:26px; line-height:26px;">&nbsp;</td>
+									</tr>
+									<tr>
+										<th align="center" valign="top" class="mobile" width="50">
+											<table width="50" cellpadding="0" cellspacing="0" border="0" class="container">
+												<tr>
+													<th align="center" valign="top" style="font-family:  Helvetica, Arial, sans-serif;">
+														<a href="#" style="cursor: default;"><img src="asset-01.png" alt="" width="50"
+																style="width:100%;max-width:50px !important;"></a>
+													</th>
+												</tr>
+											</table>
+										</th>
+										<th align="center" valign="top" class="mobile" width="15" style="line-height: 20px; font-size: 20px;">
+											<table width="15" cellpadding="0" cellspacing="0" border="0" class="container">
+												<tr>
+													<th align="center" valign="top">&nbsp;
+													</th>
+												</tr>
+											</table>
+										</th>
+										<th align="left" valign="middle" class="mobile mobile-center" width="490">
+											<table width="490" cellpadding="0" cellspacing="0" border="0" class="container">
+												<tr>
+													<th align="left" valign="top" style="font-family:  Helvetica, Arial, sans-serif;"
+														class="mobile-center ">
+														<p style="Margin: 0;font-size: 16px;line-height: 24px;color:#333333;font-weight: 400; "><em>Esta métrica ayuda a determinar el éxito de tu campaña y cómo mejorarla a futuro.</em>
+														</p>
+													</th>
+												</tr>
+											</table>
+										</th>
+									</tr>
+									<tr>
+										<td height="40" style="font-size:40px; line-height:40px;">&nbsp;</td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+					</table>
+					<table width="600" cellpadding="0" cellspacing="0" border="0" class="wrapper">
+						<tr>
+							<td align="center" valign="top" style="background-color: #FFFFFF">
+								<table width="555" cellpadding="0" cellspacing="0" border="0" class="container">
+									<tr>
+										<td height="20" style="font-size:20px; line-height:20px;" class="mobileOff">&nbsp;</td>
+									</tr>
+									<tr>
+										<td align="center" valign="top" style="font-family:  Helvetica, Arial, sans-serif;" class="mobile-center">
+											<p style="Margin: 0;font-size: 16px;line-height: 26px;color:#333333;font-weight: 400;">¿Necesitas profundizar más en alguna métrica o reporte en particular? <a href="https://help.fromdoppler.com/es/category/reportes/?utm_source=fromdoppler&utm_medium=email&utm_campaign=eg-onboardingusuarios-nutricion&utm_term=email20&utm_content=reportes" target="_blank"
+												style=" color: #33AD73; font-weight: 700; text-decoration: none;" class="link-hover">Mira los artículos de nuestro Help.</a>
+											</p>
+										</td>
+									</tr>
+									<tr>
+										<td height="40" style="font-size:40px; line-height:40px;">&nbsp;</td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+		</table>
+
+		<table width="100%" border="0" cellpadding="0" cellspacing="0">
+			<tr>
+				<td align="center" valign="top" style="background-color: #EEEEEE">
+					<table width="600" cellpadding="0" cellspacing="0" border="0" class="wrapper">
+						<tr>
+							<td align="center" valign="top" style="background-color: #FCE579">
+								<table width="555" cellpadding="0" cellspacing="0" border="0" class="container">
+									<tr>
+										<td height="20" style="font-size:20px; line-height:20px;" class="mobile-pt">&nbsp;</td>
+									</tr>
+									<tr>
+										<th align="left" valign="center" width="380" class="mobile mobile-center">
+											<p
+												style="font-family:  Helvetica, Arial, sans-serif;font-weight: 400; font-size: 16px;line-height: 24px;color:#333333; Margin: 0;">Si quieres evaluar ahora el rendimiento de tus últimas Campañas, accede a tu cuenta ¡y optimiza ya tu estrategia!
+											</p>
+											<p style="margin: 0; font-size: 24px; line-height: 24px;">&nbsp;</p>
+											<!-- Button : BEGIN -->
+											<div>
+												<!--[if mso]><v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="https://app.fromdoppler.com/login?lang=es&page=beneficios-email-marketing/?utm_source=fromdoppler&utm_medium=email&utm_campaign=eg-onboardingusuarios-nutricion&utm_term=email20&utm_content=login" style="height:47px;v-text-anchor:middle;width:186px;" arcsize="50%" strokecolor="#33AD73" strokeweight="1px" fillcolor="#33AD73" ><w:anchorlock/><center style="color:#FFFFFF;font-family:sans-serif;font-size:15px;font-weight:bold;">INGRESA AHORA</center></v:roundrect><![endif]-->
+												<!--[if !mso] -->
+												<table cellspacing="0" cellpadding="0">
+													<tr>
+														<td
+															style="border-radius: 99px; background-color: #33AD73; color: #333333; padding: 15px 30px; text-align: center;"
+															class="button--td mobile-btn">
+															<a href="https://app.fromdoppler.com/login?lang=es&page=beneficios-email-marketing/?utm_source=fromdoppler&utm_medium=email&utm_campaign=eg-onboardingusuarios-nutricion&utm_term=email20&utm_content=login"
+																style="color: #FFFFFF; font-size:15px; font-weight: bold; font-family:sans-serif; text-decoration: none; width:100%;"
+																target="_blank"><span>INGRESA AHORA</span></a>
+														</td>
+													</tr>
+												</table>
+												<!--[endif]-->
+											</div>
+											<!-- Button : END -->
+											<p style="margin: 0; font-size: 20px; line-height: 20px;">&nbsp;</p>
+										</th>
+										<th align="center" valign="bottom" width="25" class="mobileOff">&nbsp;
+										</th>
+										<th align="center" valign="bottom" width="150" class="mobile"
+											style="font-family: Helvetica, Arial, sans-serif;font-size: 15px;line-height: 25px;font-weight: 700;">
+											<a href="#" style="cursor: default !important; padding: 0; margin: 0;"><img src="asset.png" alt="Ebook"
+													width="146" style="width:100%;max-width:146px !important; vertical-align: bottom; padding: 0;margin: 0;"
+													class="mobile"></a>
+										</th>
+									</tr>
+								</table>
+							</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+		</table>
+
+		<table width="100%" border="0" cellpadding="0" cellspacing="0">
+			<tr>
+				<td align="center" valign="top" style="background-color: #EEEEEE">
+					<table width="600" cellpadding="0" cellspacing="0" border="0" class="wrapper">
+						<tr>
+							<td align="center" valign="top" style="background-color: #FFFFFF">
+								<table width="555" cellpadding="0" cellspacing="0" border="0" class="container">
+									<tr>
+										<td height="40" style="font-size:40px; line-height:40px;">&nbsp;</td>
+									</tr>
+									<tr>
+										<td align="center" valign="top" style="font-family:  Helvetica, Arial, sans-serif;">
+											<p style="Margin: 0;font-size: 16px;line-height: 24px;color:#333333;font-weight: 400; ">Esperamos que esta información te ayude a la hora de analizar y medir la efectividad de tus Campañas de Email Marketing.
+											</p>
+										</td>
+									</tr>
+									<tr>
+										<td height="40" style="font-size:40px; line-height:40px;">&nbsp;</td>
+									</tr>
+									<tr>
+										<td align="center" valign="top" style="font-family:  Helvetica, Arial, sans-serif;">
+											<p style="Margin: 0;font-size: 16px;line-height: 24px;color:#333333;font-weight: 400; ">El equipo
+												de Doppler&nbsp;😉
+											</p>
+										</td>
+									</tr>
+									<tr>
+										<td height="40" style="font-size:40px; line-height:40px;">&nbsp;</td>
+									</tr>
+									<tr>
+										<td align="center" valign="top">
+											<a href="#" style="cursor: default;"><img src="separador.png" alt="imagen separadora" width="21"
+													style="width:100%;max-width:21px !important;" class="mobile-margin-0 "></a>
+										</td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+		</table>
+
+		<table width="100%" border="0" cellpadding="0" cellspacing="0">
+			<tr>
+				<td align="center" valign="top" style="background-color: #EEEEEE">
+					<table width="600" cellpadding="0" cellspacing="0" border="0" class="wrapper">
+						<tr>
+							<td align="center" valign="top" style="background-color: #FFFFFF">
+								<table width="555" cellpadding="0" cellspacing="0" border="0" class="container">
+									<tr>
+										<td height="40" style="font-size:40px; line-height:40px;">&nbsp;</td>
+									</tr>
+									<tr>
+										<td align="center" valign="top"
+											style="font-family:  Helvetica, Arial, sans-serif; background-color: #FFFFFF"
+											class="mobile-center">
+											<p style="Margin: 0;font-size: 13px;line-height: 18px;color:#333333;font-weight: 400; "><em>Atrae,
+													convierte y fideliza</em>
+											</p>
+										</td>
+									</tr>
+									<tr>
+										<td height="40" style="font-size:40px; line-height:40px; background-color: #FFFFFF">&nbsp;</td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+		</table>
+
+		<table width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation">
+			<tr>
+				<td align="center" valign="top" style="background-color: #EEEEEE">
+					<table width="600" cellpadding="0" cellspacing="0" border="0" class="wrapper">
+						<tr>
+							<td align="center" valign="top" style="background-color: #FFFFFF">
+								<table width="555" cellpadding="0" cellspacing="0" border="0" class="container">
+									<tr>
+										<td align="center" valign="top" style="border-top: 1px solid #A9A9A9;">
+											<table width="555" cellpadding="0" cellspacing="0" border="0" class="container">
+												<tr>
+													<td height="40" style="font-size:40px; line-height:40px;">
+														&nbsp;</td>
+												</tr>
+												<tr>
+													<td align="left" valign="top">
+														<table width="185" border="0" cellpadding="0" cellspacing="0">
+															<tbody>
+																<tr>
+																	<td width="37" align="left">
+																		<a href="https://twitter.com/fromDoppler" target="_blank"><img
+																				src="https://www.fromdoppler.com/images/emails/2022/rrss/twitter-icon.png"
+																				style="width: 100%; max-width: 32px !important;" width="32" class="img"
+																				alt="Twitter" /></a>
+																	</td>
+																	<td width="37" align="left">
+																		<a href="https://www.facebook.com/DopplerEmailMarketing" target="_blank"><img
+																				src="https://www.fromdoppler.com/images/emails/2022/rrss/facebook-icon.png"
+																				style="width: 100%; max-width: 32px !important;" width="32" class="img"
+																				alt="Facebook" /></a>
+																	</td>
+																	<td width="37" align="left">
+																		<a href="https://www.linkedin.com/company/228261" target="_blank"><img
+																				src="https://www.fromdoppler.com/images/emails/2022/rrss/linkedin-icon.png"
+																				style="width: 100%; max-width: 32px !important;" width="32" class="img"
+																				alt="Linkedin" /></a>
+																	</td>
+																	<td width="37" align="left">
+																		<a href="https://www.youtube.com/user/FromDoppler" target="_blank"><img
+																				src="https://www.fromdoppler.com/images/emails/2022/rrss/youtube-icon.png"
+																				style="width: 100%; max-width: 32px !important;" width="32" class="img"
+																				alt="Youtube" /></a>
+																	</td>
+																	<td width="37" align="left">
+																		<a href="https://www.instagram.com/fromdoppler" target="_blank"><img
+																				src="https://www.fromdoppler.com/images/emails/2022/rrss/instagram-icon.png"
+																				style="width: 100%; max-width: 32px !important;" width="32" class="img"
+																				alt="Instagram" /></a>
+																	</td>
+																</tr>
+															</tbody>
+														</table>
+													</td>
+												</tr>
+												<tr>
+													<td align="left" style="padding: 25px 0 0;">
+														<p style="
+																								        padding: 0;
+																								        margin: 0;
+																								        font-family: Helvetica, Arial, sans-serif;
+																								        font-size: 11px;
+																								        line-height: 16px;
+																								        color: #666666;
+																								      ">
+															&copy;
+															<a href="https://www.fromdoppler.com/" target="_blank"
+																style="color: #33AD73;font-weight: normal; text-decoration: none;"
+																class="link-hover ">Doppler
+																LLC</a>. Todos
+															los derechos reservados.
+														</p>
+													</td>
+												</tr>
+												<tr>
+													<td height="20" style="font-size:20px; line-height:20px;">&nbsp;</td>
+												</tr>
+												<tr>
+													<td align="left" valign="top">
+														<p style="
+																								          padding: 0;
+																								          margin: 0;
+																								          font-family: Helvetica, Arial, sans-serif;
+																								         font-size: 11px;
+																								           line-height: 14px;
+																								          color: #666666;
+																								        ">
+															Te informamos que los datos personales
+															contenidos en esta comunicaci&oacute;n fueron recogidos
+															en nuestro Formulario de registro, cuyo
+															responsable es Doppler LLC, dado que prestaste
+															tu consentimiento para recibir nuestras
+															comunicaciones. Al registrarte como usuario,
+															acept&aacute;s y consent&iacute;s que tus datos sean
+															almacenados por nuestra plataforma, cuyos
+															servidores est&aacute;n en Estados Unidos, para
+															gestionar el env&iacute;o de las comunicaciones
+															correspondientes. Podr&aacute;s ejercer tus derechos de
+															acceso, rectificaci&oacute;n, limitaci&oacute;n y eliminaci&oacute;n
+															de los datos escribiendo a
+															<a href="mailto:legal@fromdoppler.com" target="_blank"
+																style=" color: #33AD73;font-weight: normal; text-decoration: none;"
+																class="link-hover">legal@fromdoppler.com</a>,
+															as&iacute; como presentar una reclamaci&oacute;n ante una
+															autoridad de control. Si no dese&aacute;s seguir
+															recibiendo nuestras Campa&ntilde;as, pod&eacute;s darte de
+															baja autom&aacute;ticamente haciendo clic en el enlace
+															que se encuentra debajo. Pod&eacute;s consultar
+															informaci&oacute;n adicional y detallada sobre la
+															protecci&oacute;n de tus datos personales en nuestra
+															<a href="https://www.fromdoppler.com/legal/privacidad/" target="_blank"
+																style=" color: #33AD73; font-weight: normal; text-decoration: none;"
+																class="link-hover">Pol&iacute;tica
+																de
+																Privacidad</a>.
+														</p>
+													</td>
+												</tr>
+												<tr>
+													<td height="40" style="font-size:40px; line-height:40px;">&nbsp;</td>
+												</tr>
+											</table>
+										</td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+		</table>
+
+	</center>
+</body>
+
+</html>
