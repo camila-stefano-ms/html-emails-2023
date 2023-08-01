@@ -1,0 +1,645 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="es">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="x-apple-disable-message-reformatting">
+	<meta content="telephone=no" name="format-detection">
+	<title>Doppler</title>
+	<style>
+		html,
+		body {
+			margin: 0 auto !important;
+			padding: 0 !important;
+			background-color: #ffffff;
+		}
+
+		* {
+			-ms-text-size-adjust: 100%;
+			-webkit-text-size-adjust: 100%;
+		}
+
+		div[style*="margin: 16px 0"] {
+			margin: 0 !important;
+		}
+
+		table,
+		td {
+			mso-table-lspace: 0pt !important;
+			mso-table-rspace: 0pt !important;
+		}
+
+		table table table {
+			table-layout: auto;
+		}
+
+		img {
+			-ms-interpolation-mode: bicubic;
+			border: 0;
+			height: auto;
+			line-height: 100%;
+			outline: none;
+			text-decoration: none;
+		}
+
+		/* Hover styles for buttons */
+		.button--td:hover,
+		.button--a:hover {
+			background: #008046 !important;
+		}
+
+		.link-hover:hover {
+			color: #008046 !important;
+		}
+
+		*[x-apple-data-detectors],
+		.x-gmail-data-detectors,
+		.x-gmail-data-detectors *,
+		.aBn {
+			border-bottom: 0 !important;
+			cursor: default !important;
+			color: inherit !important;
+			text-decoration: none !important;
+			font-size: inherit !important;
+			font-family: inherit !important;
+			font-weight: inherit !important;
+			line-height: inherit !important;
+		}
+
+		th {
+			font-weight: normal;
+		}
+
+		/* MEDIA QUERIES */
+		@media all and (max-width:480px) {
+			.wrapper {
+				width: 320px !important;
+				padding: 0 !important;
+			}
+
+			.container {
+				width: 300px !important;
+				padding: 0 !important;
+			}
+
+			.mobile {
+				width: 300px !important;
+				display: block !important;
+				padding: 0 !important;
+			}
+
+			.mobile-btn {
+				width: 240px !important;
+				display: block !important;
+			}
+
+			.img {
+				width: 100% !important;
+				height: auto !important;
+			}
+
+			.mobileOff {
+				width: 0px !important;
+				display: none !important;
+			}
+
+			.mobileOn {
+				display: block !important;
+				max-height: none !important;
+			}
+
+			.mobile-pl,
+			.mobile-pl-btn,
+			u+.body .mobile-pl,
+			u+.body .mobile-pl-btn {
+				padding-left: 0 !important;
+			}
+
+			.mobile-pt,
+			u+.body .mobile-pt {
+				padding-top: 20px !important;
+			}
+
+			.mobile-pr,
+			u+.body .mobile-pr {
+				padding-right: 0px !important;
+			}
+
+			.mobile-mr,
+			u+.body .mobile-mr {
+				margin-right: 0px !important;
+			}
+
+			.mobilePadding {
+				padding-left: 3% !important;
+				padding-right: 3% !important;
+				width: 100% !important;
+			}
+
+			.mobilePaddingRight {
+				padding-right: 55px !important;
+			}
+
+			.mobileTitle {
+				font-size: 28px !important;
+				line-height: 32px !important;
+			}
+
+			u~div .wrapper {
+				width: 100vw !important;
+			}
+
+			.mobile-center,
+			u+.body .mobile-center {
+				text-align: center !important;
+			}
+		}
+	</style>
+	<!--[if gte mso 9]>
+      <xml>
+        <o:OfficeDocumentSettings>
+          <o:AllowPNG/>
+          <o:PixelsPerInch>96</o:PixelsPerInch>
+        </o:OfficeDocumentSettings>
+      </xml>
+      <![endif]-->
+</head>
+
+<body style="margin:0; padding:0;">
+	<center>
+		<table width="100%" border="0" cellpadding="0" cellspacing="0">
+			<tr>
+				<td align="center" valign="top" style="background-color: #FFFFFF;">
+					<table width="640" cellpadding="0" cellspacing="0" border="0" class="wrapper">
+						<tr>
+							<td align="center" valign="top">
+								<table width="600" cellpadding="0" cellspacing="0" border="0" class="container">
+									<tr>
+										<td height="40" style="font-size:40px; line-height:40px;">&nbsp;</td>
+									</tr>
+									<tr>
+										<th align="center" valign="center" width="200" class="mobile">
+											<a href="#" style="cursor: default;"><img src="logo-doppler.png" alt="Logo de Doppler" width="144"
+													style="width:100%;max-width:144px !important" class="mobile"></a>
+										</th>
+										<th align="center" valign="center" width="200" class="mobile mobile-pt">
+											<a href="#" style="cursor: default;"><img src="logo-chatcenter.png" alt="Logo de  Partner"
+													width="123" style="width:100%;max-width:123px !important" class="mobile"></a>
+										</th>
+										<th align="center" valign="center" width="200" class="mobile mobile-pt">
+											<a href="#" style="cursor: default;"><img src="logo-nubemetrics.png" alt="Logo de Partner"
+													width="167" style="width:100%;max-width:167px !important" class="mobile"></a>
+										</th>
+									</tr>
+									<tr>
+										<td height="40" style="font-size:40px; line-height:40px;">&nbsp;</td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+		</table>
+
+		<table width="100%" border="0" cellpadding="0" cellspacing="0">
+			<tr>
+				<td align="center" valign="top" style="background-color: #F2F2F2;">
+					<table width="640" cellpadding="0" cellspacing="0" border="0" class="wrapper">
+						<tr>
+							<td align="center" valign="top" class="container">
+								<table width="600" cellpadding="0" cellspacing="0" border="0" class="container">
+									<tr>
+										<td height="40" style="font-size:40px; line-height:40px;">&nbsp;</td>
+									</tr>
+									<tr>
+										<th align="left" valign="center" width="300" class="mobile mobile-center">
+											<p
+												style="font-family: Helvetica, Arial, sans-serif;font-size: 15px;line-height: 30px;font-weight: 700; color:#333333; margin: 0;">
+												LLEGÓ TU E-BOOK GRATUITO
+											</p>
+											<p
+												style="font-family: Helvetica, Arial, sans-serif;font-size: 20px;line-height: 30px;font-weight: 700; color:#333333; margin: 0;">
+												Estrategias para potenciar tus ventas en Marketplaces 🛒
+											</p>
+											<p style="margin: 0; font-size: 15px; line-height: 15px;">&nbsp;</p>
+											<p
+												style="font-family: Helvetica, Arial, sans-serif;font-size: 15px;line-height: 24px;font-weight: 400; color:#333333; margin: 0;">
+												Incrementa
+												los resultados de tu negocio digital con herramientas de inteligencia de ventas y técnicas
+												avanzadas de
+												Marketing con este <strong>E-book gratuito</strong>.
+											</p>
+											<p style="margin: 0; font-size: 30px; line-height: 30px;">&nbsp;</p>
+											<!-- Button : BEGIN -->
+											<div>
+												<!--[if mso]><v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="https://www.fromdoppler.com/wp-content/uploads/2023/05/Ebook-Estrategias-para-potenciar-tus-ventas-en-Marketplaces.pdf" style="height:47px;v-text-anchor:middle;width:225px;" arcsize="50%" strokecolor="#33AD73" strokeweight="1px" fillcolor="#33AD73" >
+																							  <w:anchorlock/>
+																							  <center style="color:#FFFFFF;font-family:sans-serif;font-size:15px;font-weight:bold;">
+																							  DESCÁRGALO AHORA
+																							  </center>
+																							  </v:roundrect>
+																							  <![endif]-->
+												<!--[if !mso] -->
+												<table cellspacing="0" cellpadding="0">
+													<tr>
+														<td
+															style="border-radius: 99px; background-color: #33AD73; color: #333333; padding: 15px 30px; text-align: center;"
+															class="button--td mobile-btn">
+															<a href="https://www.fromdoppler.com/wp-content/uploads/2023/05/Ebook-Estrategias-para-potenciar-tus-ventas-en-Marketplaces.pdf"
+																style="color: #FFFFFF; font-size:15px; font-weight: bold; font-family:sans-serif; text-decoration: none; width:100%;"
+																target="_blank"><span>DESCÁRGALO AHORA</span></a>
+														</td>
+													</tr>
+												</table>
+												<!--[endif]-->
+											</div>
+											<!-- Button : END -->
+										</th>
+										<th align="center" valign="center" width="300" class="mobile mobile-pt"
+											style="font-family: Helvetica, Arial, sans-serif;font-size: 15px;line-height: 25px;font-weight: 700;">
+											<a href="https://www.fromdoppler.com/wp-content/uploads/2023/05/Ebook-Estrategias-para-potenciar-tus-ventas-en-Marketplaces.pdf"
+												target="_blank"><img src="asset.png" alt="Ebook" width="262"
+													style="width:100%;max-width:262px !important" class="mobile mobile-pt"></a>
+										</th>
+									</tr>
+									<tr>
+										<td height="40" style="font-size:40px; line-height:40px;">&nbsp;
+										</td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+		</table>
+
+		<table width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation">
+			<tr>
+				<td align="center" valign="top" style="background-color: #FFFFFF;">
+					<table width="640" cellpadding="0" cellspacing="0" border="0" class="wrapper">
+						<tr>
+							<td align="center" valign="top">
+								<table width="600" cellpadding="0" cellspacing="0" border="0" class="container"
+									style="background-color: #FFFFFF;">
+									<tr>
+										<td height="40" style="font-size:40px; line-height:40px;">&nbsp;</td>
+									</tr>
+									<tr>
+										<td align="center" valign="top">
+											<p
+												style="font-family:  Helvetica, Arial, sans-serif;font-weight: 400; font-size: 15px;line-height: 22px;color:#333333; Margin: 0">
+												Como ya te adelantamos en el Webinar, te enseñamos en este recurso algunas de las mejores
+												estrategias para <strong>incrementar
+													las ventas de tu Marketplace con Analytics, Automation y Whatsapp</strong>.
+											</p>
+										</td>
+									</tr>
+									<tr>
+										<td height="40" style="font-size:40px; line-height:40px;">&nbsp;</td>
+									</tr>
+									<tr>
+										<td align="center" valign="top">
+											<p
+												style="font-family:  Helvetica, Arial, sans-serif;font-weight: 400; font-size: 18px;line-height: 25px;color:#333333; Margin: 0">
+												¿Qué encontrarás allí?
+											</p>
+										</td>
+									</tr>
+									<tr>
+										<td height="40" style="font-size:40px; line-height:40px;">&nbsp;</td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+		</table>
+
+		<table width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation">
+			<tr>
+				<td align="center" valign="top" style="background-color: #FFFFFF;">
+					<table width="640" cellpadding="0" cellspacing="0" border="0" class="wrapper">
+						<tr>
+							<td align="center" valign="top">
+								<table width="600" cellpadding="0" cellspacing="0" border="0" class="container"
+									style="background-color: #FFFFFF;">
+									<tr>
+										<th align="left" valign="top" class="mobile" width="300">
+											<table width="300" cellpadding="0" cellspacing="0" border="0" class="container">
+												<tr>
+													<th width="40" align="center" valign="top" class="mobile mobile-center">
+														<p style="margin: 0; font-size: 4px; line-height: 4px;">&nbsp;
+														</p>
+														<p
+															style="font-family:  Helvetica, Arial, sans-serif;font-weight: 400; font-size: 14px;line-height: 13px;color:#333333; Margin: 0">
+															<img src="1.png" alt="Emoji pin" width="21"
+																style="width:100%;max-width:21px !important; vertical-align: top;">
+														</p>
+													</th>
+													<th width="260" align="left" valign="top" class="mobile mobile-center mobile-pt">
+														<p
+															style="font-family:  Helvetica, Arial, sans-serif;font-weight: 400; font-size: 15px;line-height: 25px;color:#333333; Margin: 0; ">
+															Cómo elegir los <strong>productos más rentables</strong> para vender
+														</p>
+													</th>
+												</tr>
+												<tr>
+													<td height="25" style="font-size:25px; line-height:25px;">&nbsp;
+													</td>
+												</tr>
+												<tr>
+													<th width="40" align="center" valign="top" class="mobile mobile-center">
+														<p style="margin: 0; font-size: 4px; line-height: 4px;">&nbsp;
+														</p>
+														<p
+															style="font-family:  Helvetica, Arial, sans-serif;font-weight: 400; font-size: 14px;line-height: 13px;color:#333333; Margin: 0">
+															<img src="1.png" alt="Emoji pin" width="21"
+																style="width:100%;max-width:21px !important; vertical-align: top;">
+														</p>
+													</th>
+													<th width="260" align="left" valign="top" class="mobile mobile-center mobile-pt">
+														<p
+															style="font-family:  Helvetica, Arial, sans-serif;font-weight: 400; font-size: 15px;line-height: 25px;color:#333333; Margin: 0; ">
+															Cómo posicionar tus publicaciones entre los <strong>primeros resultados de
+																búsqueda</strong>
+														</p>
+													</th>
+												</tr>
+												<tr>
+													<td height="25" style="font-size:25px; line-height:25px;">&nbsp;
+													</td>
+												</tr>
+												<tr>
+													<th width="40" align="center" valign="top" class="mobile mobile-center">
+														<p style="margin: 0; font-size: 4px; line-height: 4px;">&nbsp;
+														</p>
+														<p
+															style="font-family:  Helvetica, Arial, sans-serif;font-weight: 400; font-size: 14px;line-height: 13px;color:#333333; Margin: 0">
+															<img src="1.png" alt="Emoji pin" width="21"
+																style="width:100%;max-width:21px !important; vertical-align: top;">
+														</p>
+													</th>
+													<th width="260" align="left" valign="top" class="mobile mobile-center mobile-pt">
+														<p
+															style="font-family:  Helvetica, Arial, sans-serif;font-weight: 400; font-size: 15px;line-height: 25px;color:#333333; Margin: 0; ">
+															Cómo aumentar tu base de datos con la <strong>captación inteligente</strong>
+														</p>
+													</th>
+												</tr>
+												<tr>
+													<td height="25" style="font-size:25px; line-height:25px;">&nbsp;
+													</td>
+												</tr>
+											</table>
+										</th>
+										<th align="left" valign="top" class="mobile" width="300">
+											<table width="300" cellpadding="0" cellspacing="0" border="0" class="container">
+												<tr>
+													<th width="40" align="center" valign="top" class="mobile mobile-center">
+														<p style="margin: 0; font-size: 4px; line-height: 4px;">&nbsp;
+														</p>
+														<p
+															style="font-family:  Helvetica, Arial, sans-serif;font-weight: 400; font-size: 14px;line-height: 13px;color:#333333; Margin: 0">
+															<img src="1.png" alt="Emoji pin" width="21"
+																style="width:100%;max-width:21px !important; vertical-align: top;">
+														</p>
+													</th>
+													<th width="260" align="left" valign="top" class="mobile mobile-center mobile-pt">
+														<p
+															style="font-family:  Helvetica, Arial, sans-serif;font-weight: 400; font-size: 15px;line-height: 25px;color:#333333; Margin: 0; ">
+															Cómo implementar <strong>estrategias de recompra</strong> y multiplicar tus ingresos
+														</p>
+													</th>
+												</tr>
+												<tr>
+													<td height="25" style="font-size:25px; line-height:25px;">&nbsp;
+													</td>
+												</tr>
+												<tr>
+													<th width="20" align="center" valign="top" class="mobile mobile-center">
+														<p style="margin: 0; font-size: 5px; line-height: 5px;">&nbsp;
+														</p>
+														<p
+															style="font-family:  Helvetica, Arial, sans-serif;font-weight: 400; font-size: 14px;line-height: 13px;color:#333333; Margin: 0">
+															<img src="1.png" alt="Emoji pin" width="21"
+																style="width:100%;max-width:21px !important; vertical-align: top;">
+														</p>
+													</th>
+													<th width="230" align="left" valign="top" class="mobile mobile-center mobile-pt">
+														<p
+															style="font-family:  Helvetica, Arial, sans-serif;font-weight: 400; font-size: 15px;line-height: 25px;color:#333333; Margin: 0; ">
+															Cómo <strong>medir, optimizar y mejorar las ventas</strong> de tu Marketplace
+														</p>
+													</th>
+												</tr>
+											</table>
+										</th>
+									</tr>
+								</table>
+							</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+		</table>
+
+		<table width="100%" border="0" cellpadding="0" cellspacing="0">
+			<tr>
+				<td align="center" valign="top" style="background-color: #FFFFFF;">
+					<table width="640" cellpadding="0" cellspacing="0" border="0" class="wrapper">
+						<tr>
+							<td align="center" valign="top">
+								<table width="600" cellpadding="0" cellspacing="0" border="0" class="container">
+									<tr>
+										<td height="20" style="font-size:20px; line-height:20px;" class="mobile-pt">&nbsp;
+										</td>
+									</tr>
+									<tr>
+										<td align="center" valign="top" style="font-size:14px; font-family:  Helvetica, Arial, sans-serif;">
+											<!-- Button : BEGIN -->
+											<div>
+												<!--[if mso]><v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="https://www.fromdoppler.com/wp-content/uploads/2023/05/Ebook-Estrategias-para-potenciar-tus-ventas-en-Marketplaces.pdf" style="height:44px;v-text-anchor:middle;width:197px;" arcsize="50%" strokecolor="#33AD73" strokeweight="1px" fillcolor="#33AD73" >
+																		    	<w:anchorlock/>
+																		      <center style="color:#FFFFFF;font-family:sans-serif;font-size:14px;font-weight:bold;">
+																		      ACCEDE AL E-BOOK
+																		     </center>
+																		      </v:roundrect>
+																		      <![endif]-->
+												<!--[if !mso] -->
+												<table cellspacing="0" cellpadding="0">
+													<tr>
+														<td
+															style="border-radius: 99px; background-color: #33AD73; color: #FFFFFF; padding: 14px 28px; text-align: center;"
+															class="button--td mobile-btn">
+															<a href="https://www.fromdoppler.com/wp-content/uploads/2023/05/Ebook-Estrategias-para-potenciar-tus-ventas-en-Marketplaces.pdf"
+																style="color: #FFFFFF; font-size:14px; font-weight: bold; font-family:sans-serif; text-decoration: none; width:100%; display:inline-block"
+																target="_blank"><span>ACCEDE AL E-BOOK</span></a>
+														</td>
+													</tr>
+												</table>
+												<!--[endif]-->
+											</div>
+											<!-- Button : END -->
+										</td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+						<tr>
+							<td align="center" valign="top">
+								<table width="600" cellpadding="0" cellspacing="0" border="0" class="container">
+									<tr>
+										<td height="40" style="font-size:40px; line-height:40px;">&nbsp;</td>
+									</tr>
+									<tr>
+										<td align="center" valign="top" style="font-family:  Helvetica, Arial, sans-serif;">
+											<p
+												style="Margin: 0;font-size: 15px;line-height: 25px;color:#333333;font-weight: 700;max-width: 510px;">
+												¡Descárgalo y comienza a aplicar estas técnicas para escalar tus ventas ahora! 🚀
+											</p>
+										</td>
+									</tr>
+									<tr>
+										<td height="30" style="font-size:30px; line-height:30px;">&nbsp;</td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+		</table>
+
+		<table width="100%" border="0" cellpadding="0" cellspacing="0">
+			<tr>
+				<td align="center" valign="top" style="background-color: #FFFFFF;">
+					<table width="640" cellpadding="0" cellspacing="0" border="0" class="wrapper">
+						<tr>
+							<td align="center" valign="top">
+								<table width="600" cellpadding="0" cellspacing="0" border="0" class="container">
+									<tr>
+										<td align="center" valign="top">
+											<table width="600" cellpadding="0" cellspacing="0" border="0" class="container">
+												<tr>
+													<td height="50" style="font-size:50px; line-height:50px;">
+														&nbsp;</td>
+												</tr>
+												<tr>
+													<td align="left" valign="top">
+
+														<table width="185" border="0" cellpadding="0" cellspacing="0">
+															<tbody>
+																<tr>
+																	<td width="37" align="left">
+																		<a href="https://twitter.com/fromDoppler" target="_blank"><img
+																				src="twitter-icon.png" style="width: 100%; max-width: 32px !important;"
+																				width="32" class="img" alt="Twitter" /></a>
+																	</td>
+																	<td width="37" align="left">
+																		<a href="https://www.facebook.com/DopplerEmailMarketing" target="_blank"><img
+																				src="facebook-icon.png" style="width: 100%; max-width: 32px !important;"
+																				width="32" class="img" alt="Facebook" /></a>
+																	</td>
+																	<td width="37" align="left">
+																		<a href="https://www.linkedin.com/company/228261" target="_blank"><img
+																				src="linkedin-icon.png" style="width: 100%; max-width: 32px !important;"
+																				width="32" class="img" alt="Linkedin" /></a>
+																	</td>
+																	<td width="37" align="left">
+																		<a href="https://www.youtube.com/user/FromDoppler" target="_blank"><img
+																				src="youtube-icon.png" style="width: 100%; max-width: 32px !important;"
+																				width="32" class="img" alt="Youtube" /></a>
+																	</td>
+																	<td width="37" align="left">
+																		<a href="https://www.instagram.com/fromdoppler" target="_blank"><img
+																				src="instagram-icon.png" style="width: 100%; max-width: 32px !important;"
+																				width="32" class="img" alt="Instagram" /></a>
+																	</td>
+																</tr>
+															</tbody>
+														</table>
+													</td>
+												</tr>
+												<tr>
+													<td align="left" style="padding: 25px 0 0;">
+														<p style="
+														        padding: 0;
+														        margin: 0;
+														        font-family: Helvetica, Arial, sans-serif;
+														        font-size: 11px;
+														        line-height: 16px;
+														        color: #999999;
+														      ">
+															&copy;
+															<a href="https://www.fromdoppler.com" target="_blank"
+																style="text-decoration: none; color: #33AD73;font-weight: bold;"
+																class="link-hover ">Doppler
+																LLC</a>. Todos
+															los derechos reservados.
+														</p>
+													</td>
+												</tr>
+												<tr>
+													<td height="20" style="font-size:20px; line-height:20px;">&nbsp;</td>
+												</tr>
+												<tr>
+													<td align="left" valign="top">
+														<p style="
+														          padding: 0;
+														          margin: 0;
+														          font-family: Helvetica, Arial, sans-serif;
+														         font-size: 11px;
+														           line-height: 14px;
+														          color: #999999;
+														        ">
+															Te informamos que los datos personales
+															contenidos en esta comunicaci&oacute;n fueron recogidos
+															en nuestro Formulario de registro, cuyo
+															responsable es Doppler LLC, dado que prestaste
+															tu consentimiento para recibir nuestras
+															comunicaciones. Al registrarte como usuario,
+															acept&aacute;s y consent&iacute;s que tus datos sean
+															almacenados por nuestra plataforma, cuyos
+															servidores est&aacute;n en Estados Unidos, para
+															gestionar el env&iacute;o de las comunicaciones
+															correspondientes. Podr&aacute;s ejercer tus derechos de
+															acceso, rectificaci&oacute;n, limitaci&oacute;n y eliminaci&oacute;n
+															de los datos escribiendo a
+															<a href="mailto:legal@fromdoppler.com" target="_blank"
+																style="text-decoration: none; color: #33AD73;font-weight: bold;"
+																class="link-hover">legal@fromdoppler.com</a>,
+															as&iacute; como presentar una reclamaci&oacute;n ante una
+															autoridad de control. Si no dese&aacute;s seguir
+															recibiendo nuestras Campa&ntilde;as, pod&eacute;s darte de
+															baja autom&aacute;ticamente haciendo clic en el enlace
+															que se encuentra debajo. Pod&eacute;s consultar
+															informaci&oacute;n adicional y detallada sobre la
+															protecci&oacute;n de tus datos personales en nuestra
+															<a href="https://www.fromdoppler.com/legal/privacidad" target="_blank"
+																style="text-decoration: none; color: #33AD73; font-weight: bold;"
+																class="link-hover">Pol&iacute;tica de
+																Privacidad</a>.
+														</p>
+													</td>
+												</tr>
+												<tr>
+													<td height="20" style="font-size:20px; line-height:20px;">&nbsp;</td>
+												</tr>
+											</table>
+										</td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+		</table>
+	</center>
+</body>
+
+</html>

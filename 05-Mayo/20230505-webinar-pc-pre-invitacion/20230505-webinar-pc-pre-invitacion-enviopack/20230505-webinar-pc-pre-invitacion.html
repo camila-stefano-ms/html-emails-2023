@@ -1,0 +1,811 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="es">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="x-apple-disable-message-reformatting">
+	<meta content="telephone=no" name="format-detection">
+	<title>Doppler</title>
+	<style>
+		html,
+		body {
+			margin: 0 auto !important;
+			padding: 0 !important;
+			background-color: #ffffff;
+		}
+
+		* {
+			-ms-text-size-adjust: 100%;
+			-webkit-text-size-adjust: 100%;
+		}
+
+		div[style*="margin: 16px 0"] {
+			margin: 0 !important;
+		}
+
+		table,
+		td {
+			mso-table-lspace: 0pt !important;
+			mso-table-rspace: 0pt !important;
+		}
+
+		table table table {
+			table-layout: auto;
+		}
+
+		img {
+			-ms-interpolation-mode: bicubic;
+			border: 0;
+			height: auto;
+			line-height: 100%;
+			outline: none;
+			text-decoration: none;
+		}
+
+		/* Hover styles for buttons */
+		.button--td:hover,
+		.button--a:hover {
+			background: #008046 !important;
+		}
+
+		.link-hover:hover {
+			color: #008046 !important;
+		}
+
+		*[x-apple-data-detectors],
+		.x-gmail-data-detectors,
+		.x-gmail-data-detectors *,
+		.aBn {
+			border-bottom: 0 !important;
+			cursor: default !important;
+			color: inherit !important;
+			text-decoration: none !important;
+			font-size: inherit !important;
+			font-family: inherit !important;
+			font-weight: inherit !important;
+			line-height: inherit !important;
+		}
+
+		th {
+			font-weight: normal;
+		}
+
+		/* MEDIA QUERIES */
+		@media all and (max-width:480px) {
+			.wrapper {
+				width: 320px !important;
+				padding: 0 !important;
+			}
+
+			.container {
+				width: 300px !important;
+				padding: 0 !important;
+			}
+
+			.mobile {
+				width: 300px !important;
+				display: block !important;
+				padding: 0 !important;
+			}
+
+			.mobile-btn {
+				width: 240px !important;
+				display: block !important;
+			}
+
+			.img {
+				width: 100% !important;
+				height: auto !important;
+			}
+
+			.mobileOff {
+				width: 0px !important;
+				display: none !important;
+			}
+
+			.mobileOn {
+				display: block !important;
+				max-height: none !important;
+			}
+
+			.mobile-pl,
+			.mobile-pl-btn,
+			u+.body .mobile-pl,
+			u+.body .mobile-pl-btn {
+				padding-left: 0 !important;
+			}
+
+			.mobile-pt,
+			u+.body .mobile-pt {
+				padding-top: 20px !important;
+			}
+
+			.mobile-pr,
+			u+.body .mobile-pr {
+				padding-right: 0px !important;
+			}
+
+			.mobile-mr,
+			u+.body .mobile-mr {
+				margin-right: 0px !important;
+			}
+
+			.mobilePadding {
+				padding-left: 3% !important;
+				padding-right: 3% !important;
+				width: 100% !important;
+			}
+
+			.mobilePaddingRight {
+				padding-right: 55px !important;
+			}
+
+			.mobileTitle {
+				font-size: 28px !important;
+				line-height: 32px !important;
+			}
+
+			u~div .wrapper {
+				width: 100vw !important;
+			}
+
+			.mobile-center,
+			u+.body .mobile-center {
+				text-align: center !important;
+			}
+		}
+	</style>
+	<!--[if gte mso 9]>
+      <xml>
+        <o:OfficeDocumentSettings>
+          <o:AllowPNG/>
+          <o:PixelsPerInch>96</o:PixelsPerInch>
+        </o:OfficeDocumentSettings>
+      </xml>
+      <![endif]-->
+</head>
+
+<body style="margin:0; padding:0;">
+	<center>
+		<table width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation">
+			<tr>
+				<td align="center" valign="top" style="background-color: #FFFFFF;">
+					<table width="640" cellpadding="0" cellspacing="0" border="0" class="wrapper">
+						<tr>
+							<td align="center" valign="top">
+								<table width="600" cellpadding="0" cellspacing="0" border="0" class="container">
+									<tr>
+										<td height="40" style="font-size:40px; line-height:40px;">&nbsp;</td>
+									</tr>
+									<tr>
+										<td align="center" valign="top" class="mobile">
+											<a href="#" style="cursor: default;"><img src="logos.png" alt="Logo de Doppler y partner"
+													width="320" style="width:100%;max-width:320px !important" class="mobile"></a>
+										</td>
+									</tr>
+									<tr>
+										<td height="40" style="font-size:40px; line-height:40px;">&nbsp;</td>
+									</tr>
+									<tr>
+										<td height="20" style="font-size:20px; line-height:20px;" class="mobileOff">&nbsp;</td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+		</table>
+
+		<table width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation">
+			<tr>
+				<td align="center" valign="top" style="background-color: #FFFFFF">
+					<table width="640" cellpadding="0" cellspacing="0" border="0" class="wrapper">
+						<tr>
+							<td align="center" valign="top" style="background-color: #FFFFFF">
+								<table width="600" cellpadding="0" cellspacing="0" border="0" class="container">
+									<tr>
+										<th align="center" valign="top" class="mobile" width="200">
+											<table width="200" cellpadding="0" cellspacing="0" border="0" class="container">
+												<tr>
+													<th align="center" valign="top" style="font-family:  Helvetica, Arial, sans-serif;">
+														<p style="Margin: 0; "><a href="#" style="cursor: default;"><img src="asset.png"
+																	alt="Asset de carrito de compra" width="149"
+																	style="width:100%;max-width:149px !important;" class="mobile-margin-0"></a>
+														</p>
+													</th>
+												</tr>
+											</table>
+										</th>
+										<th align="left" valign="top" class="mobile " width="400">
+											<table width="400" cellpadding="0" cellspacing="0" border="0" class="container">
+												<tr>
+													<th align="left" valign="top" style="font-family:  Helvetica, Arial, sans-serif;"
+														class="mobile-center mobile-pt">
+														<p style="Margin: 0;font-size: 15px;line-height: 36px;color:#333333;font-weight: 400; ">
+															WORKSHOP ONLINE Y GRATUITO</p>
+														<p
+															style="Margin: 0;font-size: 30px;line-height: 36px;color:#333333;font-weight: 700; font-family:  Helvetica, Arial, sans-serif;">
+															Email Marketing de 0 a 100
+														</p>
+														<p style="Margin: 0;font-size: 15px;line-height: 15px;">&nbsp;</p>
+														<p
+															style="Margin: 0;font-size: 15px;line-height: 24px;color:#333333;font-weight: 400; font-family:  Helvetica, Arial, sans-serif;">
+															Iníciate en Email Marketing asistiendo a este <strong>Workshop práctico y
+																gratuito</strong>.
+														</p>
+													</th>
+												</tr>
+											</table>
+										</th>
+									</tr>
+								</table>
+							</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+		</table>
+
+		<table width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation">
+			<tr>
+				<td align="center" valign="top" style="background-color: #FFFFFF">
+					<table width="640" cellpadding="0" cellspacing="0" border="0" class="wrapper">
+						<tr>
+							<td align="center" valign="top" style="background-color: #FFFFFF">
+								<table width="600" cellpadding="0" cellspacing="0" border="0" class="container">
+									<tr>
+										<td height="40" style="font-size:40px; line-height:40px;">&nbsp;</td>
+									</tr>
+									<tr>
+										<td align="left" valign="top" class="mobile-center">
+											<p
+												style="Margin: 0;font-size: 15px;line-height: 25px;color:#333333;font-weight: 400; font-family:  Helvetica, Arial, sans-serif; max-width: 590px;">
+												¿Quieres hacer Email Marketing pero no sabes por dónde empezar? ¿Tienes una base de contactos
+												muy pequeña y piensas que
+												no vale la pena? ¿Tu único canal de ventas son las redes sociales y quieres sumar un canal que
+												multiplique tus
+												conversiones?
+											</p>
+										</td>
+									</tr>
+									<tr>
+										<td height="25" style="font-size:25px; line-height:25px;">&nbsp;</td>
+									</tr>
+									<tr>
+										<td align="left" valign="top" class="mobile-center">
+											<p
+												style="Margin: 0;font-size: 15px;line-height: 25px;color:#333333;font-weight: 400; font-family:  Helvetica, Arial, sans-serif; max-width: 590px;">
+												Asiste a este <strong>Workshop gratuito</strong> que ofrece Ennio Castillo de Doppler y te irás
+												con tus Formularios de captación armados,
+												tu primera Newsletter, una automatización de bienvenida para todos tu contactos y un calendario
+												de envíos planificado.
+											</p>
+										</td>
+									</tr>
+									<tr>
+										<td height="30" style="font-size:30px; line-height:30px;">&nbsp;</td>
+									</tr>
+									<tr>
+										<td align="left" valign="top"
+											style="font-family:  Helvetica, Arial, sans-serif;font-size: 15px;color:#FFFFFF;font-weight: 400;"
+											class="mobile">
+											<!-- Button : BEGIN -->
+											<div>
+												<!--[if mso]>  <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="https://evento.fromdoppler.com/ws-emprendimiento-email-marketing-pc/?utm_source=enviopack&utm_campaign=cyw-pc-ws-email-invitacion-may23" style="height:47px;v-text-anchor:middle;width:215px;" arcsize="50%" strokecolor="#33AD73" strokeweight="1px" fillcolor="#33AD73" >	<w:anchorlock/><center style="color:#ffffff;font-family:sans-serif;font-size:15px;font-weight:bold;">REGÍSTRATE AHORA</center></v:roundrect><![endif]-->
+												<!--[if !mso] -->
+												<table cellspacing="0" cellpadding="0">
+													<tr>
+														<td
+															style="border-radius: 99px; background-color: #33AD73; color: #ffffff; padding: 15px 30px; text-align: center;"
+															class="button--td mobile-btn">
+															<a href="https://evento.fromdoppler.com/ws-emprendimiento-email-marketing-pc/?utm_source=enviopack&utm_campaign=cyw-pc-ws-email-invitacion-may23"
+																style="color: #ffffff; font-size:15px; font-weight: bold; font-family:sans-serif; text-decoration: none; width:100%; display:inline-block"
+																target="_blank"><span>REGÍSTRATE AHORA</span></a>
+														</td>
+													</tr>
+												</table>
+												<!--[endif]-->
+											</div>
+											<!-- Button : END -->
+										</td>
+									</tr>
+									<tr>
+										<td height="40" style="font-size:40px; line-height:40px;">&nbsp;</td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+		</table>
+
+		<table width="100%" border="0" cellpadding="0" cellspacing="0">
+			<tr>
+				<td align="center" valign="top" style="background-color: #F8F8F8;">
+					<table width="640" cellpadding="0" cellspacing="0" border="0" class="wrapper">
+						<tr>
+							<td align="center" valign="top">
+								<table width="600" cellpadding="0" cellspacing="0" border="0" class="container">
+									<tr>
+										<td align="center" valign="top" style="background-color: #F8F8F8">
+											<table width="600" cellpadding="0" cellspacing="0" border="0" class="container">
+												<tr>
+													<td height="40" style="font-size:40px; line-height:40px;">&nbsp;</td>
+												</tr>
+												<tr>
+													<td align="center" valign="top" style="font-family:  Helvetica, Arial, sans-serif;">
+														<p style="Margin: 0;font-size: 15px;line-height: 25px;color:#333333;font-weight: 700; ">Todo
+															lo que necesitas saber sobre el evento
+														</p>
+													</td>
+												</tr>
+											</table>
+										</td>
+									</tr>
+									<tr>
+										<td align="center" valign="top" style="background-color: #F8F8F8">
+											<table width="600" cellpadding="0" cellspacing="0" border="0" class="container">
+												<tr>
+													<td height="40" style="font-size:40px; line-height:40px;">&nbsp;</td>
+												</tr>
+												<tr>
+													<td align="center" valign="top" style="font-family:  Helvetica, Arial, sans-serif;">
+														<p style="Margin: 0;font-size: 25px;line-height: 35px;color:#333333;font-weight: 400; ">
+															Primera parte
+														</p>
+													</td>
+												</tr>
+												<tr>
+													<td align="center" valign="top" style="border-bottom: 1px solid #666666;">
+														<p style="Margin: 0;font-size: 5px;line-height: 5px;">&nbsp;</p>
+													</td>
+												</tr>
+												<tr>
+													<td height="15" style="font-size:15px; line-height:15px;">&nbsp;</td>
+												</tr>
+												<tr>
+													<td align="left" valign="top" style="font-family:  Helvetica, Arial, sans-serif;"
+														class="mobile-center">
+														<p style="Margin: 0;font-size: 15px;line-height: 25px;color:#333333;font-weight: 400; ">
+															<strong>Cuándo:</strong> ¡Ahora mismo! Regístrate y accede al vídeo. También te lo
+															enviaremos a tu Email para que lo puedas ver cuando
+															quieras.
+														</p>
+														<p style="margin: 0; font-size: 25px; line-height: 25px;">&nbsp;</p>
+														<p style="Margin: 0;font-size: 15px;line-height: 25px;color:#333333;font-weight: 400; ">
+															<strong>Dónde:</strong> Online
+														</p>
+														<p style="margin: 0; font-size: 25px; line-height: 25px;">&nbsp;</p>
+														<p style="Margin: 0;font-size: 15px;line-height: 25px;color:#333333;font-weight: 700; ">Qué
+															haremos en el Workshop:
+														</p>
+													</td>
+												</tr>
+											</table>
+										</td>
+									</tr>
+									<tr>
+										<td align="center" valign="top">
+											<table width="580" cellpadding="0" cellspacing="0" border="0" class="container">
+												<tr>
+													<td height="40" style="font-size:40px; line-height:40px;">&nbsp;</td>
+												</tr>
+												<tr>
+													<th width="40" align="center" valign="top" class="mobile mobile-center">
+														<p
+															style="font-family:  Helvetica, Arial, sans-serif;font-weight: 400; line-height: 20px; color:#333333; Margin: 0">
+															<img src="1.png" alt="Emoji pin" width="20"
+																style="width:100%;max-width:20px !important; vertical-align: top;">
+														</p>
+													</th>
+													<th width="540" align="left" valign="top" class="mobile mobile-center mobile-pt">
+														<p
+															style="font-family:  Helvetica, Arial, sans-serif;font-weight: 400; font-size: 15px;line-height: 20px;color:#333333; Margin: 0;">
+															Te explicamos brevemente por qué el Email Marketing sigue siendo el canal digital que más
+															ventas genera
+														</p>
+													</th>
+												</tr>
+												<tr>
+													<td height="25" style="font-size:25px; line-height:25px;">&nbsp;</td>
+												</tr>
+												<tr>
+													<th width="40" align="center" valign="top" class="mobile mobile-center">
+														<p
+															style="font-family:  Helvetica, Arial, sans-serif;font-weight: 400; line-height: 20px; color:#333333; Margin: 0">
+															<img src="1.png" alt="Emoji pin" width="20"
+																style="width:100%;max-width:20px !important; vertical-align: top;">
+														</p>
+													</th>
+													<th width="540" align="left" valign="top" class="mobile mobile-center mobile-pt">
+														<p
+															style="font-family:  Helvetica, Arial, sans-serif;font-weight: 400; font-size: 15px;line-height: 20px;color:#333333; Margin: 0;">
+															Planificamos juntos tus Lead Magnets para que atraigas más prospectos en menos tiempo
+														</p>
+													</th>
+												</tr>
+												<tr>
+													<td height="25" style="font-size:25px; line-height:25px;">&nbsp;</td>
+												</tr>
+												<tr>
+													<th width="40" align="center" valign="top" class="mobile mobile-center">
+														<p
+															style="font-family:  Helvetica, Arial, sans-serif;font-weight: 400; line-height: 20px; color:#333333; Margin: 0">
+															<img src="1.png" alt="Emoji pin" width="20"
+																style="width:100%;max-width:20px !important; vertical-align: top;">
+														</p>
+													</th>
+													<th width="540" align="left" valign="top" class="mobile mobile-center mobile-pt">
+														<p
+															style="font-family:  Helvetica, Arial, sans-serif;font-weight: 400; font-size: 15px;line-height: 20px;color:#333333; Margin: 0;">
+															Diseñamos tus Formularios para captar potenciales clientes
+														</p>
+													</th>
+												</tr>
+												<tr>
+													<td height="25" style="font-size:25px; line-height:25px;">&nbsp;</td>
+												</tr>
+												<tr>
+													<th width="40" align="center" valign="top" class="mobile mobile-center">
+														<p
+															style="font-family:  Helvetica, Arial, sans-serif;font-weight: 400; line-height: 20px; color:#333333; Margin: 0">
+															<img src="1.png" alt="Emoji pin" width="20"
+																style="width:100%;max-width:20px !important; vertical-align: top;">
+														</p>
+													</th>
+													<th width="540" align="left" valign="top" class="mobile mobile-center mobile-pt">
+														<p
+															style="font-family:  Helvetica, Arial, sans-serif;font-weight: 400; font-size: 15px;line-height: 20px;color:#333333; Margin: 0;">
+															Creamos tu primer Automation para dar la bienvenida a tus nuevos Contactos
+														</p>
+													</th>
+												</tr>
+												<tr>
+													<td height="40" style="font-size:40px; line-height:40px;">&nbsp;</td>
+												</tr>
+											</table>
+										</td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+		</table>
+
+		<table width="100%" border="0" cellpadding="0" cellspacing="0">
+			<tr>
+				<td align="center" valign="top" style="background-color: #F8F8F8;">
+					<table width="640" cellpadding="0" cellspacing="0" border="0" class="wrapper">
+						<tr>
+							<td align="center" valign="top">
+								<table width="600" cellpadding="0" cellspacing="0" border="0" class="container">
+									<tr>
+										<td align="center" valign="top" style="background-color: #F8F8F8">
+											<table width="600" cellpadding="0" cellspacing="0" border="0" class="container">
+												<tr>
+													<td height="20" style="font-size:20px; line-height:20px;">&nbsp;</td>
+												</tr>
+												<tr>
+													<td align="center" valign="top" style="font-family:  Helvetica, Arial, sans-serif;">
+														<p style="Margin: 0;font-size: 25px;line-height: 35px;color:#333333;font-weight: 400; ">
+															Segunda parte
+														</p>
+													</td>
+												</tr>
+												<tr>
+													<td align="center" valign="top" style="border-bottom: 1px solid #666666;">
+														<p style="Margin: 0;font-size: 5px;line-height: 5px;">&nbsp;</p>
+													</td>
+												</tr>
+												<tr>
+													<td height="15" style="font-size:15px; line-height:15px;">&nbsp;</td>
+												</tr>
+												<tr>
+													<td align="left" valign="top" style="font-family:  Helvetica, Arial, sans-serif;"
+														class="mobile-center">
+														<p style="Margin: 0;font-size: 15px;line-height: 25px;color:#333333;font-weight: 400; ">
+															<strong>Fecha:</strong> 8 de junio. <strong>Hora:</strong> 13hs ARG - 10hs MX - 11hs COL
+														</p>
+														<p style="margin: 0; font-size: 25px; line-height: 25px;">&nbsp;</p>
+														<p style="Margin: 0;font-size: 15px;line-height: 25px;color:#333333;font-weight: 400; ">
+															<strong>Dónde:</strong> Online
+														</p>
+														<p style="margin: 0; font-size: 25px; line-height: 25px;">&nbsp;</p>
+														<p style="Margin: 0;font-size: 15px;line-height: 25px;color:#333333;font-weight: 400; ">
+															<strong>Cómo:</strong> Te llegará un enlace ese día a tu casilla de correo
+														</p>
+														<p style="margin: 0; font-size: 25px; line-height: 25px;">&nbsp;</p>
+														<p style="Margin: 0;font-size: 15px;line-height: 25px;color:#333333;font-weight: 700; ">Qué
+															haremos en el Workshop:
+														</p>
+													</td>
+												</tr>
+											</table>
+										</td>
+									</tr>
+									<tr>
+										<td align="center" valign="top">
+											<table width="580" cellpadding="0" cellspacing="0" border="0" class="container">
+												<tr>
+													<td height="40" style="font-size:40px; line-height:40px;">&nbsp;</td>
+												</tr>
+												<tr>
+													<th width="40" align="center" valign="top" class="mobile mobile-center">
+														<p
+															style="font-family:  Helvetica, Arial, sans-serif;font-weight: 400; line-height: 20px; color:#333333; Margin: 0">
+															<img src="1.png" alt="Emoji pin" width="20"
+																style="width:100%;max-width:20px !important; vertical-align: top;">
+														</p>
+													</th>
+													<th width="540" align="left" valign="top" class="mobile mobile-center mobile-pt">
+														<p
+															style="font-family:  Helvetica, Arial, sans-serif;font-weight: 400; font-size: 15px;line-height: 20px;color:#333333; Margin: 0;">
+															Crearemos tu primera Newsletter
+														</p>
+													</th>
+												</tr>
+												<tr>
+													<td height="25" style="font-size:25px; line-height:25px;">&nbsp;</td>
+												</tr>
+												<tr>
+													<th width="40" align="center" valign="top" class="mobile mobile-center">
+														<p
+															style="font-family:  Helvetica, Arial, sans-serif;font-weight: 400; line-height: 20px; color:#333333; Margin: 0">
+															<img src="1.png" alt="Emoji pin" width="20"
+																style="width:100%;max-width:20px !important; vertical-align: top;">
+														</p>
+													</th>
+													<th width="540" align="left" valign="top" class="mobile mobile-center mobile-pt">
+														<p
+															style="font-family:  Helvetica, Arial, sans-serif;font-weight: 400; font-size: 15px;line-height: 20px;color:#333333; Margin: 0;">
+															Planificaremos tu calendario de envíos para que sepas qué enviar y cuándo hacerlo
+														</p>
+													</th>
+												</tr>
+												<tr>
+													<td height="25" style="font-size:25px; line-height:25px;">&nbsp;</td>
+												</tr>
+												<tr>
+													<th width="40" align="center" valign="top" class="mobile mobile-center">
+														<p
+															style="font-family:  Helvetica, Arial, sans-serif;font-weight: 400; line-height: 20px; color:#333333; Margin: 0">
+															<img src="1.png" alt="Emoji pin" width="20"
+																style="width:100%;max-width:20px !important; vertical-align: top;">
+														</p>
+													</th>
+													<th width="540" align="left" valign="top" class="mobile mobile-center mobile-pt">
+														<p
+															style="font-family:  Helvetica, Arial, sans-serif;font-weight: 400; font-size: 15px;line-height: 20px;color:#333333; Margin: 0;">
+															Te ayudaremos a segmentar tu Base de Datos para que envíes solo contenidos de valor a cada
+															usuario y tus conversiones se
+															multipliquen
+														</p>
+													</th>
+												</tr>
+												<tr>
+													<td height="40" style="font-size:40px; line-height:40px;">&nbsp;</td>
+												</tr>
+											</table>
+										</td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+		</table>
+
+		<table width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation">
+			<tr>
+				<td align="center" valign="top" style="background-color: #5C3A67">
+					<table width="640" cellpadding="0" cellspacing="0" border="0" class="wrapper">
+						<tr>
+							<td align="center" valign="top" style="background-color: #5C3A67">
+								<table width="600" cellpadding="0" cellspacing="0" border="0" class="container">
+									<tr>
+										<td height="40" style="font-size:40px; line-height:40px;">&nbsp;
+										</td>
+									</tr>
+									<tr>
+										<th align="left" valign="middle" width="310" class="mobile">
+											<table ellpadding="0" cellspacing="0" border="0" class="container">
+												<tr>
+													<td align="left" valign="top" class="mobile mobile-center"
+														style="font-family: Helvetica, Arial, sans-serif; color:#FFFFFF;">
+														<p
+															style="margin: 0; font-family: Helvetica, Arial, sans-serif;font-size: 17px;line-height: 25px;font-weight: 400;color:#FFFFFF; max-width: 305px;">
+															Asiste a ambos Workshops y en 2 horas tendrás tu estrategia de Email Marketing
+															funcionando.
+														</p>
+														<p style="margin: 0; font-size: 24px;line-height: 24px;">&nbsp;
+														</p>
+														<p
+															style="margin: 0; font-family: Helvetica, Arial, sans-serif;font-size: 15px;line-height: 25px;font-weight: 400;color:#FFFFFF;">
+															¡Se terminaron las excusas! Es hora de facturar :)
+														</p>
+													</td>
+												</tr>
+												<tr>
+													<td height="30" style="font-size:30px; line-height:30px;">&nbsp;
+													</td>
+												</tr>
+											</table>
+											<table ellpadding="0" cellspacing="0" border="0" class="container">
+												<tr>
+													<td align="left" valign="top"
+														style="font-family:  Helvetica, Arial, sans-serif;font-size: 15px;color:#FFFFFF;font-weight: 400;"
+														class="mobile">
+														<!-- Button : BEGIN -->
+														<div>
+															<!--[if mso]>  <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="https://evento.fromdoppler.com/ws-emprendimiento-email-marketing-pc/?utm_source=enviopack&utm_campaign=cyw-pc-ws-email-invitacion-may23" style="height:47px;v-text-anchor:middle;width:266px;" arcsize="50%" strokecolor="#33AD73" strokeweight="1px" fillcolor="#33AD73" >	<w:anchorlock/><center style="color:#ffffff;font-family:sans-serif;font-size:15px;font-weight:bold;">ASEGURA TU CUPO GRATIS</center></v:roundrect><![endif]-->
+															<!--[if !mso] -->
+															<table cellspacing="0" cellpadding="0">
+																<tr>
+																	<td
+																		style="border-radius: 99px; background-color: #33AD73; color: #ffffff; padding: 15px 30px; text-align: center;"
+																		class="button--td mobile-btn">
+																		<a href="https://evento.fromdoppler.com/ws-emprendimiento-email-marketing-pc/?utm_source=enviopack&utm_campaign=cyw-pc-ws-email-invitacion-may23"
+																			style="color: #ffffff; font-size:15px; font-weight: bold; font-family:sans-serif; text-decoration: none; width:100%; display:inline-block"
+																			target="_blank"><span>ASEGURA TU CUPO GRATIS</span></a>
+																	</td>
+																</tr>
+															</table>
+															<!--[endif]-->
+														</div>
+														<!-- Button : END -->
+													</td>
+												</tr>
+											</table>
+										</th>
+										<th align="center" valign="bottom" width="290" class="mobile">
+											<a href="#" style="cursor: default !important;"><img src="main.png"
+													alt="Imagen de persona usando una Notebook" width="212"
+													style="width:100%;max-width:212px !important;"></a>
+										</th>
+									</tr>
+									<tr>
+										<td height="40" style="font-size:40px; line-height:40px;">&nbsp;
+										</td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+				</td>
+			</tr>
+		</table>
+
+		<table width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation">
+			<tr>
+				<td align="center" valign="top" style="background-color: #FFFFFF;">
+					<table width="640" cellpadding="0" cellspacing="0" border="0" class="wrapper">
+						<tr>
+							<td align="center" valign="top">
+								<table width="600" cellpadding="0" cellspacing="0" border="0" class="container">
+									<tr>
+										<td align="center" valign="top">
+											<table width="600" cellpadding="0" cellspacing="0" border="0" class="container">
+												<tr>
+													<td height="60" style="font-size:60px; line-height:60px;">
+														&nbsp;</td>
+												</tr>
+												<tr>
+													<td align="left" valign="top">
+
+														<table width="185" border="0" cellpadding="0" cellspacing="0">
+															<tbody>
+																<tr>
+																	<td width="37" align="left">
+																		<a href="https://twitter.com/fromDoppler" target="_blank"><img
+																				src="twitter-icon.png" style="width: 100%; max-width: 32px !important;"
+																				width="32" class="img" alt="Twitter" /></a>
+																	</td>
+																	<td width="37" align="left">
+																		<a href="https://www.facebook.com/DopplerEmailMarketing" target="_blank"><img
+																				src="facebook-icon.png" style="width: 100%; max-width: 32px !important;"
+																				width="32" class="img" alt="Facebook" /></a>
+																	</td>
+																	<td width="37" align="left">
+																		<a href="https://www.linkedin.com/company/228261" target="_blank"><img
+																				src="linkedin-icon.png" style="width: 100%; max-width: 32px !important;"
+																				width="32" class="img" alt="Linkedin" /></a>
+																	</td>
+																	<td width="37" align="left">
+																		<a href="https://www.youtube.com/user/FromDoppler" target="_blank"><img
+																				src="youtube-icon.png" style="width: 100%; max-width: 32px !important;"
+																				width="32" class="img" alt="Youtube" /></a>
+																	</td>
+																	<td width="37" align="left">
+																		<a href="https://www.instagram.com/fromdoppler" target="_blank"><img
+																				src="instagram-icon.png" style="width: 100%; max-width: 32px !important;"
+																				width="32" class="img" alt="Instagram" /></a>
+																	</td>
+																</tr>
+															</tbody>
+														</table>
+													</td>
+												</tr>
+												<tr>
+													<td align="left" style="padding: 25px 0 0;">
+														<p style="
+														        padding: 0;
+														        margin: 0;
+														        font-family: Helvetica, Arial, sans-serif;
+														        font-size: 11px;
+														        line-height: 16px;
+														        color: #999999;
+														      ">
+															&copy;
+															<a href="https://www.fromdoppler.com/?utm_source=enviopack&utm_campaign=cyw-pc-ws-email-invitacion-may23"
+																target="_blank" style="text-decoration: none; color: #33AD73;font-weight: bold;"
+																class="link-hover ">Doppler
+																LLC</a>. Todos
+															los derechos reservados.
+														</p>
+													</td>
+												</tr>
+												<tr>
+													<td height="20" style="font-size:20px; line-height:20px;">&nbsp;</td>
+												</tr>
+												<tr>
+													<td align="left" valign="top">
+														<p style="
+														          padding: 0;
+														          margin: 0;
+														          font-family: Helvetica, Arial, sans-serif;
+														         font-size: 11px;
+														           line-height: 14px;
+														          color: #999999;
+														        ">
+															Te informamos que los datos personales
+															contenidos en esta comunicaci&oacute;n fueron recogidos
+															en nuestro Formulario de registro, cuyo
+															responsable es Doppler LLC, dado que prestaste
+															tu consentimiento para recibir nuestras
+															comunicaciones. Al registrarte como usuario,
+															acept&aacute;s y consent&iacute;s que tus datos sean
+															almacenados por nuestra plataforma, cuyos
+															servidores est&aacute;n en Estados Unidos, para
+															gestionar el env&iacute;o de las comunicaciones
+															correspondientes. Podr&aacute;s ejercer tus derechos de
+															acceso, rectificaci&oacute;n, limitaci&oacute;n y eliminaci&oacute;n
+															de los datos escribiendo a
+															<a href="mailto:legal@fromdoppler.com" target="_blank"
+																style="text-decoration: none; color: #33AD73;font-weight: bold;"
+																class="link-hover">legal@fromdoppler.com</a>,
+															as&iacute; como presentar una reclamaci&oacute;n ante una
+															autoridad de control. Si no dese&aacute;s seguir
+															recibiendo nuestras Campa&ntilde;as, pod&eacute;s darte de
+															baja autom&aacute;ticamente haciendo clic en el enlace
+															que se encuentra debajo. Pod&eacute;s consultar
+															informaci&oacute;n adicional y detallada sobre la
+															protecci&oacute;n de tus datos personales en nuestra
+															<a href="https://www.fromdoppler.com/legal/privacidad" target="_blank"
+																style="text-decoration: none; color: #33AD73; font-weight: bold;"
+																class="link-hover">Pol&iacute;tica de
+																Privacidad</a>.
+														</p>
+													</td>
+												</tr>
+												<tr>
+													<td height="20" style="font-size:20px; line-height:20px;">&nbsp;</td>
+												</tr>
+											</table>
+										</td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+		</table>
+	</center>
+</body>
+
+</html>

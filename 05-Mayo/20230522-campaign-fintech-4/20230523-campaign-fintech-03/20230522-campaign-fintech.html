@@ -1,0 +1,968 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="es">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="x-apple-disable-message-reformatting">
+	<title>Doppler</title>
+	<style>
+		html,
+		body {
+			margin: 0 auto !important;
+			padding: 0 !important;
+			background-color: #ffffff;
+		}
+
+		* {
+			-ms-text-size-adjust: 100%;
+			-webkit-text-size-adjust: 100%;
+		}
+
+		div[style*="margin: 16px 0"] {
+			margin: 0 !important;
+		}
+
+		table,
+		td {
+			mso-table-lspace: 0pt !important;
+			mso-table-rspace: 0pt !important;
+		}
+
+		table table table {
+			table-layout: auto;
+		}
+
+		img {
+			-ms-interpolation-mode: bicubic;
+			border: 0;
+			height: auto;
+			line-height: 100%;
+			outline: none;
+			text-decoration: none;
+		}
+
+		/* Hover styles for buttons */
+		.button--td:hover,
+		.button--a:hover {
+			background: #008046 !important;
+		}
+
+		.link-hover:hover {
+			color: #008046 !important;
+		}
+
+		*[x-apple-data-detectors],
+		.x-gmail-data-detectors,
+		.x-gmail-data-detectors *,
+		.aBn {
+			border-bottom: 0 !important;
+			cursor: default !important;
+			color: inherit !important;
+			text-decoration: none !important;
+			font-size: inherit !important;
+			font-family: inherit !important;
+			font-weight: inherit !important;
+			line-height: inherit !important;
+		}
+
+		th {
+			font-weight: normal;
+		}
+
+		.mobileOn {
+			display: none !important;
+			max-height: none !important;
+		}
+
+
+
+		/* MEDIA QUERIES */
+		@media all and (max-width:480px) {
+			.wrapper {
+				width: 320px !important;
+				padding: 0 !important;
+			}
+
+			.container {
+				width: 300px !important;
+				padding: 0 !important;
+			}
+
+			.mobile {
+				width: 300px !important;
+				display: block !important;
+				padding: 0 !important;
+			}
+
+			.mobile-btn {
+				width: 240px !important;
+				display: block !important;
+			}
+
+			.img {
+				width: 100% !important;
+				height: auto !important;
+			}
+
+			.mobileOff {
+				width: 0px !important;
+				display: none !important;
+			}
+
+			.mobileOn {
+				display: block !important;
+				max-height: none !important;
+			}
+
+			.mobile-pl,
+			.mobile-pl-btn,
+			u+.body .mobile-pl,
+			u+.body .mobile-pl-btn {
+				padding-left: 0 !important;
+			}
+
+			.mobile-pt,
+			u+.body .mobile-pt {
+				padding-top: 20px !important;
+			}
+
+			.mobile-pr,
+			u+.body .mobile-pr {
+				padding-right: 0px !important;
+			}
+
+			.mobile-margin-0,
+			u+.body .mobile-margin-0 {
+				margin: 0px !important;
+			}
+
+			.mobilePadding {
+				padding-left: 3% !important;
+				padding-right: 3% !important;
+				width: 100% !important;
+			}
+
+			u~div .wrapper {
+				width: 100vw !important;
+			}
+
+			.mobile-center,
+			u+.body .mobile-center {
+				text-align: center !important;
+			}
+
+			.mobile-border {
+				border-bottom: 2px solid #B58FC1 !important;
+				border-right: none !important;
+				border-left: none !important;
+			}
+		}
+	</style>
+	<!--[if gte mso 9]>
+      <xml>
+        <o:OfficeDocumentSettings>
+          <o:AllowPNG/>
+          <o:PixelsPerInch>96</o:PixelsPerInch>
+        </o:OfficeDocumentSettings>
+      </xml>
+      <![endif]-->
+</head>
+
+<body style="margin:0; padding:0;">
+	<center>
+		<table width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation">
+			<tr>
+				<td align="center" valign="top" style="background-color: #EEEEEE">
+					<table width="600" cellpadding="0" cellspacing="0" border="0" class="wrapper">
+						<tr>
+							<td align="center" valign="top" style="background-color: #310E44">
+								<table width="555" cellpadding="0" cellspacing="0" border="0" class="container">
+									<tr>
+										<td height="60" style="font-size:60px; line-height:60px;">&nbsp;</td>
+									</tr>
+									<tr>
+										<td align="center" valign="top">
+											<a href="#" style="cursor: default;"><img src="logo-doppler.png" alt="Logo de Doppler" width="144"
+													style="width:100%;max-width:144px !important;" class="mobile-margin-0"></a>
+										</td>
+									</tr>
+									<tr>
+										<td height="40" style="font-size:40px; line-height:40px;">&nbsp;</td>
+									</tr>
+									<tr>
+										<td align="center" valign="top" style="font-family:  Helvetica, Arial, sans-serif;">
+											<p style="Margin: 0;font-size: 15px;line-height: 22px;color:#FFFFFF;font-weight: 400; ">¡Hola, [[[Nombre]]]! Esperamos que te encuentres bien.</p>
+										</td>
+									</tr>
+									<tr>
+										<td height="20" style="font-size:20px; line-height:20px;">&nbsp;</td>
+									</tr>
+									<tr>
+										<td height="10" style="font-size:10px; line-height:10px;" class="mobileOff">&nbsp;</td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+		</table>
+
+		<table width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation">
+			<tr>
+				<td align="center" valign="top" style="background-color: #EEEEEE">
+					<table width="600" cellpadding="0" cellspacing="0" border="0" class="wrapper">
+						<tr>
+							<td align="center" valign="top" style="background-color: #310E44">
+								<table width="555" cellpadding="0" cellspacing="0" border="0" class="container">
+									<tr>
+										<th align="center" valign="middle" class="mobile" width="155">
+											<table width="155" cellpadding="0" cellspacing="0" border="0" class="container">
+												<tr>
+													<th align="center" valign="middle" style="font-family:  Helvetica, Arial, sans-serif;">
+														<p style="Margin: 0; "><a href="#" style="cursor: default;"><img src="asset.png"
+																	alt="Asset metrica" width="147" style="width:100%;max-width:147px !important;"
+																	class="mobile-margin-0"></a>
+														</p>
+													</th>
+												</tr>
+											</table>
+										</th>
+										<th align="left" valign="middle" class="mobile" width="400">
+											<table width="400" cellpadding="0" cellspacing="0" border="0" class="container">
+												<tr>
+													<th align="left" valign="middle" style="font-family:  Helvetica, Arial, sans-serif;"
+														class="mobile-center mobile-pt">
+														<p
+															style="Margin: 0;font-size: 15px;line-height: 22px;color:#FFFFFF;font-weight: 400; font-family:  Helvetica, Arial, sans-serif;">
+															Tanto tú como nosotros sabemos que <strong>la confianza y la credibilidad</strong> son fundamentales para
+															<strong>establecer relaciones sólidas
+																con nuestros clientes</strong>. Y más aún en la industria de banca, seguros y finanzas, donde los clientes depositan
+															su confianza
+															para manejar sus activos más valiosos.
+														</p>
+													</th>
+												</tr>
+											</table>
+										</th>
+									</tr>
+									<tr>
+										<td height="40" style="font-size:40px; line-height:40px;">&nbsp;</td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+		</table>
+
+		<table width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation">
+			<tr>
+				<td align="center" valign="top" style="background-color: #EEEEEE">
+					<table width="600" cellpadding="0" cellspacing="0" border="0" class="wrapper">
+						<tr>
+							<td align="center" valign="top" style="background-color: #FFFFFF">
+								<table width="555" cellpadding="0" cellspacing="0" border="0" class="container">
+									<tr>
+										<td height="40" style="font-size:40px; line-height:40px;">&nbsp;</td>
+									</tr>
+									<tr>
+										<td align="left" valign="top" style="font-family:  Helvetica, Arial, sans-serif;"
+											class="mobile-center">
+											<p style="Margin: 0;font-size: 15px;line-height: 22px;color:#333333;font-weight: 400; ">Por eso, <strong>la reputación de dominio es un factor esencial para transmitir confianza</strong> y, por consiguiente, para <strong>lograr el
+											éxito de tu negocio</strong>.
+											</p>
+											<p style="margin: 0; font-size: 22px; line-height: 22px;">&nbsp;</p>
+											<p style="Margin: 0;font-size: 15px;line-height: 22px;color:#333333;font-weight: 400; max-width: 500px;">A continuación, te contamos por qué este es un tema tan importante para tu industria:
+											</p>
+										</td>
+									</tr>
+									<tr>
+										<td height="40" style="font-size:40px; line-height:40px;">&nbsp;</td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+						<tr>
+							<td align="center" valign="top" style="background-color: #FFFFFF">
+								<table width="555" cellpadding="0" cellspacing="0" border="0" class="container">
+									<tr>
+										<th align="center" valign="top" class="mobile" width="60">
+											<table width="60" cellpadding="0" cellspacing="0" border="0" class="container">
+												<tr>
+													<th align="center" valign="top" style="font-family:  Helvetica, Arial, sans-serif;">
+														<a href="#" style="cursor: default;"><img src="asset-01.png" alt="" width="41"
+																style="width:100%;max-width:41px !important;" class="mobile-margin-0 "></a>
+													</th>
+												</tr>
+											</table>
+										</th>
+										<th align="left" valign="top" class="mobile mobile-center" width="495">
+											<table width="495" cellpadding="0" cellspacing="0" border="0" class="container">
+												<tr>
+													<th align="left" valign="top" style="font-family:  Helvetica, Arial, sans-serif;"
+														class="mobile-center mobile-pt">
+														<p
+															style="Margin: 0;font-size: 15px;line-height: 22px;color:#333333;font-weight: 400; "><strong>Entrega efectiva de correos electrónicos:</strong> La reputación de dominio influye en la capacidad de entrega de los correos electrónicos a la bandeja de entrada de los
+															destinatarios. Los proveedores de servicios de correo electrónico (como Gmail, Yahoo, etc.) utilizan métricas de
+															reputación de dominio para determinar la autenticidad y confiabilidad de los remitentes. Si un dominio tiene una buena
+															reputación, es más probable que tus Emails no caigan en Spam.
+														</p>
+													</th>
+												</tr>
+											</table>
+										</th>
+									</tr>
+									<tr>
+										<td height="20" style="font-size:20px; line-height:20px;">&nbsp;</td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+						<tr>
+							<td align="center" valign="top" style="background-color: #FFFFFF">
+								<table width="555" cellpadding="0" cellspacing="0" border="0" class="container">
+									<tr>
+										<th align="center" valign="top" class="mobile" width="60">
+											<table width="60" cellpadding="0" cellspacing="0" border="0" class="container">
+												<tr>
+													<th align="center" valign="top" style="font-family:  Helvetica, Arial, sans-serif;">
+														<a href="#" style="cursor: default;"><img src="asset-02.png" alt="" width="41"
+																style="width:100%;max-width:41px !important;" class="mobile-margin-0 "></a>
+													</th>
+												</tr>
+											</table>
+										</th>
+										<th align="left" valign="top" class="mobile mobile-center" width="495">
+											<table width="495" cellpadding="0" cellspacing="0" border="0" class="container">
+												<tr>
+													<th align="left" valign="top" style="font-family:  Helvetica, Arial, sans-serif;"
+														class="mobile-center mobile-pt">
+														<p
+															style="Margin: 0;font-size: 15px;line-height: 22px;color:#333333;font-weight: 400;"><strong>Evita ser marcado como correo no deseado:</strong> Los Emails enviados desde un dominio con mala reputación tienen más probabilidades de ser marcados como correo no
+															deseado o spam por los filtros de correo electrónico. Esto puede llevar a que los Emails legítimos de tu negocio no
+															lleguen a los destinatarios, lo que afecta negativamente la capacidad de comunicarte con tus clientes y prospectos.
+														</p>
+													</th>
+												</tr>
+											</table>
+										</th>
+									</tr>
+									<tr>
+										<td height="20" style="font-size:20px; line-height:20px;">&nbsp;</td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+						<tr>
+							<td align="center" valign="top" style="background-color: #FFFFFF">
+								<table width="555" cellpadding="0" cellspacing="0" border="0" class="container">
+									<tr>
+										<th align="center" valign="top" class="mobile" width="60">
+											<table width="60" cellpadding="0" cellspacing="0" border="0" class="container">
+												<tr>
+													<th align="center" valign="top" style="font-family:  Helvetica, Arial, sans-serif;">
+														<a href="#" style="cursor: default;"><img src="asset-03.png" alt="" width="40"
+																style="width:100%;max-width:40px !important;" class="mobile-margin-0 "></a>
+													</th>
+												</tr>
+											</table>
+										</th>
+										<th align="left" valign="top" class="mobile mobile-center" width="490">
+											<table width="490" cellpadding="0" cellspacing="0" border="0" class="container">
+												<tr>
+													<th align="left" valign="top" style="font-family:  Helvetica, Arial, sans-serif;"
+														class="mobile-center mobile-pt">
+														<p
+															style="Margin: 0;font-size: 15px;line-height: 22px;color:#333333;font-weight: 400;"><strong>Construcción de confianza y credibilidad:</strong> Los destinatarios estarán más dispuestos a abrir y leer tus correos electrónicos si confían en tu dominio y saben que
+															provienen de una fuente confiable.
+														</p>
+													</th>
+												</tr>
+											</table>
+										</th>
+									</tr>
+								</table>
+							</td>
+						</tr>
+						<tr>
+							<td align="center" valign="top" style="background-color: #FFFFFF">
+								<table width="555" cellpadding="0" cellspacing="0" border="0" class="container">
+									<tr>
+										<td height="20" style="font-size:20px; line-height:20px;">&nbsp;</td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+						<tr>
+							<td align="center" valign="top" style="background-color: #FFFFFF">
+								<table width="555" cellpadding="0" cellspacing="0" border="0" class="container">
+									<tr>
+										<th align="center" valign="top" class="mobile" width="60">
+											<table width="60" cellpadding="0" cellspacing="0" border="0" class="container">
+												<tr>
+													<th align="center" valign="top" style="font-family:  Helvetica, Arial, sans-serif;">
+														<a href="#" style="cursor: default;"><img src="asset-04.png" alt="" width="40"
+																style="width:100%;max-width:40px !important;" class="mobile-margin-0 "></a>
+													</th>
+												</tr>
+											</table>
+										</th>
+										<th align="left" valign="top" class="mobile mobile-center" width="495">
+											<table width="495" cellpadding="0" cellspacing="0" border="0" class="container">
+												<tr>
+													<th align="left" valign="top" style="font-family:  Helvetica, Arial, sans-serif;"
+														class="mobile-center mobile-pt">
+														<p style="Margin: 0;font-size: 15px;line-height: 22px;color:#333333;font-weight: 400;">
+															<strong>Cumplimiento normativo:</strong> La industria de bancas, finanzas y seguros está sujeta a regulaciones estrictas, como el Reglamento General de
+															Protección de Datos (GDPR) vigente en la Unión Europea. Mantener una buena reputación de dominio implica cumplir con
+															estas normativas y proteger la privacidad y seguridad de los datos de tus destinatarios.
+														</p>
+													</th>
+												</tr>
+											</table>
+										</th>
+									</tr>
+								</table>
+							</td>
+						</tr>
+						<tr>
+							<td align="center" valign="top" style="background-color: #FFFFFF">
+								<table width="555" cellpadding="0" cellspacing="0" border="0" class="container">
+									<tr>
+										<td height="20" style="font-size:20px; line-height:20px;">&nbsp;</td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+						<tr>
+							<td align="center" valign="top" style="background-color: #FFFFFF">
+								<table width="555" cellpadding="0" cellspacing="0" border="0" class="container">
+									<tr>
+										<th align="center" valign="top" class="mobile" width="60">
+											<table width="60" cellpadding="0" cellspacing="0" border="0" class="container">
+												<tr>
+													<th align="center" valign="top" style="font-family:  Helvetica, Arial, sans-serif;">
+														<a href="#" style="cursor: default;"><img src="asset-05.png" alt="" width="40"
+																style="width:100%;max-width:40px !important;" class="mobile-margin-0 "></a>
+													</th>
+												</tr>
+											</table>
+										</th>
+										<th align="left" valign="top" class="mobile mobile-center" width="495">
+											<table width="495" cellpadding="0" cellspacing="0" border="0" class="container">
+												<tr>
+													<th align="left" valign="top" style="font-family:  Helvetica, Arial, sans-serif;"
+														class="mobile-center mobile-pt">
+														<p style="Margin: 0;font-size: 15px;line-height: 22px;color:#333333;font-weight: 400;">
+															<strong>Mejora de la tasa de respuesta y conversión:</strong> Cuando tus correos electrónicos son percibidos como confiables, hay una mayor probabilidad de que sean abiertos y
+															leídos. Esto puede mejorar la tasa de respuesta y conversión de tus campañas de Email Marketing, lo que a su vez puede
+															tener un impacto positivo en el crecimiento y el éxito de tu negocio.
+														</p>
+													</th>
+												</tr>
+											</table>
+										</th>
+									</tr>
+								</table>
+							</td>
+						</tr>
+						<tr>
+							<td align="center" valign="top" style="background-color: #FFFFFF">
+								<table width="555" cellpadding="0" cellspacing="0" border="0" class="container">
+									<tr>
+										<td height="40" style="font-size:40px; line-height:40px;">&nbsp;</td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+		</table>
+
+		<table width="100%" border="0" cellpadding="0" cellspacing="0">
+				<tr>
+					<td align="center" valign="top" style="background-color: #EEEEEE;">
+						<table width="600" cellpadding="0" cellspacing="0" border="0" class="wrapper">
+							<tr>
+								<td align="center" valign="top" class="container" style="background-color: #310E44">
+									<table width="555" cellpadding="0" cellspacing="0" border="0" class="container">
+										<tr>
+											<td height="40" style="font-size:40px; line-height:40px;">&nbsp;</td>
+										</tr>
+										<tr>
+											<td align="center" valign="top" style="font-family:  Helvetica, Arial, sans-serif;">
+												<p style="Margin: 0;font-size: 25px;line-height: 26px;color:#FFFFFF;font-weight: 700; ">¿Quieres
+													conocer más sobre este tema?</p>
+											</td>
+										</tr>
+										<tr>
+											<td height="24" style="font-size:24px; line-height:24px;">&nbsp;</td>
+										</tr>
+										<tr>
+											<td align="center" valign="top" style="font-family:  Helvetica, Arial, sans-serif;">
+												<p
+													style="Margin: 0;font-size: 15px;line-height: 24px;color:#FFFFFF;font-weight: 400; max-width: 460px;">
+													Te compartimos un artículo de Doppler Relay para que profundices tus conocimientos.</p>
+											</td>
+										</tr>
+										<tr>
+											<td height="30" style="font-size:30px; line-height:30px;">&nbsp;</td>
+										</tr>
+										<tr>
+											<td align="center" valign="top"
+												style="font-family:  Helvetica, Arial, sans-serif;font-size: 13px;color:#FFFFFF;font-weight: 400;"
+												class="mobile">
+												<!-- Button : BEGIN -->
+												<div>
+													<!--[if mso]> <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="https://blog.dopplerrelay.com/importancia-de-la-reputacion-del-dominio/?utm_source=fromdoppler&utm_medium=email&utm_campaign=cm-fintech-nutricion-may2023&utm_term=email4&utm_content=blogdominio" style="height:47px;v-text-anchor:middle;width:138px;" arcsize="50%" strokecolor="#33AD73" strokeweight="1px" fillcolor="#33AD73" ><w:anchorlock/><center style="color:#ffffff;font-family:sans-serif;font-size:15px;font-weight:bold;">LEER MÁS</center></v:roundrect><![endif]--><!--[if !mso] -->
+													<table cellspacing="0" cellpadding="0" class="mobile">
+														<tr>
+															<td
+																style="border-radius: 99px; background-color: #33AD73; color: #ffffff; padding: 15px 30px; text-align: center;"
+																class="button--td mobile-btn">
+																<a href="https://blog.dopplerrelay.com/importancia-de-la-reputacion-del-dominio/?utm_source=fromdoppler&utm_medium=email&utm_campaign=cm-fintech-nutricion-may2023&utm_term=email4&utm_content=blogdominio"
+																	style="color: #ffffff; font-size:15px; font-weight: bold; font-family:sans-serif; text-decoration: none; width:100%; display:inline-block"
+																	target="_blank"><span>LEER MÁS</span></a>
+															</td>
+														</tr>
+													</table>
+													<!--[endif]-->
+												</div>
+												<!-- Button : END -->
+											</td>
+										</tr>
+										<tr>
+											<td height="40" style="font-size:40px; line-height:40px;">&nbsp;</td>
+										</tr>
+									</table>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+		</table>
+
+		<table width="100%" border="0" cellpadding="0" cellspacing="0">
+			<tr>
+				<td align="center" valign="top" style="background-color: #EEEEEE">
+					<table width="600" cellpadding="0" cellspacing="0" border="0" class="wrapper">
+						<tr>
+							<td align="center" valign="top" style="background-color: #FFFFFF">
+								<table width="555" cellpadding="0" cellspacing="0" border="0" class="container">
+									<tr>
+										<td height="40" style="font-size:40px; line-height:40px;">&nbsp;</td>
+									</tr>
+									<tr>
+										<td align="center" valign="top">
+											<a href="#" style="cursor: default;"><img src="asset-06.png" alt="imagen separadora" width="71"
+													style="width:100%;max-width:71px !important;" class="mobile-margin-0 "></a>
+										</td>
+									</tr>
+									<tr>
+										<td height="20" style="font-size:20px; line-height:20px;">&nbsp;</td>
+									</tr>
+									<tr>
+										<td align="center" valign="top" style="font-family:  Helvetica, Arial, sans-serif;">
+											<p
+												style="Margin: 0;font-size: 15px;line-height: 22px;color:#333333;font-weight: 700; ">¿Aún no has implementado Email & Automation Marketing en tu negocio?</p>
+											<p style="Margin: 0;font-size: 15px;line-height: 22px;color:#333333;font-weight: 400; ">Empieza ahora y olvídate del trabajo pesado, ¡ahorra tiempo y recursos!</p>
+										</td>
+									</tr>
+									<tr>
+										<td height="40" style="font-size:40px; line-height:40px;">&nbsp;</td>
+									</tr>
+									<tr>
+										<td align="center" valign="top" style="font-family:  Helvetica, Arial, sans-serif;">
+											<p style="Margin: 0;font-size: 25px;line-height: 32px;color:#333333;font-weight: 700; ">2x1 en Créditos*</p>
+											<p style="Margin: 0;font-size: 25px;line-height: 32px;color:#333333;font-weight: 700; ">20% OFF en Planes por Contactos*</p>
+											<p style="margin: 0; font-size: 22px; line-height: 22px;">&nbsp;</p>
+											<p style="Margin: 0;font-size: 15px;line-height: 22px;color:#333333;font-weight: 400; ">Código de descuento: FINT3CH
+											</p>
+										</td>
+									</tr>
+									<tr>
+										<td height="30" style="font-size:30px; line-height:30px;">&nbsp;</td>
+									</tr>
+									<tr>
+										<td align="center" valign="top"
+											style="font-family:  Helvetica, Arial, sans-serif;font-size: 13px;color:#FFFFFF;font-weight: 400;" class="mobile">
+											<!-- Button : BEGIN -->
+											<div>
+												<!--[if mso]> <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="http://app.fromdoppler.com/?origin=cm-fintech#/ingresa?redirect=/ControlPanel/AccountPreferences/UpgradeAccount?Plan=monthly&PromoCode=FINT3CH" style="height:47px;v-text-anchor:middle;width:236px;" arcsize="50%" strokecolor="#33AD73" strokeweight="1px" fillcolor="#33AD73" ><w:anchorlock/><center style="color:#ffffff;font-family:sans-serif;font-size:15px;font-weight:bold;">APLICA EL DESCUENTO</center></v:roundrect><![endif]--><!--[if !mso] -->
+												<table cellspacing="0" cellpadding="0" class="mobile">
+													<tr>
+														<td
+															style="border-radius: 99px; background-color: #33AD73; color: #ffffff; padding: 15px 30px; text-align: center;"
+															class="button--td mobile-btn">
+															<a href="http://app.fromdoppler.com/?origin=cm-fintech#/ingresa?redirect=/ControlPanel/AccountPreferences/UpgradeAccount?Plan=monthly&PromoCode=FINT3CH"
+																style="color: #ffffff; font-size:15px; font-weight: bold; font-family:sans-serif; text-decoration: none; width:100%; display:inline-block"
+																target="_blank"><span>APLICA EL DESCUENTO</span></a>
+														</td>
+													</tr>
+												</table>
+												<!--[endif]-->
+											</div>
+											<!-- Button : END -->
+										</td>
+									</tr>
+									<tr>
+										<td height="40" style="font-size:40px; line-height:40px;">&nbsp;</td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+		</table>
+
+
+		<table width="100%" border="0" cellpadding="0" cellspacing="0">
+			<tr>
+				<td align="center" valign="top" style="background-color: #EEEEEE">
+					<table width="600" cellpadding="0" cellspacing="0" border="0" class="wrapper">
+						<tr>
+							<td align="center" valign="top" style="background-color: #F4F4F4">
+								<table width="555" cellpadding="0" cellspacing="0" border="0" class="container">
+									<tr>
+										<td height="40" style="font-size:40px; line-height:40px;">&nbsp;</td>
+									</tr>
+									<tr>
+										<td align="center" valign="top"
+											style="font-family:  Helvetica, Arial, sans-serif; background-color: #F4F4F4"
+											class="mobile-center">
+											<p
+												style="Margin: 0;font-size: 13px;line-height: 21px;color:#333333;font-weight: 400; max-width: 550px;">
+												<em>¿No perteneces a la industria fintech?</em> No te preocupes, tenemos más campañas activas en
+												este momento. ¡Haz clic en tu sector para formar parte de cualquiera de
+												ellas!
+											</p>
+										</td>
+									</tr>
+									<tr>
+										<td height="40" style="font-size:40px; line-height:40px; background-color: #F4F4F4">&nbsp;</td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+		</table>
+
+		<table width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation">
+			<tr>
+				<td align="center" valign="top" style="background-color: #EEEEEE">
+					<table width="600" cellpadding="0" cellspacing="0" border="0" class="wrapper">
+						<tr>
+							<td align="center" valign="top" style="background-color: #F4F4F4">
+								<table width="500" cellpadding="0" cellspacing="0" border="0" class="container">
+									<tr>
+										<th align="center" valign="top" class="mobileOff" width="45">
+											&nbsp;
+										</th>
+										<th align="center" valign="top" class="mobile" width="90">
+											<table width="90" cellpadding="0" cellspacing="0" border="0" class="container">
+												<tr>
+													<th align="center" valign="top" style="font-family:  Helvetica, Arial, sans-serif;">
+														<p style="Margin: 0;font-size: 26px;line-height: 36px;color:#333333;font-weight: 400; "><a
+																href="#" style="cursor: default;"><img src="1.png" alt="imagen separadora" width="30"
+																	style="width:100%;max-width:30px !important;" class="mobile-margin-0 "></a>
+														</p>
+														<p style="Margin: 0;font-size: 13px;line-height: 33px;"><a
+																href="https://comercial.fromdoppler.com/landingsegmentacion/?utm_source=fromdoppler&utm_medium=email&utm_campaign=cm-fintech-nutricion&utm_term=industria&utm_content=ecommerce"
+																target="_blank" style="color: #33AD73;font-weight: bold; text-decoration: none;"
+																class="link-hover ">Ecommerce</a>
+														</p>
+													</th>
+												</tr>
+											</table>
+										</th>
+										<th align="center" valign="top" class="mobile" width="70">
+											&nbsp;
+										</th>
+										<th align="center" valign="top" class="mobile" width="90">
+											<table width="90" cellpadding="0" cellspacing="0" border="0" class="container">
+												<tr>
+													<th align="center" valign="top" style="font-family:  Helvetica, Arial, sans-serif;">
+														<p style="Margin: 0;font-size: 26px;line-height: 36px;color:#333333;font-weight: 400; "><a
+																href="#" style="cursor: default;"><img src="2.png" alt="imagen separadora" width="30"
+																	style="width:100%;max-width:30px !important;" class="mobile-margin-0 "></a>
+														</p>
+														<p style="Margin: 0;font-size: 13px;line-height: 33px;"><a
+																href="https://comercial.fromdoppler.com/landingsegmentacion/?utm_source=fromdoppler&utm_medium=email&utm_campaign=cm-fintech-nutricion&utm_term=industria&utm_content=educacion"
+																target="_blank" style="color: #33AD73;font-weight: bold; text-decoration: none;"
+																class="link-hover ">Educación</a>
+														</p>
+													</th>
+												</tr>
+											</table>
+										</th>
+										<th align="center" valign="top" class="mobile" width="70">
+											&nbsp;
+										</th>
+										<th align="center" valign="top" class="mobile" width="90">
+											<table width="90" cellpadding="0" cellspacing="0" border="0" class="container">
+												<tr>
+													<th align="center" valign="top" style="font-family:  Helvetica, Arial, sans-serif;">
+														<p style="Margin: 0;font-size: 26px;line-height: 36px;color:#333333;font-weight: 400; "><a
+																href="#" style="cursor: default;"><img src="3.png" alt="imagen separadora" width="30"
+																	style="width:100%;max-width:30px !important;" class="mobile-margin-0 "></a>
+														</p>
+														<p style="Margin: 0;font-size: 13px;line-height: 33px;"><a
+																href="https://comercial.fromdoppler.com/landingsegmentacion/?utm_source=fromdoppler&utm_medium=email&utm_campaign=cm-fintech-nutricion&utm_term=industria&utm_content=otra"
+																target="_blank" style="color: #33AD73;font-weight: bold; text-decoration: none;"
+																class="link-hover ">Otra</a>
+														</p>
+													</th>
+												</tr>
+											</table>
+										</th>
+										<th align="center" valign="top" class="mobileOff" width="45">
+											&nbsp;
+										</th>
+									</tr>
+
+								</table>
+							</td>
+						</tr>
+						<tr>
+							<td height="40" style="font-size:40px; line-height:40px; background-color: #F4F4F4">&nbsp;</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+		</table>
+
+		<table width="100%" border="0" cellpadding="0" cellspacing="0">
+			<tr>
+				<td align="center" valign="top" style="background-color: #EEEEEE">
+					<table width="600" cellpadding="0" cellspacing="0" border="0" class="wrapper">
+						<tr>
+							<td align="center" valign="top" style="background-color: #FFFFFF">
+								<table width="555" cellpadding="0" cellspacing="0" border="0" class="container">
+									<tr>
+										<td height="40" style="font-size:40px; line-height:40px;">&nbsp;</td>
+									</tr>
+									<tr>
+										<td align="left" valign="top"
+											style="font-family:  Helvetica, Arial, sans-serif; background-color: #FFFFFF"
+											class="mobile-center">
+											<p
+												style="Margin: 0;font-size: 15px;line-height: 22px;color:#333333;font-weight: 400;">
+												La reputación de dominio es fundamental para el éxito y el crecimiento sostenible de tu negocio.
+											</p>
+										</td>
+									</tr>
+									<tr>
+										<td height="22" style="font-size:22px; line-height:22px;">&nbsp;</td>
+									</tr>
+									<tr>
+										<td align="left" valign="top" style="font-family:  Helvetica, Arial, sans-serif; background-color: #FFFFFF"
+											class="mobile-center">
+											<p style="Margin: 0;font-size: 15px;line-height: 22px;color:#333333;font-weight: 400; ">
+											Si tienes alguna consulta, no dudes en ponerte en contacto con nosotros. ¡Estaremos encantados de ayudarte!
+											</p>
+										</td>
+									</tr>
+									<tr>
+										<td height="40" style="font-size:40px; line-height:40px;">&nbsp;</td>
+									</tr>
+									<tr>
+										<td align="left" valign="top"
+											style="font-family:  Helvetica, Arial, sans-serif; background-color: #FFFFFF"
+											class="mobile-center">
+											<p
+												style="Margin: 0;font-size: 15px;line-height: 22px;color:#333333;font-weight: 400; max-width: 550px;">
+												El Equipo de Doppler 😉
+											</p>
+										</td>
+									</tr>
+									<tr>
+										<td height="40" style="font-size:40px; line-height:40px;">&nbsp;</td>
+									</tr>
+									<tr>
+										<td height="29" style="font-size:29px; line-height:29px; border-top: 1px solid #D6D6D6;">&nbsp;</td>
+									</tr>
+									<tr>
+										<td align="center" valign="top" style="font-family:  Helvetica, Arial, sans-serif; background-color: #FFFFFF"
+											class="mobile-center">
+											<p style="Margin: 0;font-size: 12px;line-height: 22px;color:#999999;font-weight: 400;"><em>*Beneficio válido para Planes por Créditos hasta 400.000 Emails y Planes por Contactos hasta 100.000 Contactos. En el
+											caso de Plan por Contactos el descuento será aplicado durante el período de 3 meses. Código de descuento no válido para
+											recompras. Válido únicamente para cuentas gratuitas que deseen realizar la compra de Planes por primera vez. El código
+											estará vigente hasta el 01/08/2023.</em>
+											</p>
+										</td>
+									</tr>
+									<tr>
+										<td height="40" style="font-size:40px; line-height:40px;">&nbsp;</td>
+									</tr>
+									<tr>
+										<td align="center" valign="top">
+											<a href="#" style="cursor: default;"><img src="separador.png" alt="imagen separadora" width="21"
+													style="width:100%;max-width:21px !important;" class="mobile-margin-0 "></a>
+										</td>
+									</tr>
+									<tr>
+										<td height="40" style="font-size:40px; line-height:40px;">&nbsp;</td>
+									</tr>
+									<tr>
+										<td align="center" valign="top"
+											style="font-family:  Helvetica, Arial, sans-serif; background-color: #FFFFFF"
+											class="mobile-center">
+											<p style="Margin: 0;font-size: 13px;line-height: 18px;color:#333333;font-weight: 400; "><em>Atrae,
+													convierte y fideliza</em>
+											</p>
+										</td>
+									</tr>
+									<tr>
+										<td height="40" style="font-size:40px; line-height:40px; background-color: #FFFFFF">&nbsp;</td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+		</table>
+
+		<table width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation">
+			<tr>
+				<td align="center" valign="top" style="background-color: #EEEEEE">
+					<table width="600" cellpadding="0" cellspacing="0" border="0" class="wrapper">
+						<tr>
+							<td align="center" valign="top" style="background-color: #FFFFFF">
+								<table width="555" cellpadding="0" cellspacing="0" border="0" class="container">
+									<tr>
+										<td align="center" valign="top" style="border-top: 1px solid #A9A9A9;">
+											<table width="555" cellpadding="0" cellspacing="0" border="0" class="container">
+												<tr>
+													<td height="40" style="font-size:40px; line-height:40px;">
+														&nbsp;</td>
+												</tr>
+												<tr>
+													<td align="left" valign="top">
+														<table width="185" border="0" cellpadding="0" cellspacing="0">
+															<tbody>
+																<tr>
+																	<td width="37" align="left">
+																		<a href="https://twitter.com/fromDoppler" target="_blank"><img
+																				src="https://www.fromdoppler.com/images/emails/2022/rrss/twitter-icon.png"
+																				style="width: 100%; max-width: 32px !important;" width="32" class="img"
+																				alt="Twitter" /></a>
+																	</td>
+																	<td width="37" align="left">
+																		<a href="https://www.facebook.com/DopplerEmailMarketing" target="_blank"><img
+																				src="https://www.fromdoppler.com/images/emails/2022/rrss/facebook-icon.png"
+																				style="width: 100%; max-width: 32px !important;" width="32" class="img"
+																				alt="Facebook" /></a>
+																	</td>
+																	<td width="37" align="left">
+																		<a href="https://www.linkedin.com/company/228261" target="_blank"><img
+																				src="https://www.fromdoppler.com/images/emails/2022/rrss/linkedin-icon.png"
+																				style="width: 100%; max-width: 32px !important;" width="32" class="img"
+																				alt="Linkedin" /></a>
+																	</td>
+																	<td width="37" align="left">
+																		<a href="https://www.youtube.com/user/FromDoppler" target="_blank"><img
+																				src="https://www.fromdoppler.com/images/emails/2022/rrss/youtube-icon.png"
+																				style="width: 100%; max-width: 32px !important;" width="32" class="img"
+																				alt="Youtube" /></a>
+																	</td>
+																	<td width="37" align="left">
+																		<a href="https://www.instagram.com/fromdoppler" target="_blank"><img
+																				src="https://www.fromdoppler.com/images/emails/2022/rrss/instagram-icon.png"
+																				style="width: 100%; max-width: 32px !important;" width="32" class="img"
+																				alt="Instagram" /></a>
+																	</td>
+																</tr>
+															</tbody>
+														</table>
+													</td>
+												</tr>
+												<tr>
+													<td align="left" style="padding: 25px 0 0;">
+														<p style="
+																								        padding: 0;
+																								        margin: 0;
+																								        font-family: Helvetica, Arial, sans-serif;
+																								        font-size: 11px;
+																								        line-height: 16px;
+																								        color: #666666;
+																								      ">
+															&copy;
+															<a href="https://www.fromdoppler.com/" target="_blank"
+																style="color: #33AD73;font-weight: normal; text-decoration: none;"
+																class="link-hover ">Doppler
+																LLC</a>. Todos
+															los derechos reservados.
+														</p>
+													</td>
+												</tr>
+												<tr>
+													<td height="20" style="font-size:20px; line-height:20px;">&nbsp;</td>
+												</tr>
+												<tr>
+													<td align="left" valign="top">
+														<p style="
+																								          padding: 0;
+																								          margin: 0;
+																								          font-family: Helvetica, Arial, sans-serif;
+																								         font-size: 11px;
+																								           line-height: 14px;
+																								          color: #666666;
+																								        ">
+															Te informamos que los datos personales
+															contenidos en esta comunicaci&oacute;n fueron recogidos
+															en nuestro Formulario de registro, cuyo
+															responsable es Doppler LLC, dado que prestaste
+															tu consentimiento para recibir nuestras
+															comunicaciones. Al registrarte como usuario,
+															acept&aacute;s y consent&iacute;s que tus datos sean
+															almacenados por nuestra plataforma, cuyos
+															servidores est&aacute;n en Estados Unidos, para
+															gestionar el env&iacute;o de las comunicaciones
+															correspondientes. Podr&aacute;s ejercer tus derechos de
+															acceso, rectificaci&oacute;n, limitaci&oacute;n y eliminaci&oacute;n
+															de los datos escribiendo a
+															<a href="mailto:legal@fromdoppler.com" target="_blank"
+																style=" color: #33AD73;font-weight: normal; text-decoration: none;"
+																class="link-hover">legal@fromdoppler.com</a>,
+															as&iacute; como presentar una reclamaci&oacute;n ante una
+															autoridad de control. Si no dese&aacute;s seguir
+															recibiendo nuestras Campa&ntilde;as, pod&eacute;s darte de
+															baja autom&aacute;ticamente haciendo clic en el enlace
+															que se encuentra debajo. Pod&eacute;s consultar
+															informaci&oacute;n adicional y detallada sobre la
+															protecci&oacute;n de tus datos personales en nuestra
+															<a href="https://www.fromdoppler.com/legal/privacidad/" target="_blank"
+																style=" color: #33AD73; font-weight: normal; text-decoration: none;"
+																class="link-hover">Pol&iacute;tica
+																de
+																Privacidad</a>.
+														</p>
+													</td>
+												</tr>
+												<tr>
+													<td height="40" style="font-size:40px; line-height:40px;">&nbsp;</td>
+												</tr>
+											</table>
+										</td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+		</table>
+
+	</center>
+</body>
+
+</html>
